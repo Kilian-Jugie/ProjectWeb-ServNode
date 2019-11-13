@@ -1,0 +1,55 @@
+.displaying-dashBoard {
+    @include headerPos(flex, row, center, center);
+    height: 500px;
+    background-color: $colorBlack;
+
+    .dashboard {
+        height: 80%;
+
+        .row {
+            height: 50%;
+
+            .orange-box {
+                background-color: $colorYellow;
+                @include headerPos(flex, column, center, center);
+
+                div:nth-child(1) {
+                    @include headerPos(flex, row, center, center);
+                    @include innerBanner($mediumTitle, bolder, 1px, white, 1);
+                }
+
+                div:nth-child(2) {
+                    @include headerPos(flex, row, center, center);
+                    @include innerBanner($mediumTitle/1.5, bolder, 1px, white, 1);
+                }
+            }
+
+            .white-box {
+                background-color: white;
+                @include headerPos(flex, column, center, center);
+
+                div:nth-child(1) {
+                    @include headerPos(flex, row, center, center);
+                    @include innerBanner($mediumTitle, bolder, 1px, $colorYellow, 1);
+                }
+
+                div:nth-child(2) {
+                    @include headerPos(flex, row, center, center);
+                    @include innerBanner($mediumTitle/1.5, bolder, 1px, $colorYellow, 1);
+                }
+            }
+
+            .title-dashBoard {
+                @include headerPos(flex, column, center, center);
+
+                div:nth-child(1) {
+                    @include headerPos(flex, row, center, center);
+
+                    span {
+                        @include innerBanner($mediumTitle, bolder, 1px, $colorYellow, 0.6);
+                    }
+                }
+            }
+        }
+    }
+}

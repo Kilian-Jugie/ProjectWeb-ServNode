@@ -1,0 +1,36 @@
+html {
+    body {
+        .container-fluid {
+            .image-size {
+                @include resize;
+            }
+
+            .inner-banner {
+                position: absolute;
+                top: 40%;
+                left: 10%;
+                @include headerPos(flex, column, center, center);
+
+                div:nth-child(1) {
+                    span {
+                        @include innerBanner($mediumTitle, none, 1px, white, 0.6);
+                    }
+                }
+
+                div:nth-child(2) {
+                    span {
+                        @include innerBanner($titleSize, bolder, 1px, white, 1);
+                    }
+                }
+
+                div:nth-child(3) {
+                    margin-top: 20px;
+
+                    button {
+                        @include buttonStyle($sizeFont+2);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+html {
+    body {
+        @include resetToZero;
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        .container-fluid {
+            .space {
+                @include spaceMaking;
+            }
+        }
+    }
+}

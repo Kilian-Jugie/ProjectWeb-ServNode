@@ -1,0 +1,28 @@
+section {
+    .container-fluid {
+        .pos-whoAreWe {
+            .title-whoAreWe {
+                @include innerBanner($titleSize, bolder, 1px, $colorBlack, 1);
+                @include headerPos(flex, row, center, center);
+
+                span::before {
+                    @include beforeTitle(55px, 5px, none, none, "");
+                }
+            }
+
+            .displaying-whoAreWe {
+                padding: $padding*13 $padding*7 $padding*7 $padding*20;
+            }
+        }
+
+        .displaying-whoAreWeImage {
+            margin-top: 50px;
+            @include headerPos(flex, column, center, center);
+
+            .resize-whoAreWeImage {
+                @include resizeImg(300px, 300px);
+            }
+
+        }
+    }
+}

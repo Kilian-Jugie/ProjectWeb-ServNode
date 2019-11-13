@@ -1,0 +1,55 @@
+html {
+    body {
+        .header {
+            @include headerBackground;
+
+            .pos-logo {
+                @include headerPos(flex, row, flex-start, none);
+
+                img {
+                    height: 80px;
+                }
+            }
+
+            .pos-nav-menu {
+                @include headerPos(flex, row, center, center);
+
+                span {
+                    a {
+                        position: relative;
+                        color: $colorBlack;
+                        font-weight: bolder;
+                        letter-spacing: 1px;
+                        padding: $padding;
+                        font-size: $sizeFont+2;
+
+                        &::after {
+                            @include undescoreLine(0);
+                        }
+
+                        &:hover::after {
+                            transform: scaleX(1);
+                        }
+                    }
+                }
+            }
+        }
+
+        .pos-icon {
+            @include headerPos(flex, row, flex-end, center);
+
+            a {
+                padding-right: $padding*3;
+
+                button {
+                    @include buttonStyle($sizeFont);
+                }
+
+                img {
+                    color: $colorBlack;
+                    @include resizeImg(30px, 30px);
+                }
+            }
+        }
+    }
+}

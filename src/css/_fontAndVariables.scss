@@ -1,0 +1,23 @@
+$radius : 22px !default;
+$padding : 10px !default;
+$sizeFont : 10px !default;
+$colorYellow : #FFC107 !default;
+$colorBlack : #343A40 !default;
+$titleSize : $padding+25 !default;
+$mediumTitle: $sizeFont+15 !default;
+
+@font-face {
+    font-family: "Roboto";
+    src: font-url('src/fonts/Roboto.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: font-url('src/fonts/Roboto-Bold.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: "Roboto-Light";
+    src: font-url('src/fonts/Roboto-Light.woff2') format('woff2');
+}
