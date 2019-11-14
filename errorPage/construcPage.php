@@ -16,30 +16,27 @@
     <title>BDE CESI</title>
 </head>
 
-<body>
+<body id="rain-theme">
     <div class="mini-header">
         <a href="../index.php"><img src="../src/img/contactFormImage/cesiFondBlanc.jpg" alt="logoCesi"></a>
     </div>
 
-    <div class="container-fluid">
-        <div class="row content-bis">
-            <div class="col-md-7">
-                <img src="../src/img/errorImage/error403Image.png" alt="imgContact" class="error403Img">
-            </div>
 
-            <div class="col-md-5 errorText">
-                <h1>YOU SHALL NOT PASS !</h1>
-                <p>Nous sommes désolé mais vous n'avez pas acces à cette page.</p>
-                <a href="../index.php"><button type="button" class="btn btn-warning">Go back Home</button></a>
-            </div>
-
-            <div class="digit">
-                <span class="fourDigit">4</span>
-                <span class="zeroDigit">0</span>
-                <span class="threeDigit">3</span>
+    <section>
+        <div class="container-fluid construct-page">
+            <div class="construct-content-page">
+                <div>
+                    <img src="../src/img/errorImage/contructImage.png" alt="image de page en construction" />
+                </div>
+                <div>
+                    <span>
+                        Cette page est en développement, un peu de patience.
+                    </span>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
     <footer class="container-fluid footer">
         <div class="footerMenu">
             <ul>
@@ -69,7 +66,6 @@
         <div class="space">
         </div>
     </section>
-
 </body>
 
 </html>

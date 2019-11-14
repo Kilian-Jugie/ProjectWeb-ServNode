@@ -1,0 +1,58 @@
+body {
+    .cpds {
+        .cpds-content {
+            display: flex;
+            flex-direction: column;
+            @include resizeImg(100vw, none);
+            @include paddingRule(0, 0, 20vw, 20vw);
+            margin-bottom: 7VH;
+
+            h1 {
+                text-align: center;
+                @include innerBanner($titleSize, bolder, 1px, $colorBlack, 1);
+                @include marginRule(3VH, 12VH, 0, 0);
+            }
+
+            h2 {
+                @include innerBanner($mediumTitle, bolder, 1px, $colorBlack, 1);
+                @include marginRule(2VH, 2VH, 0, 0);
+            }
+
+            h3 {
+                @include fontRule(1.3em, none, none, none, left);
+                @include marginRule(1VH, 1VH, 0, 0);
+            }
+
+            p {
+                @include fontRule(1em, none, none, none, justify);
+                @include marginRule(0.5VH, 0.5VH, 0, 0);
+                word-wrap: break-word;
+            }
+
+            .bordered {
+                @include borderRule(1px, solid, #808080, 2px);
+                @include paddingRule(1VH, 1VH, 0.5vw, 0.5vw);
+                @include marginRule(1VH, 1VH, 0.5vw, 0.5vw);
+                width: -moz-fit-content;
+                max-width: 50vw;
+            }
+
+            div {
+                @include headerPos(flex, row, center, center);
+                @include marginRule(2VH, 2VH, 1vw, 1vw);
+
+                thead {
+                    th {
+                        @include fontRule(1.1em, bold, none, none, left);
+                    }
+                }
+
+                tbody {
+                    td {
+                        @include fontRule(0.8em, lighter, none, none, justify);
+                    }
+                }
+            }
+        }
+    }
+}

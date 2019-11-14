@@ -48,8 +48,8 @@
                 <li><a href="../index/foireAQuestion.php">FAQ</a></li>
                 <li><a href="../index/cgv.php">CGV</a></li>
                 <li><a href="../index/legalNotice.php">Mentions legales</a></li>
-                <li><a href="#">Politique de confidentialité</a></li>
-                <li><a href="#">Protections de données</a></li>
+                <li><a href="../index/cpds.php">Politique de confidentialité</a></li>
+                <li><a href="../index/cpds.php">Protections de données</a></li>
                 <li><a href="../index/contactPage.php">Contact</a>
             </ul>
             </ul>

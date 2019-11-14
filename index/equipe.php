@@ -185,7 +185,7 @@
                         <img src="../src/img/logoImage/sanji.png" />
                         <div>
                             <span>
-                                Eliot Donatien
+                                Eliott Donatien
                             </span>
                             <span>
                                 Back-end Développeur
@@ -328,10 +328,10 @@
         <div class="footerMenu">
             <ul>
                 <li><a href="foireAQuestion.php">FAQ</a></li>
-                <li><a href="#">CGV</a></li>
-                <li><a href="#">Mentions legales</a></li>
-                <li><a href="#">Politique de confidentialité</a></li>
-                <li><a href="#">Protections de données</a></li>
+                <li><a href="cgv.php">CGV</a></li>
+                <li><a href="legalNotice.php">Mentions legales</a></li>
+                <li><a href="cpds.php">Politique de confidentialité</a></li>
+                <li><a href="cpds.php">Protections de données</a></li>
                 <li><a href="contactPage.php">Contact</a>
             </ul>
             </ul>
@@ -353,3 +353,4 @@
         <div class="space">
         </div>
     </section>
+</body>

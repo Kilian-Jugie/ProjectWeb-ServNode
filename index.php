@@ -41,7 +41,7 @@
 
             </div>
             <div class="col-md-4 pos-icon">
-                <a href="#"><button type="button" class="btn btn-outline-dark">Se connecter</button></a>
+                <a href="index/login.php"><button type="button" class="btn btn-outline-dark">Se connecter</button></a>
                 <a href="#"><img src="src/img/headerImage/searchIcon.png" alt="icon de la barre de recherche" /></a>
             </div>
         </div>
@@ -222,8 +222,8 @@
                 <li><a href="index/foireAQuestion.php">FAQ</a></li>
                 <li><a href="index/cgv.php">CGV</a></li>
                 <li><a href="index/legalNotice.php">Mentions legales</a></li>
-                <li><a href="#">Politique de confidentialité</a></li>
-                <li><a href="#">Protections de données</a></li>
+                <li><a href="index/cpds.php">Politique de confidentialité</a></li>
+                <li><a href="index/cpds.php">Protections de données</a></li>
                 <li><a href="index/contactPage.php">Contact</a>
             </ul>
             </ul>

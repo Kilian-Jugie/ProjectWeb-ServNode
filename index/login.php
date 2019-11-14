@@ -3,7 +3,7 @@
     // echo $_SESSION['user_log'];
     if (isset($_SESSION['user_log'])) {
         echo "Bienvenue " . $_SESSION['user_log']->pseudo . "<br>";
-        echo "<a href='../src/phpScript/log_outScript.php'>Log Out</a>";
+        echo "<a href='log_outScript.php'>Log Out</a>";
     } else {
         echo "<html>
 
