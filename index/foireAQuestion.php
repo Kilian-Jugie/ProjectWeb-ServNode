@@ -28,7 +28,7 @@
             </div>
             <div class="col-md-4 pos-nav-menu">
                 <span><a href="../index.php#ecole">ECOLE</a></span>
-                <span><a href="#">EQUIPE</a></span>
+                <span><a href="equipe.php">EQUIPE</a></span>
                 <span><a href="#">CLUB&ASSOC</a></span>
                 <span><a href="#">BOUTIQUE</a></span>
                 <span><a href="#">EVENT</a></span>
@@ -512,7 +512,7 @@
         <div class="subscribeForm">
             <form action="/ma-page-de-traitement" method="post">
                 <label for="email" class="subscribeText">Subscribe !</label>
-                <input type="email" id="mail" value="ecris ton mail..." name="user_mail" class="subscribeInput">
+                <input type="email" id="mail" placeholder="ecris ton mail..." name="user_mail" class="subscribeInput">
                 <button type="submit" value="Submit" class="submitButton">S'inscrire</button>
             </form>
         </div>

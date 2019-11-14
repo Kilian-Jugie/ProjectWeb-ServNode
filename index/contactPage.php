@@ -34,18 +34,18 @@
                 <h1>CONTACTEZ-NOUS</h1>
                 <form action="/ma-page-de-traitement" method="post">
                     <div>
-                        <input type="text" id="name" value="Prénom..." name="user_name">
+                        <input type="text" id="name" placeholder="Prénom..." name="user_name">
 
-                        <input type="text" id="name" value="Nom..." name="user_name">
+                        <input type="text" id="name" placeholder="Nom..." name="user_name">
                     </div>
                     <div>
-                        <input type="email" id="mail" value="Email..." name="user_mail" class="longInput">
+                        <input type="email" id="mail" placeholder="Email..." name="user_mail" class="longInput">
                     </div>
                     <div>
-                        <input type="topic" id="topic" value="Sujet..." name="user_topic" class="longInput">
+                        <input type="topic" id="topic" placeholder="Sujet..." name="user_topic" class="longInput">
                     </div>
                     <div>
-                        <textarea id="msg" name="user_message">Entrez votre message...</textarea>
+                        <textarea id="msg" name="user_message" placeholder="Entrez votre message..."></textarea>
                     </div>
                     <div>
                         <button type="submit" value="Submit" class="submitButton">Envoyer</button>
@@ -74,7 +74,7 @@
         <div class="subscribeForm">
             <form action="/ma-page-de-traitement" method="post">
                 <label for="email" class="subscribeText">Subscribe !</label>
-                <input type="email" id="mail" value="ecris ton mail..." name="user_mail" class="subscribeInput">
+                <input type="email" id="mail" placeholder="ecris ton mail..." name="user_mail" class="subscribeInput">
                 <button type="submit" value="Submit" class="submitButton">S'inscrire</button>
             </form>
         </div>

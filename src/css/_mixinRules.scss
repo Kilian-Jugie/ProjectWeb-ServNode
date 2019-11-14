@@ -50,6 +50,10 @@
         &-md-7 {
             @include noPaddingMaring;
         }
+
+        &-md-8 {
+            @include noPaddingMaring;
+        }
     }
 }
 
@@ -157,6 +161,21 @@
 @mixin colorRule($backgroundColor: default, $textColor: default) {
     background-color: $backgroundColor;
     color: $textColor;
+}
+
+
+@mixin crossLine {
+    position: absolute;
+    top: 21px;
+    width: 100%;
+    bottom: -1px;
+    height: 5px;
+    background-color: $colorBlack;
+    transform: scaleX(1);
+    content: "";
+    transition: all 0.3s ease 0s;
+    transform-origin: left center;
+    left: 0;
 }
 
 // Terminer le putain de mixin pour le responsive (les dimensions à optimiser) //responsive making

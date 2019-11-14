@@ -34,7 +34,7 @@
             </div>
             <div class="col-md-4 pos-nav-menu">
                 <span><a href="#ecole">ECOLE</a></span>
-                <span><a href="#">EQUIPE</a></span>
+                <span><a href="index/equipe.php">EQUIPE</a></span>
                 <span><a href="#">CLUB&ASSOC</a></span>
                 <span><a href="#">BOUTIQUE</a></span>
                 <span><a href="#">EVENT</a></span>

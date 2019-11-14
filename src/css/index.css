@@ -46,6 +46,10 @@ html body .col-md-7 {
   padding: 0;
   margin: 0;
 }
+html body .col-md-8 {
+  padding: 0;
+  margin: 0;
+}
 html body a:hover {
   text-decoration: none;
 }
@@ -809,51 +813,318 @@ html body section .container-fluid .row .team-list-displaying {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+html body section .container-fluid .row .team-list-displaying span a {
+  font-size: 35px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
+  position: relative;
+}
+html body section .container-fluid .row .team-list-displaying span a:nth-child(1)::before {
+  position: absolute;
+  top: 21px;
+  width: 100%;
+  bottom: -1px;
+  height: 5px;
+  background-color: #343A40;
+  transform: scaleX(1);
+  content: "";
+  transition: all 0.3s ease 0s;
+  transform-origin: left center;
+  left: 0;
+}
+html body section .container-fluid .row .team-list-displaying span a:nth-child(2)::before {
+  position: absolute;
+  top: 21px;
+  width: 100%;
+  bottom: -1px;
+  height: 5px;
+  background-color: #343A40;
+  transform: scaleX(1);
+  content: "";
+  transition: all 0.3s ease 0s;
+  transform-origin: left center;
+  left: 0;
+}
+html body section .container-fluid .row .team-list-displaying span a:nth-child(3)::before {
+  position: absolute;
+  top: 21px;
+  width: 100%;
+  bottom: -1px;
+  height: 5px;
+  background-color: #343A40;
+  transform: scaleX(1);
+  content: "";
+  transition: all 0.3s ease 0s;
+  transform-origin: left center;
+  left: 0;
+}
+html body section .container-fluid .row .team-list-displaying span a:nth-child(4)::before {
+  position: absolute;
+  top: 21px;
+  width: 100%;
+  bottom: -1px;
+  height: 5px;
+  background-color: #343A40;
+  transform: scaleX(1);
+  content: "";
+  transition: all 0.3s ease 0s;
+  transform-origin: left center;
+  left: 0;
+}
+html body section .container-fluid .row .team-list-displaying span a:nth-child(1):hover::before {
+  transform: scaleX(0);
+}
+html body section .container-fluid .row .team-list-displaying span a:nth-child(2):hover::before {
+  transform: scaleX(0);
+}
+html body section .container-fluid .row .team-list-displaying span a:nth-child(3):hover::before {
+  transform: scaleX(0);
+}
+html body section .container-fluid .row .team-list-displaying span a:nth-child(4):hover::before {
+  transform: scaleX(0);
+}
+html body .displaying-title-whoWeAre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+html body .displaying-title-whoWeAre .title-whoWeAre span {
   font-size: 35px;
   font-weight: bolder;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
 }
-html body section .container-fluid .row .team-list-displaying span:nth-child(1)::before {
+html body .displaying-title-whoWeAre .title-whoWeAre span::before {
   position: absolute;
-  width: 45px;
+  width: 51px;
   height: 5px;
   background-color: #343A40;
   transform: scaleX(1);
-  content: "";
-  left: 181px;
-  bottom: 179px;
+  content: "a";
+  left: -60px;
+  bottom: 25px;
 }
-html body section .container-fluid .row .team-list-displaying span:nth-child(2)::before {
-  position: absolute;
-  width: 45px;
-  height: 5px;
-  background-color: #343A40;
-  transform: scaleX(1);
-  content: "";
-  left: 181px;
-  bottom: 127px;
+html body section .displaying-image-whoWeAre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-html body section .container-fluid .row .team-list-displaying span:nth-child(3)::before {
-  position: absolute;
-  width: 45px;
-  height: 5px;
-  background-color: #343A40;
-  transform: scaleX(1);
-  content: "";
-  left: 181px;
-  bottom: 75px;
+html body section .displaying-image-whoWeAre .center-teamate .displaying-teamate .resize-image-teamate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-html body section .container-fluid .row .team-list-displaying span:nth-child(4)::before {
+html body section .displaying-image-whoWeAre .center-teamate .displaying-teamate .resize-image-teamate img {
+  width: 150px;
+  height: 150px;
+}
+html body section .displaying-image-whoWeAre .center-teamate .displaying-teamate .resize-image-teamate #specific-resize {
+  width: auto;
+  height: 150px;
+}
+html body section .displaying-image-whoWeAre .center-teamate .displaying-teamate .resize-image-teamate div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+html body section .displaying-image-whoWeAre .center-teamate .displaying-teamate .resize-image-teamate div span:nth-child(1) {
+  font-size: 16px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
+}
+html body section .displaying-image-whoWeAre .center-teamate .displaying-teamate .resize-image-teamate div span:nth-child(2) {
+  font-size: 16px;
+  font-weight: none;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 0.6;
+}
+html body section .displaying-teamate-bis {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+html body section .displaying-teamate-bis .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+html body section .displaying-teamate-bis .container .resize-image-teamate-bis {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+html body section .displaying-teamate-bis .container .resize-image-teamate-bis img {
+  width: auto;
+  height: 200px;
+}
+html body section .displaying-teamate-bis .container .resize-image-teamate-bis div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+html body section .displaying-teamate-bis .container .resize-image-teamate-bis div span:nth-child(1) {
+  font-size: 16px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
+}
+html body section .displaying-teamate-bis .container .resize-image-teamate-bis div span:nth-child(2) {
+  font-size: 16px;
+  font-weight: none;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 0.6;
+}
+html body section .displaying-pourquoi-bde {
+  z-index: 1;
+}
+html body section .displaying-pourquoi-bde .displaying-pourquoi-bde-row .col-md-8 {
+  height: 500px;
+}
+html body section .displaying-pourquoi-bde .displaying-pourquoi-bde-row .col-md-8 .color-pourquoi-bde-col {
+  background-color: #FFC107;
+  width: 100%;
+  height: 100%;
+  border-radius: 0px 10px 10px 0px;
+}
+html body section .displaying-pourquoi-bde .displaying-pourquoi-bde-row .container-fluid .team-displaying-title-pourquoi {
+  position: relative;
+  bottom: 420%;
+  left: 53%;
+  font-size: 35px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
+}
+html body section .displaying-pourquoi-bde .displaying-pourquoi-bde-row .container-fluid .team-displaying-title-pourquoi span::before {
   position: absolute;
-  width: 45px;
+  width: 51px;
   height: 5px;
   background-color: #343A40;
   transform: scaleX(1);
   content: "";
-  left: 181px;
-  bottom: 21px;
+  left: -60px;
+  bottom: 25px;
+}
+html body section .displaying-pourquoi-bde .displaying-pourquoi-bde-row .container-fluid .team-displaying-image-team {
+  position: relative;
+  bottom: 550%;
+  left: 3%;
+}
+html body section .displaying-pourquoi-bde .displaying-pourquoi-bde-row .container-fluid .team-displaying-image-team img {
+  width: 350px;
+  height: 350px;
+}
+html body section .displaying-pourquoi-bde .displaying-block-container {
+  z-index: 5;
+  height: 250px;
+  position: absolute;
+  bottom: -370%;
+  left: 0%;
+}
+html body section .displaying-pourquoi-bde .displaying-block-container .row {
+  background-color: #343A40;
+  width: 100%;
+  height: 100%;
+  border-radius: 0px 10px 10px 0px;
+}
+html body section .displaying-pourquoi-bde .displaying-block-container .row .color-black-pourquoi-bde-col {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 40px;
+}
+html body section .displaying-pourquoi-bde .displaying-block-container .row .color-black-pourquoi-bde-col span {
+  font-size: 16px;
+  font-weight: none;
+  letter-spacing: none;
+  color: white;
+  opacity: 0.6;
+}
+html body section .container-fluid .displaying-tools .displaying-tools-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+html body section .container-fluid .displaying-tools .displaying-tools-col div:nth-child(1) {
+  padding-top: 0;
+  padding-bottom: 40px;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 25px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
+}
+html body section .container-fluid .displaying-tools .displaying-tools-col div:nth-child(2) {
+  padding-top: 0;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 16px;
+  font-weight: none;
+  letter-spacing: none;
+  color: #343A40;
+  opacity: 1;
+}
+html body section .container-fluid .displaying-tools .displaying-tools-col div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+html body section .container-fluid .displaying-tools .displaying-tools-col div:nth-child(3) span:nth-child(1) {
+  padding-top: 0;
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 16px;
+  font-weight: bolder;
+  letter-spacing: none;
+  color: #343A40;
+  opacity: 1;
+}
+html body section .container-fluid .displaying-tools .displaying-tools-col div:nth-child(3) span:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+html body section .container-fluid .displaying-tools .displaying-tools-col div:nth-child(3) span:nth-child(2) span {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+html body section .container-fluid .displaying-tools .displaying-tools-col div:nth-child(3) span:nth-child(2) span img {
+  width: 30px;
+  height: 30px;
+}
+html body section .container-fluid .displaying-tools .displaying-tools-col-bis .displaying-tools-col-ter img {
+  border-radius: 10px 0 0 10px;
 }
 
 /*# sourceMappingURL=index.css.map */
