@@ -1,171 +1,17 @@
 //file for font 
 @import "_fontAndVariables.scss";
 
-//mixin for some repetitives tasks
-@mixin noPaddingMaring {
-    padding: 0;
-    margin: 0;
-}
-
-@mixin setMax {
-    width: 100%;
-    height: 100%;
-}
-
-@mixin resetToZero {
-    @include noPaddingMaring;
-    font-family: "Roboto", "Roboto-Bold", "Roboto-Light";
-    @include setMax;
-    overflow-X: hidden;
-
-    .container {
-        @include noPaddingMaring;
-
-        &-fluid {
-            @include noPaddingMaring;
-        }
-    }
-
-    .row {
-        @include noPaddingMaring;
-    }
-
-    .col {
-        &-md-4 {
-            @include noPaddingMaring;
-        }
-
-        &-md-5 {
-            @include noPaddingMaring;
-        }
-
-        &-md-6 {
-            @include noPaddingMaring;
-        }
-
-        &-md-7 {
-            @include noPaddingMaring;
-        }
-    }
-}
-
-@mixin spaceMaking {
-    height: 100px;
-}
-
-@mixin containerBackground {
-    background-color: $colorYellow;
-    width: 100%;
-    height: 100%;
-    border-radius: 0px 10px 10px 0px;
-}
-
-@mixin displayingTitleAndLogo($position, $bottomValue, $leftValue) {
-    position: $position;
-    bottom: $bottomValue;
-    left: $leftValue;
-}
-
-@mixin beforeTitle($widthDecoraction, $heightDecoration, $leftDecoration, $bottomnDecoration, $content) {
-    position: absolute;
-    width: $widthDecoraction;
-    height: $heightDecoration;
-    background-color: $colorBlack;
-    transform: scaleX(1);
-    content: $content;
-    left: $leftDecoration;
-    bottom: $bottomnDecoration;
-}
-
-@mixin resize {
-    width: 100%;
-    height: 100%;
-}
-
-@mixin innerBanner($sizeFont, $weightFont, $letterSpacing, $color, $opacity) {
-    font-size: $sizeFont;
-    font-weight: $weightFont;
-    letter-spacing: $letterSpacing;
-    color: $color;
-    opacity: $opacity;
-}
-
-@mixin headerPos($display, $flexDirection, $justifyContent, $alignItems) {
-    display: $display;
-    flex-direction: $flexDirection;
-    justify-content: $justifyContent;
-    align-items: $alignItems;
-}
-
-@mixin buttonStyle($sizeFont) {
-    border-radius: $radius;
-    font-size: $sizeFont;
-    border-width: 2px;
-}
-
-@mixin headerBackground {
-    position: absolute;
-    background-color: white;
-    opacity: 0.8;
-    height: 80px;
-}
-
-@mixin undescoreLine($scaleX) {
-    position: absolute;
-    top: auto;
-    width: 100%;
-    bottom: -1px;
-    height: 2px;
-    background-color: $colorBlack;
-    transform: scaleX($scaleX);
-    content: "";
-    transition: all 0.3s ease 0s;
-    transform-origin: left center;
-    left: 0;
-}
-
-@mixin resizeImg($widthImage, $heightImage) {
-    width: $widthImage;
-    height: $heightImage;
-}
-
-
-//file for other css components
+@import "_mixinRules.scss";
 @import "_body.scss";
 @import "_header.scss";
 @import "_banner.scss";
 @import "_ourSchool.scss";
 @import "_whoAreWe.scss";
 @import "_bdeDashBoard.scss";
-
-// Terminer le putain de mixin pour le responsive (les dimensions à optimiser)
-//responsive making
-@mixin responsive($media) {
-    @if $media>=1800 or $media>=1900 {
-
-        //bigScreen of Opera
-        @media only screen and (min-width : 1800px) and (max-width:1899px) {
-            @content;
-        }
-    }
-
-    @else if $media>=1300 or $media <=1795 {
-
-        //Screen of Chrome 
-        @media only screen and (min-width: 1300px) and (max-width: 1795) {
-            @content;
-        }
-    }
-
-    @else if $media>=1900 {
-        @media only screen and (max-width: 1900px) {
-            @content;
-        }
-    }
-
-    @else if $media <=785 {
-        @media only screen and (max-width: 785px) {
-            @content;
-        }
-    }
-}
+@import "_footer.scss";
+@import "_miniHeader.scss";
+@import "_contactForm.scss";
+@import "_FAQ.scss";
+@import "_error404.scss";
+@import "_error403.scss";
+@import "_equipe.scss";

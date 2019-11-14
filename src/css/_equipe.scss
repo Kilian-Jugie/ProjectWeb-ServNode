@@ -1,0 +1,88 @@
+html {
+    body {
+        .container-fluid {
+            .team-header {
+                @include marginRule(100px, 0, 0, 0);
+                @include headerPos(flex, column, center, center);
+
+                div:nth-child(1) {
+                    span {
+                        @include innerBanner($titleSize, bolder, 1px, $colorBlack, 1);
+                    }
+                }
+
+                div:nth-child(2) {
+                    span {
+                        @include innerBanner($mediumTitle, bolder, 1px, $colorBlack, 0.5);
+                    }
+                }
+            }
+        }
+
+        section {
+            .container-fluid {
+                .row {
+                    .team-block {
+                        height: 600px;
+
+                        .team-background {
+                            background-color: $colorYellow;
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 10px 0px 0px 10px;
+                        }
+                    }
+
+                    .team-text {
+                        height: 400px;
+                        @include headerPos(flex, column, center, center);
+
+                        .displaying-school-team-text {
+                            padding: $padding*20 $padding*20 $padding*7 $padding*20;
+                        }
+                    }
+
+                    div:nth-child(3) {
+                        .team-displaying-title {
+                            @include displayingTitleAndLogo(relative, 564%, 53%);
+                            @include innerBanner($titleSize, bolder, 1px, $colorBlack, 1);
+
+                            span::before {
+                                @include beforeTitle(51px, 5px, -60px, 25px, "");
+                            }
+                        }
+
+                        .team-displaying-image {
+                            @include displayingTitleAndLogo(relative, 512%, 56%);
+
+                            .team-resize-logo-image {
+                                @include resizeImg(450px, 450px);
+                            }
+                        }
+                    }
+
+                    .team-list-displaying {
+                        @include headerPos(flex, column, center, center);
+                        @include innerBanner($titleSize, bolder, 1px, $colorBlack, 1);
+
+                        span:nth-child(1)::before {
+                            @include beforeTitle(45px, 5px, 181px, 179px, "");
+                        }
+
+                        span:nth-child(2)::before {
+                            @include beforeTitle(45px, 5px, 181px, 127px, "");
+                        }
+
+                        span:nth-child(3)::before {
+                            @include beforeTitle(45px, 5px, 181px, 75px, "");
+                        }
+
+                        span:nth-child(4)::before {
+                            @include beforeTitle(45px, 5px, 181px, 21px, "");
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

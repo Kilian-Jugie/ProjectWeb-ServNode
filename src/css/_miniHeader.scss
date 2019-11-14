@@ -1,0 +1,14 @@
+body {
+    .mini-header {
+        @include headerPos(flex, row, center, center);
+        height: 64px;
+        @include marginRule(20px, 60px, none, none);
+
+        a {
+            img {
+                @include resizeImg(64px, none);
+                @include marginRule(none, none, 15px, 15px);
+            }
+        }
+    }
+}

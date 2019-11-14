@@ -1,0 +1,49 @@
+html {
+    body {
+        .displaying-Faq {
+            @include headerPos(flex, row, center, center);
+            @include marginRule(100px, 0px, 0, 0);
+
+            img {
+                @include resizeImg(300px, 232px);
+                border-radius: 5px;
+            }
+        }
+
+        .displaying-questions {
+            @include headerPos(flex, row, center, center);
+
+            .container {
+                h4 {
+                    text-align: center;
+                    @include marginRule(100px, 30px, 0, 0);
+                    @include innerBanner($mediumTitle, bold, 1px, $colorBlack, 1);
+                }
+
+                .displaying-card {
+                    @include marginRule(0, 20px, 0, 0);
+                    border: none;
+
+                    .effect-faq {
+                        transition: ease-in 0.3s;
+                        border-bottom: none;
+
+                        &:hover {
+                            background-color: #D3DAE2;
+                        }
+
+                        .color-faq {
+                            color: $colorBlack;
+                            text-decoration: none;
+                        }
+
+                        .color-faq:hover {
+                            text-decoration: none;
+                            color: $colorBlack;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

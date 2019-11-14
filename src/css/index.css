@@ -50,7 +50,7 @@ html body a:hover {
   text-decoration: none;
 }
 html body .container-fluid .space {
-  height: 100px;
+  height: 70px;
 }
 
 html body .header {
@@ -332,6 +332,528 @@ section .container-fluid .displaying-whoAreWeImage .resize-whoAreWeImage {
   letter-spacing: 1px;
   color: #FFC107;
   opacity: 0.6;
+}
+.displaying-dashBoard .dashboard .first div:nth-child(1) {
+  border-radius: 22px 0 0 0;
+}
+.displaying-dashBoard .dashboard .second div:nth-child(1) {
+  border-radius: 0 0 0 22px;
+}
+.displaying-dashBoard .dashboard .second div:nth-child(4) {
+  border-radius: 0 0 22px 0;
+}
+
+body footer .footerMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body footer .footerMenu ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body footer .footerMenu ul li {
+  list-style: none;
+  padding-top: none;
+  padding-bottom: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+body footer .footerMenu ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: none;
+  letter-spacing: 0px;
+  color: #343A40;
+  opacity: 1;
+  background-color: none;
+  color: #808080;
+  transition: color 0.2s ease-in 0s;
+}
+body footer .footerMenu ul li a:hover {
+  color: #ffc107;
+  text-decoration: none;
+}
+body footer .socialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  margin-bottom: 30px;
+}
+body footer .socialMedia a img {
+  width: 25px;
+  height: none;
+  margin-top: none;
+  margin-bottom: none;
+  margin-left: 15px;
+  margin-right: 15px;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  transition: background-color 0.2s ease-in 0s;
+}
+body footer .socialMedia a .fbColor:hover {
+  background-color: #3b5998;
+}
+body footer .socialMedia a .twColor:hover {
+  background-color: #00aced;
+}
+body footer .socialMedia a .instaColor:hover {
+  background-color: #c13584;
+}
+body footer .subscribeForm {
+  display: flex;
+  justify-content: center;
+}
+body footer .subscribeForm form .subscribeText {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: default;
+  font-size: 16px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 0.7;
+  padding-bottom: 10px;
+}
+body footer .subscribeForm form .subscribeInput {
+  border: 1px solid #808080;
+  border-radius: 15px;
+  color: #808080;
+  width: 300px;
+  height: 30px;
+  transform: translate(8%);
+}
+body footer .subscribeForm form .submitButton {
+  height: 30px;
+  border: 1px solid #ffc107;
+  border-radius: 15px;
+  background-color: #ffc107;
+  color: #ffffff;
+  transform: translate(-25%);
+}
+
+body .mini-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  margin-left: none;
+  margin-right: none;
+}
+body .mini-header a img {
+  width: 64px;
+  height: none;
+  margin-top: none;
+  margin-bottom: none;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/*
+Contact form CSS
+*/
+body .container-fluid .content-contact {
+  width: none;
+  height: 500px;
+  margin-bottom: 80px;
+}
+body .container-fluid .content-contact .contactImg {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+body .container-fluid .content-contact .contactImg .img-avionPapier {
+  position: absolute;
+  top: 205px;
+  right: -26px;
+  bottom: none;
+  left: none;
+  width: 153px;
+  height: none;
+}
+body .container-fluid .content-contact .contactImg img {
+  width: 500px;
+  height: none;
+}
+body .container-fluid .content-contact .contactForm h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: #FFC107;
+  opacity: 1;
+}
+body .container-fluid .content-contact .contactForm form {
+  margin-left: 15%;
+}
+body .container-fluid .content-contact .contactForm form input {
+  width: 250px;
+  height: 40px;
+  border: 1px solid #505050;
+  border-radius: 5px;
+  background-color: #505050;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+body .container-fluid .content-contact .contactForm form .longInput {
+  width: 515px;
+  height: 40px;
+  border: 1px solid #505050;
+  border-radius: 5px;
+  background-color: #505050;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+body .container-fluid .content-contact .contactForm form textarea {
+  width: 515px;
+  height: 80px;
+  border: 1px solid #505050;
+  border-radius: 5px;
+  background-color: #505050;
+  color: #ffffff;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+body .container-fluid .content-contact .contactForm form div:nth-child(5) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+body .container-fluid .content-contact .contactForm form div:nth-child(5) button {
+  width: 100px;
+  height: 30px;
+  border: 1px solid #ffc107;
+  border-radius: 5px;
+  background-color: #ffc107;
+  color: #ffffff;
+  margin-top: 15px;
+  margin-bottom: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 16px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: white;
+  opacity: 1;
+}
+
+html body .displaying-Faq {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  margin-left: 0;
+  margin-right: 0;
+}
+html body .displaying-Faq img {
+  width: 300px;
+  height: 232px;
+  border-radius: 5px;
+}
+html body .displaying-questions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+html body .displaying-questions .container h4 {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
+}
+html body .displaying-questions .container .displaying-card {
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  border: none;
+}
+html body .displaying-questions .container .displaying-card .effect-faq {
+  transition: ease-in 0.3s;
+  border-bottom: none;
+}
+html body .displaying-questions .container .displaying-card .effect-faq:hover {
+  background-color: #D3DAE2;
+}
+html body .displaying-questions .container .displaying-card .effect-faq .color-faq {
+  color: #343A40;
+  text-decoration: none;
+}
+html body .displaying-questions .container .displaying-card .effect-faq .color-faq:hover {
+  text-decoration: none;
+  color: #343A40;
+}
+
+body .container-fluid .content {
+  width: none;
+  height: 70VH;
+}
+body .container-fluid .content button {
+  border-radius: 22px;
+  font-size: 12px;
+  border-width: 2px;
+  text-decoration: none;
+  position: absolute;
+  font-size: 2VH;
+  width: 4vw;
+  height: 7VH;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: none;
+  transform: translate(33vw, 5VH);
+}
+body .container-fluid .content div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: none;
+}
+body .container-fluid .content div .error403Img {
+  width: 40vw;
+  height: none;
+}
+body .container-fluid .content .digit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: none;
+}
+body .container-fluid .content .digit span {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  font-size: 1.8em;
+  font-weight: bolder;
+}
+body .container-fluid .content .digit .zeroDigit {
+  transform: translate(0, 2VH);
+}
+
+body .container-fluid .content-bis {
+  width: none;
+  height: 70VH;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: none;
+  margin-bottom: 10VH;
+}
+body .container-fluid .content-bis div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: none;
+}
+body .container-fluid .content-bis div .error403Img {
+  width: 30vw;
+  height: none;
+}
+body .container-fluid .content-bis .errorText {
+  display: flex;
+  flex-direction: column;
+  transform: translate(-10vw, 0VH);
+}
+body .container-fluid .content-bis .errorText h1 {
+  margin-top: 1VH;
+  margin-bottom: 1VH;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 35px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
+}
+body .container-fluid .content-bis .errorText p {
+  margin-top: 1VH;
+  margin-bottom: 1VH;
+  margin-left: 0;
+  margin-right: 0;
+}
+body .container-fluid .content-bis .errorText button {
+  border-radius: 22px;
+  font-size: 12px;
+  border-width: 2px;
+}
+body .container-fluid .content-bis .digit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: none;
+}
+body .container-fluid .content-bis .digit span {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  font-size: 1.8em;
+  font-weight: bolder;
+}
+body .container-fluid .content-bis .digit .zeroDigit {
+  transform: translate(0, 2VH);
+}
+
+html body .container-fluid .team-header {
+  margin-top: 100px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+html body .container-fluid .team-header div:nth-child(1) span {
+  font-size: 35px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
+}
+html body .container-fluid .team-header div:nth-child(2) span {
+  font-size: 25px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 0.5;
+}
+html body section .container-fluid .row .team-block {
+  height: 600px;
+}
+html body section .container-fluid .row .team-block .team-background {
+  background-color: #FFC107;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 0px 0px 10px;
+}
+html body section .container-fluid .row .team-text {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+html body section .container-fluid .row .team-text .displaying-school-team-text {
+  padding: 200px 200px 70px 200px;
+}
+html body section .container-fluid .row div:nth-child(3) .team-displaying-title {
+  position: relative;
+  bottom: 564%;
+  left: 53%;
+  font-size: 35px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
+}
+html body section .container-fluid .row div:nth-child(3) .team-displaying-title span::before {
+  position: absolute;
+  width: 51px;
+  height: 5px;
+  background-color: #343A40;
+  transform: scaleX(1);
+  content: "";
+  left: -60px;
+  bottom: 25px;
+}
+html body section .container-fluid .row div:nth-child(3) .team-displaying-image {
+  position: relative;
+  bottom: 512%;
+  left: 56%;
+}
+html body section .container-fluid .row div:nth-child(3) .team-displaying-image .team-resize-logo-image {
+  width: 450px;
+  height: 450px;
+}
+html body section .container-fluid .row .team-list-displaying {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
+}
+html body section .container-fluid .row .team-list-displaying span:nth-child(1)::before {
+  position: absolute;
+  width: 45px;
+  height: 5px;
+  background-color: #343A40;
+  transform: scaleX(1);
+  content: "";
+  left: 181px;
+  bottom: 179px;
+}
+html body section .container-fluid .row .team-list-displaying span:nth-child(2)::before {
+  position: absolute;
+  width: 45px;
+  height: 5px;
+  background-color: #343A40;
+  transform: scaleX(1);
+  content: "";
+  left: 181px;
+  bottom: 127px;
+}
+html body section .container-fluid .row .team-list-displaying span:nth-child(3)::before {
+  position: absolute;
+  width: 45px;
+  height: 5px;
+  background-color: #343A40;
+  transform: scaleX(1);
+  content: "";
+  left: 181px;
+  bottom: 75px;
+}
+html body section .container-fluid .row .team-list-displaying span:nth-child(4)::before {
+  position: absolute;
+  width: 45px;
+  height: 5px;
+  background-color: #343A40;
+  transform: scaleX(1);
+  content: "";
+  left: 181px;
+  bottom: 21px;
 }
 
 /*# sourceMappingURL=index.css.map */

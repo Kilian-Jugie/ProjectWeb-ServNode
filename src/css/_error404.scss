@@ -1,0 +1,45 @@
+body {
+    .container-fluid {
+        .content {
+            @include resizeImg(none, 70VH);
+
+            button {
+                @include buttonStyle($sizeFont+2);
+                text-decoration: none;
+                position: absolute;
+                font-size: 2VH;
+                @include resizeImg(4vw, 7VH);
+                @include headerPos(flex, row, center, center);
+                height: none;
+                transform: translate(33vw, 5VH);
+
+            }
+
+            div {
+
+                @include headerPos(flex, row, center, center);
+                height: none;
+
+                .error403Img {
+                    @include resizeImg(40vw, none);
+                }
+            }
+
+            .digit {
+
+                @include headerPos(flex, row, center, center);
+                height: none;
+
+                span {
+                    @include marginRule(0, 0, 1vw, 1vw);
+                    font-size: 1.8em;
+                    font-weight: bolder;
+                }
+
+                .zeroDigit {
+                    transform: translate(0, 2VH);
+                }
+            }
+        }
+    }
+}

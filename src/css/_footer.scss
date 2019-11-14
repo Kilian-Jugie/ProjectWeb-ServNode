@@ -1,0 +1,91 @@
+body {
+    footer {
+        .footerMenu {
+            @include headerPos(flex, row, center, center);
+
+            ul {
+                list-style-type: none;
+                @include headerPos(flex, row, center, center);
+
+                li {
+                    list-style: none;
+                    @include paddingRule(none, none, 20px, 20px);
+
+                    a {
+                        text-decoration: none;
+                        @include innerBanner($defaultSizeFont, none, 0px, $colorBlack, 1);
+                        @include colorRule(none, #808080);
+                        transition: color 0.2s ease-in 0s;
+
+                        &:hover {
+                            color: #ffc107;
+                            text-decoration: none;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .socialMedia {
+            @include headerPos(flex, row, center, center);
+            height: 64px;
+            margin-bottom: 30px;
+
+            a {
+                img {
+                    @include resizeImg(25px, none);
+                    @include marginRule(none, none, 15px, 15px);
+                    @include borderRule(1px, solid, #000000, 6px);
+                    transition: background-color 0.2s ease-in 0s;
+                }
+
+                .fbColor {
+                    &:hover {
+                        background-color: #3b5998;
+                    }
+                }
+
+                .twColor {
+                    &:hover {
+                        background-color: #00aced;
+                    }
+                }
+
+                .instaColor {
+                    &:hover {
+                        background-color: #c13584;
+                    }
+                }
+            }
+        }
+
+        .subscribeForm {
+            display: flex;
+            justify-content: center;
+
+            form {
+                .subscribeText {
+                    @include headerPos(flex, row, center, center);
+                    height: default;
+                    @include innerBanner($defaultSizeFont, bolder, 1px, $colorBlack, 0.7);
+                    padding-bottom: 10px;
+                }
+
+                .subscribeInput {
+                    @include borderRule(1px, solid, #808080, 15px);
+                    @include colorRule(null, #808080);
+                    @include resizeImg(300px, 30px);
+                    transform: translate(8%);
+                }
+
+                .submitButton {
+                    height: 30px;
+                    @include borderRule(1px, solid, #ffc107, 15px);
+                    @include colorRule(#ffc107, #ffffff);
+                    transform: translate(-25%);
+                }
+            }
+        }
+    }
+}
