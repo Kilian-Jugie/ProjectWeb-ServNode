@@ -38,12 +38,16 @@
         <div class="space">
         </div>
     </section>
+    <section class="container-fluid">
+        <div class="space">
+        </div>
+    </section>
     <footer class="container-fluid footer">
         <div class="footerMenu">
             <ul>
                 <li><a href="../index/foireAQuestion.php">FAQ</a></li>
-                <li><a href="#">CGV</a></li>
-                <li><a href="#">Mentions legales</a></li>
+                <li><a href="../index/cgv.php">CGV</a></li>
+                <li><a href="../index/legalNotice.php">Mentions legales</a></li>
                 <li><a href="#">Politique de confidentialité</a></li>
                 <li><a href="#">Protections de données</a></li>
                 <li><a href="../index/contactPage.php">Contact</a>

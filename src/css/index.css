@@ -2,14 +2,17 @@
   font-family: "Roboto";
   src: font-url("src/fonts/Roboto.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "Roboto-Bold";
   src: font-url("src/fonts/Roboto-Bold.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "Roboto-Light";
   src: font-url("src/fonts/Roboto-Light.woff2") format("woff2");
 }
+
 html body {
   padding: 0;
   margin: 0;
@@ -18,41 +21,60 @@ html body {
   height: 100%;
   overflow-X: hidden;
 }
+
 html body .container {
   padding: 0;
   margin: 0;
 }
+
 html body .container-fluid {
   padding: 0;
   margin: 0;
 }
+
 html body .row {
   padding: 0;
   margin: 0;
 }
+
 html body .col-md-4 {
   padding: 0;
   margin: 0;
 }
+
 html body .col-md-5 {
   padding: 0;
   margin: 0;
 }
+
 html body .col-md-6 {
   padding: 0;
   margin: 0;
 }
+
 html body .col-md-7 {
   padding: 0;
   margin: 0;
 }
+
 html body .col-md-8 {
   padding: 0;
   margin: 0;
 }
+
+html body a {
+  font-size: none;
+  font-weight: none;
+  letter-spacing: none;
+  color: #FFC107;
+  opacity: 1;
+}
+
 html body a:hover {
   text-decoration: none;
+  color: #343A40;
 }
+
 html body .container-fluid .space {
   height: 70px;
 }
@@ -63,21 +85,25 @@ html body .header {
   opacity: 0.8;
   height: 80px;
 }
+
 html body .header .pos-logo {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: none;
 }
+
 html body .header .pos-logo img {
   height: 80px;
 }
+
 html body .header .pos-nav-menu {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+
 html body .header .pos-nav-menu span a {
   position: relative;
   color: #343A40;
@@ -86,6 +112,7 @@ html body .header .pos-nav-menu span a {
   padding: 10px;
   font-size: 12px;
 }
+
 html body .header .pos-nav-menu span a::after {
   position: absolute;
   top: auto;
@@ -99,23 +126,28 @@ html body .header .pos-nav-menu span a::after {
   transform-origin: left center;
   left: 0;
 }
+
 html body .header .pos-nav-menu span a:hover::after {
   transform: scaleX(1);
 }
+
 html body .pos-icon {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
 }
+
 html body .pos-icon a {
   padding-right: 30px;
 }
+
 html body .pos-icon a button {
   border-radius: 22px;
   font-size: 10px;
   border-width: 2px;
 }
+
 html body .pos-icon a img {
   color: #343A40;
   width: 30px;
@@ -126,6 +158,7 @@ html body .container-fluid .image-size {
   width: 100%;
   height: 100%;
 }
+
 html body .container-fluid .inner-banner {
   position: absolute;
   top: 40%;
@@ -135,6 +168,7 @@ html body .container-fluid .inner-banner {
   justify-content: center;
   align-items: center;
 }
+
 html body .container-fluid .inner-banner div:nth-child(1) span {
   font-size: 25px;
   font-weight: none;
@@ -142,6 +176,7 @@ html body .container-fluid .inner-banner div:nth-child(1) span {
   color: white;
   opacity: 0.6;
 }
+
 html body .container-fluid .inner-banner div:nth-child(2) span {
   font-size: 35px;
   font-weight: bolder;
@@ -149,9 +184,11 @@ html body .container-fluid .inner-banner div:nth-child(2) span {
   color: white;
   opacity: 1;
 }
+
 html body .container-fluid .inner-banner div:nth-child(3) {
   margin-top: 20px;
 }
+
 html body .container-fluid .inner-banner div:nth-child(3) button {
   border-radius: 22px;
   font-size: 12px;
@@ -161,12 +198,14 @@ html body .container-fluid .inner-banner div:nth-child(3) button {
 section .container-fluid .row .col-md-5 {
   height: 400px;
 }
+
 section .container-fluid .row .col-md-5 .school-background {
   background-color: #FFC107;
   width: 100%;
   height: 100%;
   border-radius: 0px 10px 10px 0px;
 }
+
 section .container-fluid .row .col-md-7 {
   height: 400px;
   display: flex;
@@ -174,12 +213,15 @@ section .container-fluid .row .col-md-7 {
   justify-content: center;
   align-items: center;
 }
+
 section .container-fluid .row .col-md-7 .displaying-school-text {
   padding: 130px 70px 70px 200px;
 }
+
 section .container-fluid .row .momo {
   height: 100px;
 }
+
 section .container-fluid .row div:nth-child(3) .displaying-title {
   position: relative;
   bottom: 370%;
@@ -190,6 +232,7 @@ section .container-fluid .row div:nth-child(3) .displaying-title {
   color: #343A40;
   opacity: 1;
 }
+
 section .container-fluid .row div:nth-child(3) .displaying-title span::before {
   position: absolute;
   width: 51px;
@@ -200,11 +243,13 @@ section .container-fluid .row div:nth-child(3) .displaying-title span::before {
   left: -60px;
   bottom: 25px;
 }
+
 section .container-fluid .row div:nth-child(3) .displaying-image {
   position: relative;
   bottom: 380%;
   left: 32%;
 }
+
 section .container-fluid .row div:nth-child(3) .displaying-image .resize-logo-image {
   width: 300px;
   height: 300px;
@@ -221,6 +266,7 @@ section .container-fluid .pos-whoAreWe .title-whoAreWe {
   justify-content: center;
   align-items: center;
 }
+
 section .container-fluid .pos-whoAreWe .title-whoAreWe span::before {
   position: absolute;
   width: 55px;
@@ -231,9 +277,11 @@ section .container-fluid .pos-whoAreWe .title-whoAreWe span::before {
   left: none;
   bottom: none;
 }
+
 section .container-fluid .pos-whoAreWe .displaying-whoAreWe {
   padding: 130px 70px 70px 200px;
 }
+
 section .container-fluid .displaying-whoAreWeImage {
   margin-top: 50px;
   display: flex;
@@ -241,6 +289,7 @@ section .container-fluid .displaying-whoAreWeImage {
   justify-content: center;
   align-items: center;
 }
+
 section .container-fluid .displaying-whoAreWeImage .resize-whoAreWeImage {
   width: 300px;
   height: 300px;
@@ -254,12 +303,15 @@ section .container-fluid .displaying-whoAreWeImage .resize-whoAreWeImage {
   height: 500px;
   background-color: #343A40;
 }
+
 .displaying-dashBoard .dashboard {
   height: 80%;
 }
+
 .displaying-dashBoard .dashboard .row {
   height: 50%;
 }
+
 .displaying-dashBoard .dashboard .row .orange-box {
   background-color: #FFC107;
   display: flex;
@@ -267,6 +319,7 @@ section .container-fluid .displaying-whoAreWeImage .resize-whoAreWeImage {
   justify-content: center;
   align-items: center;
 }
+
 .displaying-dashBoard .dashboard .row .orange-box div:nth-child(1) {
   display: flex;
   flex-direction: row;
@@ -278,6 +331,7 @@ section .container-fluid .displaying-whoAreWeImage .resize-whoAreWeImage {
   color: white;
   opacity: 1;
 }
+
 .displaying-dashBoard .dashboard .row .orange-box div:nth-child(2) {
   display: flex;
   flex-direction: row;
@@ -289,6 +343,7 @@ section .container-fluid .displaying-whoAreWeImage .resize-whoAreWeImage {
   color: white;
   opacity: 1;
 }
+
 .displaying-dashBoard .dashboard .row .white-box {
   background-color: white;
   display: flex;
@@ -296,6 +351,7 @@ section .container-fluid .displaying-whoAreWeImage .resize-whoAreWeImage {
   justify-content: center;
   align-items: center;
 }
+
 .displaying-dashBoard .dashboard .row .white-box div:nth-child(1) {
   display: flex;
   flex-direction: row;
@@ -307,6 +363,7 @@ section .container-fluid .displaying-whoAreWeImage .resize-whoAreWeImage {
   color: #FFC107;
   opacity: 1;
 }
+
 .displaying-dashBoard .dashboard .row .white-box div:nth-child(2) {
   display: flex;
   flex-direction: row;
@@ -318,18 +375,21 @@ section .container-fluid .displaying-whoAreWeImage .resize-whoAreWeImage {
   color: #FFC107;
   opacity: 1;
 }
+
 .displaying-dashBoard .dashboard .row .title-dashBoard {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .displaying-dashBoard .dashboard .row .title-dashBoard div:nth-child(1) {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+
 .displaying-dashBoard .dashboard .row .title-dashBoard div:nth-child(1) span {
   font-size: 25px;
   font-weight: bolder;
@@ -337,12 +397,15 @@ section .container-fluid .displaying-whoAreWeImage .resize-whoAreWeImage {
   color: #FFC107;
   opacity: 0.6;
 }
+
 .displaying-dashBoard .dashboard .first div:nth-child(1) {
   border-radius: 22px 0 0 0;
 }
+
 .displaying-dashBoard .dashboard .second div:nth-child(1) {
   border-radius: 0 0 0 22px;
 }
+
 .displaying-dashBoard .dashboard .second div:nth-child(4) {
   border-radius: 0 0 22px 0;
 }
@@ -353,6 +416,7 @@ body footer .footerMenu {
   justify-content: center;
   align-items: center;
 }
+
 body footer .footerMenu ul {
   list-style-type: none;
   display: flex;
@@ -360,6 +424,7 @@ body footer .footerMenu ul {
   justify-content: center;
   align-items: center;
 }
+
 body footer .footerMenu ul li {
   list-style: none;
   padding-top: none;
@@ -367,6 +432,7 @@ body footer .footerMenu ul li {
   padding-left: 20px;
   padding-right: 20px;
 }
+
 body footer .footerMenu ul li a {
   text-decoration: none;
   font-size: 16px;
@@ -378,10 +444,12 @@ body footer .footerMenu ul li a {
   color: #808080;
   transition: color 0.2s ease-in 0s;
 }
+
 body footer .footerMenu ul li a:hover {
   color: #ffc107;
   text-decoration: none;
 }
+
 body footer .socialMedia {
   display: flex;
   flex-direction: row;
@@ -390,6 +458,7 @@ body footer .socialMedia {
   height: 64px;
   margin-bottom: 30px;
 }
+
 body footer .socialMedia a img {
   width: 25px;
   height: none;
@@ -401,19 +470,24 @@ body footer .socialMedia a img {
   border-radius: 6px;
   transition: background-color 0.2s ease-in 0s;
 }
+
 body footer .socialMedia a .fbColor:hover {
   background-color: #3b5998;
 }
+
 body footer .socialMedia a .twColor:hover {
   background-color: #00aced;
 }
+
 body footer .socialMedia a .instaColor:hover {
   background-color: #c13584;
 }
+
 body footer .subscribeForm {
   display: flex;
   justify-content: center;
 }
+
 body footer .subscribeForm form .subscribeText {
   display: flex;
   flex-direction: row;
@@ -427,6 +501,7 @@ body footer .subscribeForm form .subscribeText {
   opacity: 0.7;
   padding-bottom: 10px;
 }
+
 body footer .subscribeForm form .subscribeInput {
   border: 1px solid #808080;
   border-radius: 15px;
@@ -435,6 +510,7 @@ body footer .subscribeForm form .subscribeInput {
   height: 30px;
   transform: translate(8%);
 }
+
 body footer .subscribeForm form .submitButton {
   height: 30px;
   border: 1px solid #ffc107;
@@ -455,6 +531,7 @@ body .mini-header {
   margin-left: none;
   margin-right: none;
 }
+
 body .mini-header a img {
   width: 64px;
   height: none;
@@ -472,12 +549,14 @@ body .container-fluid .content-contact {
   height: 500px;
   margin-bottom: 80px;
 }
+
 body .container-fluid .content-contact .contactImg {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-start;
 }
+
 body .container-fluid .content-contact .contactImg .img-avionPapier {
   position: absolute;
   top: 205px;
@@ -487,10 +566,12 @@ body .container-fluid .content-contact .contactImg .img-avionPapier {
   width: 153px;
   height: none;
 }
+
 body .container-fluid .content-contact .contactImg img {
   width: 500px;
   height: none;
 }
+
 body .container-fluid .content-contact .contactForm h1 {
   text-align: center;
   margin-bottom: 30px;
@@ -500,9 +581,11 @@ body .container-fluid .content-contact .contactForm h1 {
   color: #FFC107;
   opacity: 1;
 }
+
 body .container-fluid .content-contact .contactForm form {
   margin-left: 15%;
 }
+
 body .container-fluid .content-contact .contactForm form input {
   width: 250px;
   height: 40px;
@@ -515,6 +598,7 @@ body .container-fluid .content-contact .contactForm form input {
   margin-left: 5px;
   margin-right: 5px;
 }
+
 body .container-fluid .content-contact .contactForm form .longInput {
   width: 515px;
   height: 40px;
@@ -527,6 +611,7 @@ body .container-fluid .content-contact .contactForm form .longInput {
   margin-left: 5px;
   margin-right: 5px;
 }
+
 body .container-fluid .content-contact .contactForm form textarea {
   width: 515px;
   height: 80px;
@@ -539,12 +624,14 @@ body .container-fluid .content-contact .contactForm form textarea {
   margin-left: 5px;
   margin-right: 5px;
 }
+
 body .container-fluid .content-contact .contactForm form div:nth-child(5) {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
+
 body .container-fluid .content-contact .contactForm form div:nth-child(5) button {
   width: 100px;
   height: 30px;
@@ -573,17 +660,20 @@ html body .displaying-Faq {
   margin-left: 0;
   margin-right: 0;
 }
+
 html body .displaying-Faq img {
   width: 300px;
   height: 232px;
   border-radius: 5px;
 }
+
 html body .displaying-questions {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+
 html body .displaying-questions .container h4 {
   text-align: center;
   margin-top: 100px;
@@ -596,6 +686,7 @@ html body .displaying-questions .container h4 {
   color: #343A40;
   opacity: 1;
 }
+
 html body .displaying-questions .container .displaying-card {
   margin-top: 0;
   margin-bottom: 20px;
@@ -603,17 +694,21 @@ html body .displaying-questions .container .displaying-card {
   margin-right: 0;
   border: none;
 }
+
 html body .displaying-questions .container .displaying-card .effect-faq {
   transition: ease-in 0.3s;
   border-bottom: none;
 }
+
 html body .displaying-questions .container .displaying-card .effect-faq:hover {
   background-color: #D3DAE2;
 }
+
 html body .displaying-questions .container .displaying-card .effect-faq .color-faq {
   color: #343A40;
   text-decoration: none;
 }
+
 html body .displaying-questions .container .displaying-card .effect-faq .color-faq:hover {
   text-decoration: none;
   color: #343A40;
@@ -623,6 +718,7 @@ body .container-fluid .content {
   width: none;
   height: 70VH;
 }
+
 body .container-fluid .content button {
   border-radius: 22px;
   font-size: 12px;
@@ -639,6 +735,7 @@ body .container-fluid .content button {
   height: none;
   transform: translate(33vw, 5VH);
 }
+
 body .container-fluid .content div {
   display: flex;
   flex-direction: row;
@@ -646,10 +743,12 @@ body .container-fluid .content div {
   align-items: center;
   height: none;
 }
+
 body .container-fluid .content div .error403Img {
   width: 40vw;
   height: none;
 }
+
 body .container-fluid .content .digit {
   display: flex;
   flex-direction: row;
@@ -657,6 +756,7 @@ body .container-fluid .content .digit {
   align-items: center;
   height: none;
 }
+
 body .container-fluid .content .digit span {
   margin-top: 0;
   margin-bottom: 0;
@@ -665,6 +765,7 @@ body .container-fluid .content .digit span {
   font-size: 1.8em;
   font-weight: bolder;
 }
+
 body .container-fluid .content .digit .zeroDigit {
   transform: translate(0, 2VH);
 }
@@ -679,6 +780,7 @@ body .container-fluid .content-bis {
   height: none;
   margin-bottom: 10VH;
 }
+
 body .container-fluid .content-bis div {
   display: flex;
   flex-direction: row;
@@ -686,15 +788,18 @@ body .container-fluid .content-bis div {
   align-items: center;
   height: none;
 }
+
 body .container-fluid .content-bis div .error403Img {
   width: 30vw;
   height: none;
 }
+
 body .container-fluid .content-bis .errorText {
   display: flex;
   flex-direction: column;
   transform: translate(-10vw, 0VH);
 }
+
 body .container-fluid .content-bis .errorText h1 {
   margin-top: 1VH;
   margin-bottom: 1VH;
@@ -706,17 +811,20 @@ body .container-fluid .content-bis .errorText h1 {
   color: #343A40;
   opacity: 1;
 }
+
 body .container-fluid .content-bis .errorText p {
   margin-top: 1VH;
   margin-bottom: 1VH;
   margin-left: 0;
   margin-right: 0;
 }
+
 body .container-fluid .content-bis .errorText button {
   border-radius: 22px;
   font-size: 12px;
   border-width: 2px;
 }
+
 body .container-fluid .content-bis .digit {
   display: flex;
   flex-direction: row;
@@ -724,6 +832,7 @@ body .container-fluid .content-bis .digit {
   align-items: center;
   height: none;
 }
+
 body .container-fluid .content-bis .digit span {
   margin-top: 0;
   margin-bottom: 0;
@@ -732,6 +841,7 @@ body .container-fluid .content-bis .digit span {
   font-size: 1.8em;
   font-weight: bolder;
 }
+
 body .container-fluid .content-bis .digit .zeroDigit {
   transform: translate(0, 2VH);
 }
@@ -746,6 +856,7 @@ html body .container-fluid .team-header {
   justify-content: center;
   align-items: center;
 }
+
 html body .container-fluid .team-header div:nth-child(1) span {
   font-size: 35px;
   font-weight: bolder;
@@ -753,6 +864,7 @@ html body .container-fluid .team-header div:nth-child(1) span {
   color: #343A40;
   opacity: 1;
 }
+
 html body .container-fluid .team-header div:nth-child(2) span {
   font-size: 25px;
   font-weight: bolder;
@@ -760,15 +872,18 @@ html body .container-fluid .team-header div:nth-child(2) span {
   color: #343A40;
   opacity: 0.5;
 }
+
 html body section .container-fluid .row .team-block {
   height: 600px;
 }
+
 html body section .container-fluid .row .team-block .team-background {
   background-color: #FFC107;
   width: 100%;
   height: 100%;
   border-radius: 10px 0px 0px 10px;
 }
+
 html body section .container-fluid .row .team-text {
   height: 400px;
   display: flex;
@@ -776,9 +891,11 @@ html body section .container-fluid .row .team-text {
   justify-content: center;
   align-items: center;
 }
+
 html body section .container-fluid .row .team-text .displaying-school-team-text {
   padding: 200px 200px 70px 200px;
 }
+
 html body section .container-fluid .row div:nth-child(3) .team-displaying-title {
   position: relative;
   bottom: 564%;
@@ -789,6 +906,7 @@ html body section .container-fluid .row div:nth-child(3) .team-displaying-title 
   color: #343A40;
   opacity: 1;
 }
+
 html body section .container-fluid .row div:nth-child(3) .team-displaying-title span::before {
   position: absolute;
   width: 51px;
@@ -799,21 +917,25 @@ html body section .container-fluid .row div:nth-child(3) .team-displaying-title 
   left: -60px;
   bottom: 25px;
 }
+
 html body section .container-fluid .row div:nth-child(3) .team-displaying-image {
   position: relative;
   bottom: 512%;
   left: 56%;
 }
+
 html body section .container-fluid .row div:nth-child(3) .team-displaying-image .team-resize-logo-image {
   width: 450px;
   height: 450px;
 }
+
 html body section .container-fluid .row .team-list-displaying {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 html body section .container-fluid .row .team-list-displaying span a {
   font-size: 35px;
   font-weight: bolder;
@@ -822,6 +944,7 @@ html body section .container-fluid .row .team-list-displaying span a {
   opacity: 1;
   position: relative;
 }
+
 html body section .container-fluid .row .team-list-displaying span a:nth-child(1)::before {
   position: absolute;
   top: 21px;
@@ -835,6 +958,7 @@ html body section .container-fluid .row .team-list-displaying span a:nth-child(1
   transform-origin: left center;
   left: 0;
 }
+
 html body section .container-fluid .row .team-list-displaying span a:nth-child(2)::before {
   position: absolute;
   top: 21px;
@@ -848,6 +972,7 @@ html body section .container-fluid .row .team-list-displaying span a:nth-child(2
   transform-origin: left center;
   left: 0;
 }
+
 html body section .container-fluid .row .team-list-displaying span a:nth-child(3)::before {
   position: absolute;
   top: 21px;
@@ -861,6 +986,7 @@ html body section .container-fluid .row .team-list-displaying span a:nth-child(3
   transform-origin: left center;
   left: 0;
 }
+
 html body section .container-fluid .row .team-list-displaying span a:nth-child(4)::before {
   position: absolute;
   top: 21px;
@@ -874,24 +1000,30 @@ html body section .container-fluid .row .team-list-displaying span a:nth-child(4
   transform-origin: left center;
   left: 0;
 }
+
 html body section .container-fluid .row .team-list-displaying span a:nth-child(1):hover::before {
   transform: scaleX(0);
 }
+
 html body section .container-fluid .row .team-list-displaying span a:nth-child(2):hover::before {
   transform: scaleX(0);
 }
+
 html body section .container-fluid .row .team-list-displaying span a:nth-child(3):hover::before {
   transform: scaleX(0);
 }
+
 html body section .container-fluid .row .team-list-displaying span a:nth-child(4):hover::before {
   transform: scaleX(0);
 }
+
 html body .displaying-title-whoWeAre {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+
 html body .displaying-title-whoWeAre .title-whoWeAre span {
   font-size: 35px;
   font-weight: bolder;
@@ -899,6 +1031,7 @@ html body .displaying-title-whoWeAre .title-whoWeAre span {
   color: #343A40;
   opacity: 1;
 }
+
 html body .displaying-title-whoWeAre .title-whoWeAre span::before {
   position: absolute;
   width: 51px;
@@ -909,32 +1042,38 @@ html body .displaying-title-whoWeAre .title-whoWeAre span::before {
   left: -60px;
   bottom: 25px;
 }
+
 html body section .displaying-image-whoWeAre {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+
 html body section .displaying-image-whoWeAre .center-teamate .displaying-teamate .resize-image-teamate {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 html body section .displaying-image-whoWeAre .center-teamate .displaying-teamate .resize-image-teamate img {
   width: 150px;
   height: 150px;
 }
+
 html body section .displaying-image-whoWeAre .center-teamate .displaying-teamate .resize-image-teamate #specific-resize {
   width: auto;
   height: 150px;
 }
+
 html body section .displaying-image-whoWeAre .center-teamate .displaying-teamate .resize-image-teamate div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 html body section .displaying-image-whoWeAre .center-teamate .displaying-teamate .resize-image-teamate div span:nth-child(1) {
   font-size: 16px;
   font-weight: bolder;
@@ -942,6 +1081,7 @@ html body section .displaying-image-whoWeAre .center-teamate .displaying-teamate
   color: #343A40;
   opacity: 1;
 }
+
 html body section .displaying-image-whoWeAre .center-teamate .displaying-teamate .resize-image-teamate div span:nth-child(2) {
   font-size: 16px;
   font-weight: none;
@@ -949,34 +1089,40 @@ html body section .displaying-image-whoWeAre .center-teamate .displaying-teamate
   color: #343A40;
   opacity: 0.6;
 }
+
 html body section .displaying-teamate-bis {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+
 html body section .displaying-teamate-bis .container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+
 html body section .displaying-teamate-bis .container .resize-image-teamate-bis {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 html body section .displaying-teamate-bis .container .resize-image-teamate-bis img {
   width: auto;
   height: 200px;
 }
+
 html body section .displaying-teamate-bis .container .resize-image-teamate-bis div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 html body section .displaying-teamate-bis .container .resize-image-teamate-bis div span:nth-child(1) {
   font-size: 16px;
   font-weight: bolder;
@@ -984,6 +1130,7 @@ html body section .displaying-teamate-bis .container .resize-image-teamate-bis d
   color: #343A40;
   opacity: 1;
 }
+
 html body section .displaying-teamate-bis .container .resize-image-teamate-bis div span:nth-child(2) {
   font-size: 16px;
   font-weight: none;
@@ -991,21 +1138,25 @@ html body section .displaying-teamate-bis .container .resize-image-teamate-bis d
   color: #343A40;
   opacity: 0.6;
 }
+
 html body section .displaying-pourquoi-bde {
   z-index: 1;
 }
+
 html body section .displaying-pourquoi-bde .displaying-pourquoi-bde-row .col-md-8 {
   height: 500px;
 }
+
 html body section .displaying-pourquoi-bde .displaying-pourquoi-bde-row .col-md-8 .color-pourquoi-bde-col {
   background-color: #FFC107;
   width: 100%;
   height: 100%;
   border-radius: 0px 10px 10px 0px;
 }
+
 html body section .displaying-pourquoi-bde .displaying-pourquoi-bde-row .container-fluid .team-displaying-title-pourquoi {
   position: relative;
-  bottom: 420%;
+  bottom: 300%;
   left: 53%;
   font-size: 35px;
   font-weight: bolder;
@@ -1013,6 +1164,7 @@ html body section .displaying-pourquoi-bde .displaying-pourquoi-bde-row .contain
   color: #343A40;
   opacity: 1;
 }
+
 html body section .displaying-pourquoi-bde .displaying-pourquoi-bde-row .container-fluid .team-displaying-title-pourquoi span::before {
   position: absolute;
   width: 51px;
@@ -1023,28 +1175,33 @@ html body section .displaying-pourquoi-bde .displaying-pourquoi-bde-row .contain
   left: -60px;
   bottom: 25px;
 }
+
 html body section .displaying-pourquoi-bde .displaying-pourquoi-bde-row .container-fluid .team-displaying-image-team {
   position: relative;
-  bottom: 550%;
+  bottom: 500%;
   left: 3%;
 }
+
 html body section .displaying-pourquoi-bde .displaying-pourquoi-bde-row .container-fluid .team-displaying-image-team img {
   width: 350px;
   height: 350px;
 }
+
 html body section .displaying-pourquoi-bde .displaying-block-container {
   z-index: 5;
   height: 250px;
-  position: absolute;
+  position: relative;
   bottom: -370%;
   left: 0%;
 }
+
 html body section .displaying-pourquoi-bde .displaying-block-container .row {
   background-color: #343A40;
   width: 100%;
   height: 100%;
   border-radius: 0px 10px 10px 0px;
 }
+
 html body section .displaying-pourquoi-bde .displaying-block-container .row .color-black-pourquoi-bde-col {
   display: flex;
   flex-direction: row;
@@ -1055,6 +1212,7 @@ html body section .displaying-pourquoi-bde .displaying-block-container .row .col
   padding-left: 0;
   padding-right: 40px;
 }
+
 html body section .displaying-pourquoi-bde .displaying-block-container .row .color-black-pourquoi-bde-col span {
   font-size: 16px;
   font-weight: none;
@@ -1062,12 +1220,14 @@ html body section .displaying-pourquoi-bde .displaying-block-container .row .col
   color: white;
   opacity: 0.6;
 }
+
 html body section .container-fluid .displaying-tools .displaying-tools-col {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 html body section .container-fluid .displaying-tools .displaying-tools-col div:nth-child(1) {
   padding-top: 0;
   padding-bottom: 40px;
@@ -1079,23 +1239,26 @@ html body section .container-fluid .displaying-tools .displaying-tools-col div:n
   color: #343A40;
   opacity: 1;
 }
+
 html body section .container-fluid .displaying-tools .displaying-tools-col div:nth-child(2) {
   padding-top: 0;
   padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
   font-size: 16px;
   font-weight: none;
   letter-spacing: none;
   color: #343A40;
   opacity: 1;
 }
+
 html body section .container-fluid .displaying-tools .displaying-tools-col div:nth-child(3) {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 html body section .container-fluid .displaying-tools .displaying-tools-col div:nth-child(3) span:nth-child(1) {
   padding-top: 0;
   padding-bottom: 10px;
@@ -1107,24 +1270,173 @@ html body section .container-fluid .displaying-tools .displaying-tools-col div:n
   color: #343A40;
   opacity: 1;
 }
+
 html body section .container-fluid .displaying-tools .displaying-tools-col div:nth-child(3) span:nth-child(2) {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+
 html body section .container-fluid .displaying-tools .displaying-tools-col div:nth-child(3) span:nth-child(2) span {
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 10px;
   padding-right: 10px;
 }
+
 html body section .container-fluid .displaying-tools .displaying-tools-col div:nth-child(3) span:nth-child(2) span img {
   width: 30px;
   height: 30px;
 }
+
+html body section .container-fluid .displaying-tools .displaying-tools-col-bis .displaying-tools-col-ter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 html body section .container-fluid .displaying-tools .displaying-tools-col-bis .displaying-tools-col-ter img {
   border-radius: 10px 0 0 10px;
+}
+
+body .cgv .content-cgv {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: none;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  margin-bottom: 7VH;
+}
+
+body .cgv .content-cgv h1 {
+  font-size: none;
+  font-weight: none;
+  font-style: none;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 3VH;
+  margin-bottom: 15VH;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 35px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
+}
+
+body .cgv .content-cgv h2 {
+  font-size: 1.6em;
+  font-weight: bold;
+  font-style: none;
+  text-decoration: none;
+  text-align: left;
+  margin-top: 2VH;
+  margin-bottom: 2VH;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: none;
+  font-weight: none;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
+}
+
+body .cgv .content-cgv h3 {
+  font-size: 1.3em;
+  font-weight: none;
+  font-style: none;
+  text-decoration: none;
+  text-align: left;
+  margin-top: 1VH;
+  margin-bottom: 1VH;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 0.8;
+}
+
+body .cgv .content-cgv p {
+  font-size: 1em;
+  font-weight: none;
+  font-style: none;
+  text-decoration: none;
+  text-align: justify;
+  margin-top: 0.5VH;
+  margin-bottom: 0.5VH;
+  margin-left: 0;
+  margin-right: 0;
+  word-wrap: break-word;
+}
+
+body .cgv .content-cgv .bordered {
+  border: 1px solid #808080;
+  border-radius: 2px;
+  padding-top: 1VH;
+  padding-bottom: 1VH;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  width: -moz-fit-content;
+  max-width: 50vw;
+}
+
+body .legal-notice .content-legal-notice {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: none;
+  margin-top: 4VH;
+  margin-bottom: 5VH;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  border: 2px solid #808080;
+  border-radius: 3px;
+  padding-top: 6VH;
+  padding-bottom: 1VH;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  width: -moz-fit-content;
+  max-width: 60vw;
+}
+
+body .legal-notice .content-legal-notice h1 {
+  font-size: 2em;
+  font-weight: bold;
+  font-style: none;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 2VH;
+  margin-bottom: 2VH;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding-top: 2VH;
+  padding-bottom: 2VH;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  position: absolute;
+  transform: translate(19vw, -12VH);
+  background-color: #ffffff;
+}
+
+body .legal-notice .content-legal-notice p {
+  font-size: 1em;
+  font-weight: none;
+  font-style: none;
+  text-decoration: none;
+  text-align: justify;
+  margin-top: 0.5VH;
+  margin-bottom: 0.5VH;
+  margin-left: 0;
+  margin-right: 0;
+  word-wrap: break-word;
 }
 
 /*# sourceMappingURL=index.css.map */

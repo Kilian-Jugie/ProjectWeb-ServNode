@@ -58,8 +58,8 @@
         <div class="footerMenu">
             <ul>
                 <li><a href="foireAQuestion.php">FAQ</a></li>
-                <li><a href="#">CGV</a></li>
-                <li><a href="#">Mentions legales</a></li>
+                <li><a href="cgv.php">CGV</a></li>
+                <li><a href="legalNotice.php">Mentions legales</a></li>
                 <li><a href="#">Politique de confidentialité</a></li>
                 <li><a href="#">Protections de données</a></li>
                 <li><a href="contactPage.php">Contact</a>

@@ -163,6 +163,13 @@
     color: $textColor;
 }
 
+@mixin fontRule($fontSize, $fontWeight, $fontStyle, $textDecoration, $textAlign) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    font-style: $fontStyle;
+    text-decoration: $textDecoration;
+    text-align: $textAlign;
+}
 
 @mixin crossLine {
     position: absolute;

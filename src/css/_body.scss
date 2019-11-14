@@ -2,8 +2,13 @@ html {
     body {
         @include resetToZero;
 
+        a {
+            @include innerBanner(none, none, none, $colorYellow, 1);
+        }
+
         a:hover {
             text-decoration: none;
+            color: $colorBlack;
         }
 
         .container-fluid {

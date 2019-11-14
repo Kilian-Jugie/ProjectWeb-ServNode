@@ -220,8 +220,8 @@
         <div class="footerMenu">
             <ul>
                 <li><a href="index/foireAQuestion.php">FAQ</a></li>
-                <li><a href="#">CGV</a></li>
-                <li><a href="#">Mentions legales</a></li>
+                <li><a href="index/cgv.php">CGV</a></li>
+                <li><a href="index/legalNotice.php">Mentions legales</a></li>
                 <li><a href="#">Politique de confidentialité</a></li>
                 <li><a href="#">Protections de données</a></li>
                 <li><a href="index/contactPage.php">Contact</a>
@@ -236,7 +236,7 @@
         <div class="subscribeForm">
             <form action="/ma-page-de-traitement" method="post">
                 <label for="email" class="subscribeText">Subscribe !</label>
-                <input type="email" id="mail" value="" name="user_mail" class="subscribeInput">
+                <input type="email" id="mail" placeholder="" name="user_mail" class="subscribeInput">
                 <button type="submit" value="Submit" class="submitButton">Submit</button>
             </form>
         </div>
