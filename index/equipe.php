@@ -105,10 +105,10 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4 team-list-displaying">
-                    <span><a href="#">Bordeaux</a></span>
-                    <span><a href="#">Paris</a></span>
-                    <span><a href="#">Lyon</a></span>
-                    <span><a href="#">Marseille</a></span>
+                    <span><a href="../shop/stores.php#bordeaux">Bordeaux</a></span>
+                    <span><a href="../shop/stores.php#paris">Paris</a></span>
+                    <span><a href="../shop/stores.php#lyon">Lyon</a></span>
+                    <span><a href="../shop/stores.php#marseille">Marseille</a></span>
                 </div>
                 <div class="col-md-8">
                 </div>

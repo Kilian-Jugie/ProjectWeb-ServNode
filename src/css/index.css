@@ -1838,7 +1838,7 @@ html body .header-shop .second-shop-nav .second-shop-nav-row {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 70%;
+  height: 70px;
 }
 html body .header-shop .second-shop-nav .second-shop-nav-row .second-shop-nav-col {
   display: flex;
@@ -2089,6 +2089,84 @@ html body section .collection-shop-title span {
 html body section .collection-shop-items .collection-shop-row .collection-shop-items-col a img {
   width: 100%;
   height: 100%;
+}
+
+body .stores-displaying {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .stores-displaying h1 {
+  font-size: 3em;
+  font-weight: bold;
+  font-style: none;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 2VH;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 10VH;
+  margin-bottom: 3VH;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: auto;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
+}
+body .stores-displaying .stores-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5VH;
+  margin-bottom: 7VH;
+  margin-left: 0;
+  margin-right: 0;
+}
+body .stores-displaying .stores-content .store {
+  background-size: cover;
+  border-top: 4px solid #ffc107;
+  border-bottom: 4px solid #ffc107;
+  width: 100vw;
+  height: 100VH;
+}
+body .stores-displaying .stores-content .store h2 {
+  position: relative;
+  top: 50VH;
+  transform: translate(0, -50%);
+  font-size: 5em;
+  font-weight: bold;
+  font-style: none;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 5px;
+}
+body .stores-displaying .stores-content .store h2 a {
+  text-decoration: none;
+  color: #ffc107;
+}
+body .stores-displaying .stores-content .store .opacity {
+  position: absolute;
+  background-color: #ffffff;
+  opacity: 0.4;
+  width: 100vw;
+  height: 99.2VH;
+}
+body .stores-displaying .stores-content .paris {
+  background-image: url(../img/shop/parisImage.jpg);
+}
+body .stores-displaying .stores-content .bordeaux {
+  background-image: url(../img/shop/bordeauxImage.jpg);
+}
+body .stores-displaying .stores-content .lyon {
+  background-image: url(../img/shop/lyonImage.jpg);
+}
+body .stores-displaying .stores-content .marseille {
+  background-image: url(../img/shop/marseilleImage.jpg);
 }
 
 /*# sourceMappingURL=index.css.map */

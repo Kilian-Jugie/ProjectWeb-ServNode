@@ -1,0 +1,60 @@
+body {
+    .stores-displaying {
+        @include headerPos(flex, column, center, center);
+
+        h1 {
+            @include fontRule(3em, bold, none, none, center);
+            @include paddingRule(0, 2VH, 0, 0);
+            @include marginRule(10VH, 3VH, 0, 0);
+            @include innerBanner(auto, bolder, 1px, $colorBlack, 1);
+        }
+
+        .stores-content {
+            @include headerPos(flex, column, center, center);
+            @include marginRule(5VH, 7VH, 0, 0);
+
+            .store {
+                background-size: cover;
+                border-top: 4px solid #ffc107;
+                border-bottom: 4px solid #ffc107;
+                @include resizeImg(100vw, 100VH);
+
+                h2 {
+                    position: relative;
+                    top: 50VH;
+                    transform: translate(0, -50%);
+                    @include fontRule(5em, bold, none, none, center);
+                    letter-spacing: 5px;
+
+                    a {
+                        text-decoration: none;
+                        color: #ffc107;
+                    }
+                }
+
+                .opacity {
+                    position: absolute;
+                    background-color: #ffffff;
+                    opacity: 0.4;
+                    @include resizeImg(100vw, 99.2VH);
+                }
+            }
+
+            .paris {
+                background-image: url(../img/shop/parisImage.jpg);
+            }
+
+            .bordeaux {
+                background-image: url(../img/shop/bordeauxImage.jpg);
+            }
+
+            .lyon {
+                background-image: url(../img/shop/lyonImage.jpg);
+            }
+
+            .marseille {
+                background-image: url(../img/shop/marseilleImage.jpg);
+            }
+        }
+    }
+}
