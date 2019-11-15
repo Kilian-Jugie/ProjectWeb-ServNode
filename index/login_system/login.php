@@ -3,7 +3,7 @@
     // echo $_SESSION['user_log'];
     if (isset($_SESSION['user_log'])) {
         echo "Bienvenue " . $_SESSION['user_log']->pseudo . "<br>";
-        echo "<a href='../src/phpScript/log_outScript.php'>Log Out</a>";
+        echo "<a href='log_outScript.php'>Log Out</a>";
     } else {
         echo "<html>
 
@@ -16,7 +16,7 @@
             <meta http-equiv='pragma' content='no-cache' />
         
             <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous' />
-            <link rel='stylesheet' href='../src/css/index.css' />
+            <link rel='stylesheet' href='../../src/css/index.css' />
         
             <link href='https://fonts.googleapis.com/css?family=Roboto&display=swap' rel='stylesheet'>
             <title>BDE CESI</title>
@@ -24,12 +24,20 @@
         
         <body class='log'>
             <div class='mini-header'>
-                <a href='../index.php'><img src='../src/img/logoTransp.png' alt='logoCesi'></a>
+                <a href='../../index.php'><img src='../../src/img/logoTransp.png' alt='logoCesi'></a>
             </div>
             <section>
                 <div class='container form-displaying'>
-                    <form method='POST' action='../src/phpScript/loginScript.php'>
-                        <h3> Ravi de vous revoir !</h3>
+                    <form method='POST' action='loginScript.php'>
+                    ";
+        if (isset($_GET['error'])) {
+            if ($_GET['error'] == "password") {
+                echo "<br><h3>Wrong Password<h2>";
+            }
+        } else {
+            echo " <h3> Ravi de vous revoir !</h3>";
+        }
+        echo "
                         <div>
                             <p>Email</p>
                         </div>
@@ -43,10 +51,5 @@
                     <a href='sign_up.php'> Vous n'êtes pas inscrit ? Cliquez ici.</a>
                 </div>
             </section>";
-        if (isset($_GET['error'])) {
-            if ($_GET['error'] == "password") {
-                echo "<br><h2>Wrong Password<h2>";
-            }
-        }
         echo "</body></html>";
     }

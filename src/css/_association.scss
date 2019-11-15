@@ -1,0 +1,68 @@
+body {
+    .displaying-association {
+
+        h1 {
+            margin-top: 6VH;
+            @include fontRule(2.6em, bold, none, none, center);
+            @include innerBanner(auto, auto, 1px, $colorBlack, 1);
+        }
+
+        .row {
+            @include resizeImg(none, 70VH);
+            margin-bottom: 10VH;
+
+            div {
+                @include headerPos(flex, row, center, center);
+
+                .associationImg {
+                    @include resizeImg(30vw, none);
+                    border-radius: 10px;
+                }
+            }
+
+            .associationText {
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    @include marginRule(1VH, 1VH, 0, 0);
+                    @include fontRule(2em, none, none, none, center);
+                    @include innerBanner(auto, auto, 1px, $colorBlack, 1);
+                }
+
+                p {
+                    @include marginRule(1VH, 1VH, 0, 0);
+                    max-width: 30vw;
+                    @include fontRule(1.1em, lighter, none, none, justify);
+                    @include innerBanner(auto, auto, 1px, $colorBlack, 1);
+                }
+
+                a {
+                    text-decoration: none;
+                    font-size: 2VH;
+                    @include resizeImg(13vw, 5VH);
+                    @include borderRule(1px, solid, #ffc107, 22px);
+                    @include colorRule(#ffc107, #ffffff);
+                    @include headerPos(flex, row, center, center);
+                    @include marginRule(1VH, 1VH, 0, 0);
+                }
+            }
+        }
+
+        .content {
+            @include headerPos(flex, row, center, center);
+
+            .associationText {
+                transform: translate(-10vw, 0VH);
+            }
+        }
+
+        .reverseContent {
+            @include headerPos(flex, row-reverse, center, center);
+
+            .associationText {
+                transform: translate(10vw, 0VH);
+            }
+        }
+    }
+}

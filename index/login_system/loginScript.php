@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
             $_SESSION['user_log'] = $user;
             header("Location: ./index/login.php");
         } else {
-            header("Location: ./index/login.php?error=password");
+            header("Location: login.php?error=password");
         }
     }
 }

@@ -25,13 +25,13 @@
             <div class="col-md-4 pos-nav-menu">
                 <span><a href="#ecole">ECOLE</a></span>
                 <span><a href="../index/equipe.php">EQUIPE</a></span>
-                <span><a href="#">CLUB&ASSOC</a></span>
-                <span><a href="#">BOUTIQUE</a></span>
-                <span><a href="#">EVENT</a></span>
+                <span><a href="association.php">CLUB&ASSOC</a></span>
+                <span><a href="../shop/shopIndex.php">BOUTIQUE</a></span>
+                <span><a href="../index/event.php">EVENT</a></span>
 
             </div>
             <div class="col-md-4 pos-icon">
-                <a href="#"><button type="button" class="btn btn-outline-dark">Se connecter</button></a>
+                <a href="../index/login_system/login.php"><button type="button" class="btn btn-outline-dark">Se connecter</button></a>
                 <a href="#"><img src="../src/img/headerImage/searchIcon.png" alt="icon de la barre de recherche" /></a>
             </div>
         </div>
