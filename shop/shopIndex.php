@@ -66,11 +66,19 @@
                 <div class="row type-shop-row">
                     <div class="col-md-6 type-shop-col">
                         <img class="type-shop-img" src="../src/img/shop/shopMen.jpg" alt="shop Men " />
-                        <button type="button" class="btn btn-dark">Shop Men</button>
+                        <div class="containe-fluid type-shop-button-displaying">
+                            <div class="row type-shop-button-displaying-row">
+                                <a href="shopMen.php"><button type="button" class="btn btn-dark">Shop Men</button></a>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-6 type-shop-col">
                         <img class="type-shop-img" src="../src/img/shop/shopWomen.jpg" alt="shop women" />
-                        <button type="button" class="btn btn-warning">Shop Women</button>
+                        <div class="containe-fluid type-shop-button-displaying">
+                            <div class="row type-shop-button-displaying-row">
+                                <a href="shopFemme.php"><button type="button" class="btn btn-warning">Shop Women</button></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -193,6 +201,38 @@
                     </div>
                     <div class="col-md-3 collection-shop-items-col">
                         <a href="#"><img src="../src/img/shop/sweat.jfif" alt="image de sweat" /></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid">
+            <div class="space">
+            </div>
+        </section>
+        <section class="container-fluid">
+            <div class="space">
+            </div>
+        </section>
+
+        <section>
+            <div class="container-fluid type-shop">
+                <div class="row type-shop-row">
+                    <div class="col-md-6 type-shop-col">
+                        <img class="type-shop-img" src="../src/img/shop/accessoire.jpg" alt="image accessoire " />
+                        <div class="containe-fluid type-shop-button-displaying">
+                            <div class="row type-shop-button-displaying-row">
+                                <a href="goodies.php"><button type="button" class="btn btn-warning">Accessoire's</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 type-shop-col">
+                        <img class="type-shop-img" src="../src/img/shop/cup.jpg" alt="image goodies" />
+                        <div class="containe-fluid type-shop-button-displaying">
+                            <div class="row type-shop-button-displaying-row">
+                                <a href="goodies.php"><button type="button" class="btn btn-warning">Goodie's</button></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

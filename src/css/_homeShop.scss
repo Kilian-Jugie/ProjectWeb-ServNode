@@ -163,10 +163,18 @@ html {
 
                         }
 
-                        button {
-                            position: relative;
-                            top: -20%;
-                            border-radius: $radius;
+                        .type-shop-button-displaying {
+                            position: absolute;
+
+                            .type-shop-button-displaying-row {
+                                @include headerPos(flex, column, flex-end, flex-end);
+
+                                button {
+                                    border-radius: $radius;
+                                    @include innerBanner($defaultSizeFont, lighter, 1px, white, 1);
+                                    @include resizeImg(150px, 40px);
+                                }
+                            }
                         }
                     }
                 }

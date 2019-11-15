@@ -16,5 +16,9 @@ html {
                 @include spaceMaking;
             }
         }
+
+        svg:hover {
+            fill: red;
+        }
     }
 }

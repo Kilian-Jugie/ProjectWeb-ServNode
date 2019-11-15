@@ -64,6 +64,9 @@ html body a:hover {
 html body .container-fluid .space {
   height: 70px;
 }
+html body svg:hover {
+  fill: red;
+}
 
 html body .header {
   position: absolute;
@@ -1968,10 +1971,24 @@ html body section .type-shop .type-shop-row .type-shop-col .type-shop-img {
   height: auto;
   opacity: 0.6;
 }
-html body section .type-shop .type-shop-row .type-shop-col button {
-  position: relative;
-  top: -20%;
+html body section .type-shop .type-shop-row .type-shop-col .type-shop-button-displaying {
+  position: absolute;
+}
+html body section .type-shop .type-shop-row .type-shop-col .type-shop-button-displaying .type-shop-button-displaying-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+html body section .type-shop .type-shop-row .type-shop-col .type-shop-button-displaying .type-shop-button-displaying-row button {
   border-radius: 22px;
+  font-size: 16px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  color: white;
+  opacity: 1;
+  width: 150px;
+  height: 40px;
 }
 html body section .shop-collab {
   display: flex;
@@ -2167,6 +2184,298 @@ body .stores-displaying .stores-content .lyon {
 }
 body .stores-displaying .stores-content .marseille {
   background-image: url(../img/shop/marseilleImage.jpg);
+}
+
+body .cart-displaying {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .cart-displaying h1 {
+  font-size: 2em;
+  font-weight: bold;
+  font-style: none;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 2VH;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 3VH;
+  margin-bottom: 3VH;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100vw;
+}
+body .cart-displaying .cart-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 5px dotted #505050;
+  border-bottom: 5px dotted #505050;
+  padding-bottom: 7VH;
+  margin-bottom: 7VH;
+}
+body .cart-displaying .cart-content .cart-item {
+  width: 80vw;
+  height: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2VH;
+  padding-bottom: 2VH;
+  padding-left: 0;
+  padding-right: 0;
+  justify-content: space-between;
+  margin-top: 7VH;
+  border-top: 3px solid #505050;
+  border-bottom: 3px solid #505050;
+}
+body .cart-displaying .cart-content .cart-item img {
+  width: 15vw;
+  height: auto;
+}
+body .cart-displaying .cart-content .cart-item .cart-titleAndQuantity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .cart-displaying .cart-content .cart-item .cart-titleAndQuantity div {
+  background-color: #505050;
+  color: #ffffff;
+  border: 1px solid #505050;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .cart-displaying .cart-content .cart-item .cart-titleAndQuantity h2 {
+  font-size: 1.4em;
+  font-weight: none;
+  font-style: none;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 2VH;
+  margin-bottom: 6VH;
+  margin-left: 0;
+  margin-right: 0;
+}
+body .cart-displaying .cart-content .cart-item .cart-titleAndQuantity span {
+  padding-top: 0.1VH;
+  padding-bottom: 0.1VH;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+body .cart-displaying .cart-content .cart-item p {
+  font-size: 1em;
+  font-weight: none;
+  font-style: none;
+  text-decoration: none;
+  text-align: justify;
+  margin-bottom: 0;
+}
+body .cart-displaying .cart-content .cart-item button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 1.5vw;
+  width: -moz-fit-content;
+  height: 3VH;
+  border: 1px solid #505050;
+  border-radius: 10px;
+  background-color: #505050;
+  color: #ffffff;
+}
+body .cart-displaying .cart-content .cart-item .cart-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+}
+body .cart-displaying .cart-content .cart-sum {
+  width: 80vw;
+  height: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5VH;
+  padding-bottom: 5VH;
+  padding-left: 0;
+  padding-right: 0;
+  justify-content: right;
+  margin-top: 7VH;
+  border-top: 3px solid #505050;
+  border-bottom: 3px solid #505050;
+}
+body .cart-displaying .cart-content .cart-sum .cart-sumPrice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+}
+body .cart-displaying .cart-content .cart-sum p {
+  font-size: 1em;
+  font-weight: none;
+  font-style: none;
+  text-decoration: none;
+  text-align: justify;
+  margin-bottom: 0;
+}
+body .cart-displaying .cart-content .cart-proceed {
+  width: 80vw;
+  height: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3VH;
+  padding-bottom: 3VH;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 7VH;
+  border-top: 3px solid #505050;
+  border-bottom: 3px solid #505050;
+}
+body .cart-displaying .cart-content .cart-proceed p {
+  font-size: 1em;
+  font-weight: none;
+  font-style: none;
+  text-decoration: none;
+  text-align: justify;
+  margin-top: 3VH;
+  margin-bottom: 3VH;
+  margin-left: 0;
+  margin-right: 0;
+  align-self: flex-end;
+  margin-bottom: 0;
+}
+body .cart-displaying .cart-content .cart-proceed a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 1.5vw;
+  text-decoration: none;
+  margin-top: 3VH;
+  margin-bottom: 3VH;
+  margin-left: 0;
+  margin-right: 0;
+  width: 8vw;
+  height: 5VH;
+  border: 1px solid #ffc107;
+  border-radius: 10px;
+  background-color: #ffc107;
+  color: #ffffff;
+  align-self: center;
+}
+body .cart-displaying .cart-content .cart-bordered {
+  border: 1px solid #808080;
+  border-radius: 5px;
+  padding-top: 0.5VH;
+  padding-bottom: 0.5VH;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  width: -moz-fit-content;
+  max-width: 50vw;
+}
+
+html body .shop-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+html body .shop-banner .image-banner-bis {
+  opacity: 0.6;
+}
+html body .shop-banner .row-men {
+  position: absolute;
+}
+html body .shop-banner .row-men .col-men {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+html body .shop-banner .row-men .col-men button {
+  font-size: 16px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  color: white;
+  opacity: 1;
+  width: 150px;
+  height: 40px;
+  border-radius: 22px;
+}
+html body .reduction {
+  height: 60px;
+  background-color: #FFC107;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+html body .reduction span:nth-child(1) {
+  font-size: auto;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: white;
+  opacity: 1;
+}
+html body .reduction span:nth-child(2) {
+  font-size: auto;
+  font-weight: none;
+  letter-spacing: none;
+  color: white;
+  opacity: 1;
+}
+html body .reduction-men {
+  height: 100px;
+}
+html body section .type-shop .type-shop-row .type-shop-col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+html body section .type-shop .type-shop-row .type-shop-col .type-shop-img {
+  width: 100%;
+  height: 1395.92;
+  opacity: 0.6;
+}
+html body section .type-shop .type-shop-row .type-shop-col button {
+  position: relative;
+  top: -20%;
+  border-radius: 22px;
+}
+html body section .men {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 0;
+  padding-right: 0;
+}
+html body section .men span {
+  font-size: 35px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
+}
+html body section .collection-shop-items .product-men {
+  padding-top: 0;
+  padding-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /*# sourceMappingURL=index.css.map */

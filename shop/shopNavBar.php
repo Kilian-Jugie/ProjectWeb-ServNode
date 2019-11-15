@@ -1,18 +1,18 @@
 <div class="container-fluid header-shop">
     <div class="row">
         <div class="col-md-4 pos-logo-shop">
-            <a href="../index.php"><img src="../src/img/cesiBlancTransp.png" alt="image du logo de cesi mais en blanc" /></a>
+            <a href="shopIndex.php"><img src="../src/img/cesiBlancTransp.png" alt="image du logo de cesi mais en blanc" /></a>
         </div>
         <div class="col-md-4 pos-nav-menu-shop">
-            <span><a href="#">HOMME</a></span>
-            <span><a href="#">FEMME</a></span>
-            <span><a href="#">STORES</a></span>
-            <span><a href="#">LOOKBOOK</a></span>
-            <span><a href="#">BDE</a></span>
+            <span><a href="shopMen.php">HOMME</a></span>
+            <span><a href="shopFemme.php">FEMME</a></span>
+            <span><a href="stores.php">STORES</a></span>
+            <span><a href="../errorPage/construcPage.php">LOOKBOOK</a></span>
+            <span><a href="../index.php">BDE</a></span>
 
         </div>
         <div class="col-md-4 pos-icon-shop">
-            <a href="#"><img src="../src/img/shop/shopping-cart.svg" /></a>
+            <a href="cart.php"><img src="../src/img/shop/shopping-cart.svg" /></a>
             <a href="../index/login_system/login.php"><button type="button" class="btn btn-outline-warning">Se connecter</button></a>
             <a href="#"><img src="../src/img/headerImage/searchIonWhite.png" alt="icon de la barre de recherche" /></a>
         </div>
