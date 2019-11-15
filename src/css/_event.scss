@@ -50,7 +50,7 @@ body {
                 p {
                     @include marginRule(1VH, 1VH, 0, 0);
                     max-width: 30vw;
-                    @include fontRule(1.1em, lighter, none, none, justify);
+                    @include fontRule($defaultSizeFont*0.8, lighter, none, none, justify);
                     @include innerBanner(auto, auto, 1px, $colorBlack, 1);
                 }
 
@@ -68,10 +68,18 @@ body {
 
         .content {
             @include headerPos(flex, row, center, center);
+
+            p {
+                transform: translate(-2vW);
+            }
         }
 
         .reverseContent {
             @include headerPos(flex, row-reverse, center, center);
+
+            p {
+                transform: translate(2vW);
+            }
         }
     }
 }

@@ -187,7 +187,7 @@
                 <div class="card displaying-card">
                     <div class="card-header effect-faq" id="headingEight">
                         <h5 class="mb-0">
-                            <button class="btn btn-link collapsed color-faq" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                            <button class="btn btn-link collapsed color-faq" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
                                 Comment puis-je annuler ma commande ?
                             </button>
                         </h5>
@@ -252,7 +252,7 @@
                 <div class="card displaying-card">
                     <div class="card-header effect-faq" id="headingEleven">
                         <h5 class="mb-0">
-                            <button class="btn btn-link collapsed color-faq" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven">
+                            <button class="btn btn-link collapsed color-faq" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
                                 Comment puis-je payer ?
                             </button>
                         </h5>
@@ -322,7 +322,7 @@
                 <div class="card displaying-card">
                     <div class="card-header effect-faq" id="headingFifteen">
                         <h5 class="mb-0">
-                            <button class="btn btn-link collapsed color-faq" data-toggle="collapse" data-target="#collapseFifteen" aria-expanded="true" aria-controls="collapseFifteen">
+                            <button class="btn btn-link collapsed color-faq" data-toggle="collapse" data-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
                                 A combien s'élève les frais d'envoi ?
                             </button>
                         </h5>
@@ -380,7 +380,7 @@
                 <div class="card displaying-card">
                     <div class="card-header effect-faq" id="headingEighteen">
                         <h5 class="mb-0">
-                            <button class="btn btn-link  collapsed color-faq" data-toggle="collapse" data-target="#collapseEighteen" aria-expanded="true" aria-controls="collapseEighteen">
+                            <button class="btn btn-link  collapsed color-faq" data-toggle="collapse" data-target="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
                                 Comment rejoindre le bureau des élèves ?
                             </button>
                         </h5>
@@ -507,7 +507,7 @@
         <div class="socialMedia">
             <a href="https://www.facebook.com/bdecesibdx/"><img src="../src/img/logoImage/facebookLogo.png" alt="facebookLogo" class="fbColor"></a>
             <a href="https://bdecesibordeaux.fr/fr/"><img src="../src/img/logoImage/twitterLogo.png" alt="twitterLogo" class="twColor"></a>
-            <a href="https://www.instagram.com/bde_cesitoulouse/"><img src="../src/img/logoImage/instagramLogo.png" alt="instagramLogo" class="instaColor"></a>
+            <a href="https://www.instagram.com/bde_cesi_bdx/?hl=fr"><img src="../src/img/logoImage/instagramLogo.png" alt="instagramLogo" class="instaColor"></a>
         </div>
         <div class="subscribeForm">
             <form action="/ma-page-de-traitement" method="post">

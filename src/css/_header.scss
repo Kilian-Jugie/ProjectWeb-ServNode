@@ -1,7 +1,7 @@
 html {
     body {
         .header {
-            @include headerBackground;
+            @include headerBackground(white);
 
             .pos-logo {
                 @include headerPos(flex, row, flex-start, none);
@@ -24,7 +24,7 @@ html {
                         font-size: $sizeFont+2;
 
                         &::after {
-                            @include undescoreLine(0);
+                            @include undescoreLine(0, $colorBlack);
                         }
 
                         &:hover::after {
