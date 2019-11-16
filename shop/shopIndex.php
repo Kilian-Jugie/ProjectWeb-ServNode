@@ -27,25 +27,9 @@
     </head>
 
     <body>
-        <div class="container-fluid header">
-            <div class="row">
-                <div class="col-md-4 pos-logo">
-                    <img src="../src/img/cesiBlancTransp.png" alt="image du logo de cesi mais en blanc" />
-                </div>
-                <div class="col-md-4 pos-nav-menu">
-                    <span><a href="#">HOMME</a></span>
-                    <span><a href="#">FEMME</a></span>
-                    <span><a href="#">STORES</a></span>
-                    <span><a href="#">LOOKBOOK</a></span>
-                    <span><a href="#">BDE</a></span>
-
-                </div>
-                <div class="col-md-4 pos-icon">
-                    <a href="index/login.php"><button type="button" class="btn btn-outline-dark">Se connecter</button></a>
-                    <a href="#"><img src="../src/img/headerImage/searchIcon.png" alt="icon de la barre de recherche" /></a>
-                </div>
-            </div>
-        </div>
+        <?php
+        include 'shopNavBar.php';
+        ?>
         <div class="container-fluid shop-banner">
             <img class="image-size image-banner" src="../src/img/shop/bannerHome.jpg" alt="image de fond du home page du BDE de Cesi" />
             <div class="inner-banner shop-inner-banner">
@@ -59,44 +43,203 @@
                         CESI INGENIEUR
                     </span>
                 </div>
-                <div>
-                    <a href="index/contactPage.php"><button type="button" class="btn btn-outline-warning">SHOP NOW</button></a>
-                </div>
-                <div>
-                    <a href="index/contactPage.php"><button type="button" class="btn btn-outline-warning">LEARN MORE</button></a>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="index/contactPage.php"><button type="button" class="btn btn-warning">SHOP NOW</button></a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="index/contactPage.php"><button type="button" class="btn btn-warning">LEARN MORE</button></a>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <footer class="container-fluid footer">
-            <div class="footerMenu">
-                <ul>
-                    <li><a href="../index/foireAQuestion.php">FAQ</a></li>
-                    <li><a href="../index/cgv.php">CGV</a></li>
-                    <li><a href="../index/legalNotice.php">Mentions legales</a></li>
-                    <li><a href="../index/cpds.php">Politique de confidentialité</a></li>
-                    <li><a href="../index/cpds.php">Protections de données</a></li>
-                    <li><a href="../index/contactPage.php">Contact</a>
-                </ul>
-                </ul>
+        <div class="container-fluid reduction">
+            <span>
+                LIVRAISON GRATUITE
+            </span>
+            <span>
+                Livraison gratuit à partir de 69 euros d'achats.
+            </span>
+        </div>
+        <section>
+            <div class="container-fluid type-shop">
+                <div class="row type-shop-row">
+                    <div class="col-md-6 type-shop-col">
+                        <img class="type-shop-img" src="../src/img/shop/shopMen.jpg" alt="shop Men " />
+                        <div class="containe-fluid type-shop-button-displaying">
+                            <div class="row type-shop-button-displaying-row">
+                                <a href="shopMen.php"><button type="button" class="btn btn-dark">Shop Men</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 type-shop-col">
+                        <img class="type-shop-img" src="../src/img/shop/shopWomen.jpg" alt="shop women" />
+                        <div class="containe-fluid type-shop-button-displaying">
+                            <div class="row type-shop-button-displaying-row">
+                                <a href="shopFemme.php"><button type="button" class="btn btn-warning">Shop Women</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="socialMedia">
-                <a href="https://www.facebook.com/bdecesibdx/" target="_blank" rel="noopener noreferrer"><img src="../src/img/logoImage/facebookLogo.png" alt="facebookLogo" class="fbColor"></a>
-                <a href="https://bdecesibordeaux.fr/fr/" target="_blank" rel="noopener noreferrer"><img src="../src/img/logoImage/twitterLogo.png" alt="twitterLogo" class="twColor"></a>
-                <a href="https://www.instagram.com/bde_cesitoulouse/" target="_blank" rel="noopener noreferrer"><img src="../src/img/logoImage/instagramLogo.png" alt="instagramLogo" class="instaColor"></a>
-            </div>
-            <div class="subscribeForm">
-                <form action="/ma-page-de-traitement" method="post">
-                    <label for="email" class="subscribeText">Subscribe !</label>
-                    <input type="email" id="mail" placeholder="" name="user_mail" class="subscribeInput">
-                    <button type="submit" value="Submit" class="submitButton">Submit</button>
-                </form>
-            </div>
-        </footer>
+        </section>
         <section class="container-fluid">
             <div class="space">
             </div>
         </section>
+        <section>
+            <div class="container-fluid shop-collab">
+                <div>
+                    <span>
+                        LES COLLABORATEURS DE NOTRE ECOLE
+                    </span>
+                    <span>
+                        Notre école CESI a réalisé plusieurs collaborations entre les campus de CESI France
+                    </span>
+                </div>
+            </div>
+            <div class="container-fluid shop-collab-img">
+                <div class="row shop-collab-row">
+                    <div class="col-md-6 shop-collab-col-un">
+                        <img src="../src/img/shop/femmeMoitieNue.jpg" alt="image de femme avec un bandeau" />
+                        <div>
+                            <span>
+                                Bordeaux x Supreme
+                            </span>
+                            <div>
+                                <span class="lighter-font">
+                                    NEW
+                                </span>
+                                <span class="lighter-font">
+                                    INTERVIEW
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 shop-collab-col-deux">
+                        <img src="../src/img/shop/femmeStreetWear.jpg" alt="image d'une femme en tenue street-wear" />
+                        <div>
+                            <span>
+                                Off Trend Summer X
+                            </span>
+                            <div>
+                                <span class="lighter-font">
+                                    NEW
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row shop-collab-row">
+                    <div class="col-md-6 shop-collab-col-un">
+                        <img src="../src/img/shop/femmeLaverie.jpg" alt="image d'une femme dans une laverie" />
+                        <div>
+                            <span>
+                                California Trend x Women
+                            </span>
+                            <div>
+                                <span class="lighter-font">
+                                    COLLECTION
+                                </span>
+                                <span class="lighter-font">
+                                    NEW
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                </div>
+                <div class="row shop-collab-row">
+                    <div class=" col-md-6">
+                    </div>
+                    <div class="col-md-6 shop-collab-col-deux">
+                        <img src="../src/img/shop/amazingPrice.jpg" alt="image de neons" />
+                        <div>
+                            <span>
+                                Pop Art Collection CESI
+                            </span>
+                            <div>
+                                <span class="lighter-font">
+                                    COLLECTION
+                                </span>
+                                <span class="lighter-font">
+                                    NEW
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid">
+            <div class="space">
+            </div>
+        </section>
+        <section class="container-fluid">
+            <div class="space">
+            </div>
+        </section>
+
+        <section>
+            <div class="container-fluid collection-shop-title">
+                <span>
+                    Collection Hoodie
+                </span>
+            </div>
+            <div class="container-fluid collection-shop-items">
+                <div class="row collection-shop-row">
+                    <div class="col-md-3 collection-shop-items-col">
+                        <a href="#"><img src="../src/img/shop/sweat.jfif" alt="image de sweat" /></a>
+                    </div>
+                    <div class="col-md-3 collection-shop-items-col">
+                        <a href="#"><img src="../src/img/shop/sweat.jfif" alt="image de sweat" /></a>
+                    </div>
+                    <div class="col-md-3 collection-shop-items-col">
+                        <a href="#"><img src="../src/img/shop/sweat.jfif" alt="image de sweat" /></a>
+                    </div>
+                    <div class="col-md-3 collection-shop-items-col">
+                        <a href="#"><img src="../src/img/shop/sweat.jfif" alt="image de sweat" /></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid">
+            <div class="space">
+            </div>
+        </section>
+        <section class="container-fluid">
+            <div class="space">
+            </div>
+        </section>
+
+        <section>
+            <div class="container-fluid type-shop">
+                <div class="row type-shop-row">
+                    <div class="col-md-6 type-shop-col">
+                        <img class="type-shop-img" src="../src/img/shop/accessoire.jpg" alt="image accessoire " />
+                        <div class="containe-fluid type-shop-button-displaying">
+                            <div class="row type-shop-button-displaying-row">
+                                <a href="goodies.php"><button type="button" class="btn btn-warning">Accessoire's</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 type-shop-col">
+                        <img class="type-shop-img" src="../src/img/shop/cup.jpg" alt="image goodies" />
+                        <div class="containe-fluid type-shop-button-displaying">
+                            <div class="row type-shop-button-displaying-row">
+                                <a href="goodies.php"><button type="button" class="btn btn-warning">Goodie's</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <?php
+        include 'footer.php';
+        ?>
     </body>
 
     </html>

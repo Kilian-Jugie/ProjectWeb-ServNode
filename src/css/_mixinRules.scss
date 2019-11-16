@@ -111,20 +111,20 @@
     border-width: 2px;
 }
 
-@mixin headerBackground {
+@mixin headerBackground($color) {
     position: absolute;
-    background-color: white;
+    background-color: $color;
     opacity: 0.8;
     height: 80px;
 }
 
-@mixin undescoreLine($scaleX) {
+@mixin undescoreLine($scaleX, $color) {
     position: absolute;
     top: auto;
     width: 100%;
     bottom: -1px;
     height: 2px;
-    background-color: $colorBlack;
+    background-color: $color;
     transform: scaleX($scaleX);
     content: "";
     transition: all 0.3s ease 0s;

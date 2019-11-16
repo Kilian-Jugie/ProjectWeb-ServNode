@@ -105,10 +105,10 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4 team-list-displaying">
-                    <span><a href="#">Bordeaux</a></span>
-                    <span><a href="#">Paris</a></span>
-                    <span><a href="#">Lyon</a></span>
-                    <span><a href="#">Marseille</a></span>
+                    <span><a href="../shop/stores.php#bordeaux">Bordeaux</a></span>
+                    <span><a href="../shop/stores.php#paris">Paris</a></span>
+                    <span><a href="../shop/stores.php#lyon">Lyon</a></span>
+                    <span><a href="../shop/stores.php#marseille">Marseille</a></span>
                 </div>
                 <div class="col-md-8">
                 </div>
@@ -339,7 +339,7 @@
         <div class="socialMedia">
             <a href="https://www.facebook.com/bdecesibdx/" target="_blank" rel="noopener noreferrer"><img src="../src/img/logoImage/facebookLogo.png" alt="facebookLogo" class="fbColor"></a>
             <a href="https://bdecesibordeaux.fr/fr/" target="_blank" rel="noopener noreferrer"><img src="../src/img/logoImage/twitterLogo.png" alt="twitterLogo" class="twColor"></a>
-            <a href="https://www.instagram.com/bde_cesitoulouse/" target="_blank" rel="noopener noreferrer"><img src="../src/img/logoImage/instagramLogo.png" alt="instagramLogo" class="instaColor"></a>
+            <a href="https://www.instagram.com/bde_cesi_bdx/?hl=fr" target="_blank" rel="noopener noreferrer"><img src="../src/img/logoImage/instagramLogo.png" alt="instagramLogo" class="instaColor"></a>
         </div>
         <div class="subscribeForm">
             <form action="/ma-page-de-traitement" method="post">

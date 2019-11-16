@@ -1,0 +1,128 @@
+body {
+    .cart-displaying {
+        @include headerPos(flex, column, center, center);
+
+        h1 {
+            @include fontRule(2em, bold, none, none, center);
+            @include paddingRule(0, 2VH, 0, 0);
+            @include marginRule(3VH, 3VH, 0, 0);
+            width: 100vw;
+        }
+
+        .cart-content {
+            @include headerPos(flex, column, center, center);
+            border-top: 5px dotted #505050;
+            border-bottom: 5px dotted #505050;
+            padding-bottom: 7VH;
+            margin-bottom: 7VH;
+
+            .cart-item {
+                @include resizeImg(80vw, none);
+                @include headerPos(flex, row, center, center);
+                @include paddingRule(2VH, 2VH, 0, 0);
+                justify-content: space-between;
+                margin-top: 7VH;
+                border-top: 3px solid #505050;
+                border-bottom: 3px solid #505050;
+
+                img {
+                    @include resizeImg(15vw, auto);
+                }
+
+                .cart-titleAndQuantity {
+                    @include headerPos(flex, column, center, center);
+
+                    div {
+                        @include colorRule(#505050, #ffffff);
+
+                        @include borderRule(1px, solid, #505050, 10px);
+                        @include headerPos(flex, row, center, center);
+                    }
+
+                    h2 {
+                        @include fontRule(1.4em, none, none, none, center);
+                        @include marginRule(2VH, 6VH, 0, 0);
+                    }
+
+                    span {
+                        @include paddingRule(0.1VH, 0.1VH, 1vw, 1vw);
+
+                    }
+                }
+
+                p {
+                    @include fontRule(1em, none, none, none, justify);
+                    margin-bottom: 0;
+                }
+
+                button {
+                    @include headerPos(flex, row, center, center);
+                    min-width: 1.5vw;
+                    @include resizeImg(-moz-fit-content, 3VH);
+                    @include borderRule(1px, solid, #505050, 10px);
+                    @include colorRule(#505050, #ffffff);
+                }
+
+                .cart-price {
+                    @include headerPos(flex, column, center, center);
+                    align-items: flex-start;
+                }
+            }
+
+            .cart-sum {
+                @include resizeImg(80vw, none);
+                @include headerPos(flex, row, center, center);
+                @include paddingRule(5VH, 5VH, 0, 0);
+                justify-content: right;
+                margin-top: 7VH;
+                border-top: 3px solid #505050;
+                border-bottom: 3px solid #505050;
+
+                .cart-sumPrice {
+                    @include headerPos(flex, column, center, center);
+                    align-items: flex-start;
+                }
+
+                p {
+                    @include fontRule(1em, none, none, none, justify);
+                    margin-bottom: 0;
+                }
+            }
+
+            .cart-proceed {
+                @include resizeImg(80vw, none);
+                @include headerPos(flex, column, center, center);
+                @include paddingRule(3VH, 3VH, 0, 0);
+                margin-top: 7VH;
+                border-top: 3px solid #505050;
+                border-bottom: 3px solid #505050;
+
+                p {
+                    @include fontRule(1em, none, none, none, justify);
+                    @include marginRule(3VH, 3VH, 0, 0);
+                    align-self: flex-end;
+                    margin-bottom: 0;
+                }
+
+                a {
+                    @include headerPos(flex, row, center, center);
+                    min-width: 1.5vw;
+                    text-decoration: none;
+                    @include marginRule(3VH, 3VH, 0, 0);
+                    @include resizeImg(8vw, 5VH);
+                    @include borderRule(1px, solid, #ffc107, 10px);
+                    @include colorRule(#ffc107, #ffffff);
+                    align-self: center;
+                }
+            }
+
+
+            .cart-bordered {
+                @include borderRule(1px, solid, #808080, 5px);
+                @include paddingRule(0.5VH, 0.5VH, 0.5vw, 0.5vw);
+                width: -moz-fit-content;
+                max-width: 50vw;
+            }
+        }
+    }
+}
