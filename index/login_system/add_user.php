@@ -35,12 +35,13 @@ if (isset($_POST['submit'])) {
                     if ($response == '"User been correctfully added"') {
                         include 'login.php';
                     } else {
-                        echo "User Already Exist";
+                        $errorMessage = "User Already Exist";
+                        include 'sign_up.php';
                     }
                 }
             }
         } else {
-            $errorMessage = "Wrong Password match... Learn to write dude ";
+            $errorMessage = "Wrong Password match... Learn to write dude";
             include 'sign_up.php';
         }
     }

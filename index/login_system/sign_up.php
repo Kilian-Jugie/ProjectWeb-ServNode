@@ -24,9 +24,15 @@
         <div class='container form-displaying-bis'>
             <form action="add_user.php" method="POST" enctype="multipart/form-data">
                 <h3> Créer un compte</h3>
-                <div class="error-message">
-                    <?php echo $errorMessage ?>
-                </div>
+                <?php
+                if (isset($errorMessage)) {
+                    echo "<div class='error-message'>
+                    {$errorMessage}
+                </div>";
+                } else {
+                    echo "";
+                }
+                ?>
                 <div>
                     <p>Prénom</p>
                 </div>
