@@ -21,25 +21,14 @@
 </head>
 
 <body>
-    <div class="container-fluid header">
-        <div class="row">
-            <div class="col-md-4 pos-logo">
-                <a href="../index.php"><img src="../src/img/headerImage/cesiLogo.svg" alt="image du logo de cesi" /></a>
-            </div>
-            <div class="col-md-4 pos-nav-menu">
-                <span><a href="../index.php#ecole">ECOLE</a></span>
-                <span><a href="equipe.php">EQUIPE</a></span>
-                <span><a href="../index/association.php">CLUB&ASSOC</a></span>
-                <span><a href="../shop/shopIndex.php">BOUTIQUE</a></span>
-                <span><a href="../index/event.php">EVENT</a></span>
-
-            </div>
-            <div class="col-md-4 pos-icon">
-                <a href="../index/login_system/login.php"><button type="button" class="btn btn-outline-dark">Se connecter</button></a>
-                <a href="#"><img src="../src/img/headerImage/searchIcon.png" alt="icon de la barre de recherche" /></a>
-            </div>
-        </div>
-    </div>
+    <?php
+    $pathEcole = '../';
+    $pathImg = '../';
+    $path = '';
+    $pathForShop = '../shop/';
+    $pathForLog = '../index/login_system/';
+    include '../navBar.php';
+    ?>
 
     <!-- don't delete this cause it solve an issue of relative position on displaying-Faq -->
     <section class="container-fluid">
