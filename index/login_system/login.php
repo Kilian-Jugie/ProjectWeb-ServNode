@@ -2,8 +2,9 @@
     session_start();
     // echo $_SESSION['user_log'];
     if (isset($_SESSION['user_log'])) {
-        echo "Bienvenue " . $_SESSION['user_log']->pseudo . "<br>";
-        echo "<a href='log_outScript.php'>Log Out</a>";
+
+        //if session is active, it's gonna redirect to the homePage with session name on the top to the right.
+        include '../index.php';
     } else {
         echo "<html>
 
@@ -32,7 +33,7 @@
                     ";
         if (isset($_GET['error'])) {
             if ($_GET['error'] == "password") {
-                echo "<br><h3>Wrong Password<h2>";
+                echo "<h3>Wrong Password</h3>";
             }
         } else {
             echo " <h3> Ravi de vous revoir !</h3>";
