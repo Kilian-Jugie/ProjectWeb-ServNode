@@ -23,7 +23,15 @@
     <section>
         <div class='container form-displaying-bis'>
             <form action="add_user.php" method="POST" enctype="multipart/form-data">
-                <h3> Créer un compte</h3>
+                <?php 
+                    if(isset($_GET['info'])){
+                        if($_GET['info'] == "user_exist"){
+                            echo "<h3>Veuillez changez le pseudo et l'adresse mail</h3>";
+                        }   
+                    }else{
+                        echo "<h3> Créer un compte</h3>";
+                    }
+                ?>
                 <div>
                     <p>Prénom</p>
                 </div>

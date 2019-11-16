@@ -1,3 +1,13 @@
+<?php 
+    $get_digit = file_get_contents("http://www.bdecesi-api.ml/api/count_bde/1");
+    $get_digit = json_decode($get_digit);
+    $digits = (object)[
+        "asso" => $get_digit->asso,
+        "members" => $get_digit->member,
+        "event" => $get_digit->event,
+        "followers" => $get_digit->follower
+    ];
+?>
 <!DOCTYPE html>
 <html>
 
@@ -27,25 +37,9 @@
 </head>
 
 <body>
-    <div class="container-fluid header">
-        <div class="row">
-            <div class="col-md-4 pos-logo">
-                <img src="src/img/headerImage/cesiLogo.svg" alt="image du logo de cesi" />
-            </div>
-            <div class="col-md-4 pos-nav-menu">
-                <span><a href="#ecole">ECOLE</a></span>
-                <span><a href="index/equipe.php">EQUIPE</a></span>
-                <span><a href="index/association.php">CLUB&ASSOC</a></span>
-                <span><a href="shop/shopIndex.php">BOUTIQUE</a></span>
-                <span><a href="index/event.php">EVENT</a></span>
-
-            </div>
-            <div class="col-md-4 pos-icon">
-                <a href="index/login_system/login.php"><button type="button" class="btn btn-outline-dark">Se connecter</button></a>
-                <a href="#"><img src="src/img/headerImage/searchIcon.png" alt="icon de la barre de recherche" /></a>
-            </div>
-        </div>
-    </div>
+    <?php 
+        include "index/nav_bar.php";
+    ?>
     <div class="container-fluid">
         <img class="image-size" src="src/img/headerImage/bannerImage.jpg" alt="image de fond du home page du BDE de Cesi" />
         <div class="inner-banner">
@@ -138,7 +132,7 @@
                 <div class="col-md-3 orange-box">
                     <div>
                         <span>
-                            5
+                            <?php echo $digits->asso?>
                         </span>
                     </div>
                     <div>
@@ -150,7 +144,7 @@
                 <div class="col-md-3 white-box">
                     <div>
                         <span>
-                            10
+                            <?php echo $digits->members?>
                         </span>
                     </div>
                     <div>
@@ -171,7 +165,7 @@
                 <div class="col-md-3 white-box">
                     <div>
                         <span>
-                            12
+                            <?php echo $digits->event?>
                         </span>
                     </div>
                     <div>
@@ -185,7 +179,7 @@
                 <div class="col-md-3 orange-box">
                     <div>
                         <span>
-                            116
+                            <?php echo $digits->followers?>
                         </span>
                     </div>
                     <div>

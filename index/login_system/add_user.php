@@ -33,10 +33,9 @@
                 ];
                 $response = httpPost("bdecesi-api.ml/api/add_user", $json);
                 if($response == '"User been correctfully added"'){
-                    echo "Success <br>";
-                    echo "<a href='index.php'>To Login</a>";
+                    header("Location: login.php?info=success_sign");
                 }else{
-                    echo "User Already Exist";
+                    header("Location: sign_up.php?info=user_exist");
                 }
             }
         }
