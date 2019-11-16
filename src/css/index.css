@@ -120,7 +120,14 @@ html body .pos-icon {
   align-items: center;
 }
 html body .pos-icon a {
-  padding-right: 30px;
+  padding-right: 20px;
+}
+html body .pos-icon a .pseudo {
+  font-size: 12px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
 }
 html body .pos-icon a button {
   border-radius: 22px;
@@ -1820,7 +1827,7 @@ html body .header-shop .row .pos-icon-shop {
   align-items: center;
 }
 html body .header-shop .row .pos-icon-shop a {
-  padding-right: 30px;
+  padding-right: 20px;
 }
 html body .header-shop .row .pos-icon-shop a button {
   border-radius: 22px;
@@ -2064,7 +2071,7 @@ html body section .shop-collab-img .shop-collab-row .shop-collab-col-deux {
 }
 html body section .shop-collab-img .shop-collab-row .shop-collab-col-deux img {
   width: 50%;
-  height: 100%;
+  height: auto;
 }
 html body section .shop-collab-img .shop-collab-row .shop-collab-col-deux div {
   display: flex;

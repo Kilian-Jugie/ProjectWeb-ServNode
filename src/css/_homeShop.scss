@@ -44,7 +44,7 @@ html {
                     @include headerPos(flex, row, flex-end, center);
 
                     a {
-                        padding-right: $padding*3;
+                        padding-right: $padding*2;
 
                         button {
                             @include buttonStyle($sizeFont);
@@ -233,7 +233,7 @@ html {
                         @include resizeImg(50%, auto);
 
                         img {
-                            @include resizeImg(50%, 100%);
+                            @include resizeImg(50%, auto);
                         }
 
                         div {
