@@ -84,7 +84,7 @@
             </div>
             <div class="cart-proceed">
                 <p>Total = 249,92€</p>
-                <a href="checkout.php">Proceder à l'achat</a>
+                <a href="../paymentSystem/checkout.php">Proceder à l'achat</a>
             </div>
 
         </div>
