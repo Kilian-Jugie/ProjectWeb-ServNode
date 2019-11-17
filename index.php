@@ -2,10 +2,10 @@
     $get_digit = file_get_contents("http://www.bdecesi-api.ml/api/count_bde/1");
     $get_digit = json_decode($get_digit);
     $digits = (object) [
-        "asso" => $get_digit->asso,
-        "members" => $get_digit->member,
-        "event" => $get_digit->event,
-        "followers" => $get_digit->follower
+        "asso" => $get_digit["asso"],
+        "members" => $get_digit["member"],
+        "event" => $get_digit["event"],
+        "followers" => $get_digit["follower"]
     ];
     ?>
 
