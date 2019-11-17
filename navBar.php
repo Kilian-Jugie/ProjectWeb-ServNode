@@ -12,6 +12,9 @@
 
         </div>
         <?php
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
         if (isset($_SESSION['user_log'])) {
             echo "
                         <div class='col-md-4 pos-icon'>
