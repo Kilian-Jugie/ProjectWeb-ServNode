@@ -1,6 +1,7 @@
 html {
     body {
         @include resetToZero;
+        @include setMax;
 
         a {
             @include innerBanner(none, none, none, $colorYellow, 1);

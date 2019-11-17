@@ -11,6 +11,10 @@ html {
                 left: 10%;
                 @include headerPos(flex, column, center, center);
 
+                @include responsiveSmartphone {
+                    display: none;
+                }
+
                 div:nth-child(1) {
                     span {
                         @include innerBanner($mediumTitle, none, 1px, white, 0.6);

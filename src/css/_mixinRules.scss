@@ -22,6 +22,10 @@
     @include setMax;
     overflow-X: hidden;
 
+    @include responsiveSmartphone {
+        overflow-X: hidden;
+    }
+
     .container {
         @include noPaddingMaring;
 
@@ -227,7 +231,7 @@
 // }
 
 @mixin responsiveSmartphone {
-    @media only screen and (max-width:450px) {
+    @media only screen and (max-width:768px) {
         @content;
     }
 }

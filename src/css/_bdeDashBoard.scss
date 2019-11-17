@@ -55,16 +55,28 @@
         .first {
             div:nth-child(1) {
                 border-radius: 22px 0 0 0;
+
+                @include responsiveSmartphone {
+                    border-radius: 0, 0, 0, 0;
+                }
             }
         }
 
         .second {
             div:nth-child(1) {
                 border-radius: 0 0 0 22px;
+
+                @include responsiveSmartphone {
+                    border-radius: 0, 0, 0, 0;
+                }
             }
 
             div:nth-child(4) {
                 border-radius: 0 0 22px 0;
+
+                @include responsiveSmartphone {
+                    border-radius: 0, 0, 0, 0;
+                }
             }
         }
     }
