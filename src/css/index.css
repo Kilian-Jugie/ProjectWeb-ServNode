@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Roboto";
-  src: font-url("src/fonts/Roboto.woff2") format("woff2");
+  src: font-url("src/fonts/Roboto.woff2");
 }
 @font-face {
   font-family: "Roboto-Bold";
-  src: font-url("src/fonts/Roboto-Bold.woff2") format("woff2");
+  src: font-url("src/fonts/Roboto-Bold.woff2");
 }
 @font-face {
   font-family: "Roboto-Light";
-  src: font-url("src/fonts/Roboto-Light.woff2") format("woff2");
+  src: font-url("src/fonts/Roboto-Light.woff2");
 }
 html body {
   padding: 0;
@@ -27,6 +27,10 @@ html body .container-fluid {
   margin: 0;
 }
 html body .row {
+  padding: 0;
+  margin: 0;
+}
+html body .col-md-2 {
   padding: 0;
   margin: 0;
 }
@@ -1656,6 +1660,13 @@ html .log section .form-displaying-bis form h3 {
   color: white;
   opacity: 1;
 }
+html .log section .form-displaying-bis form .error-message {
+  font-size: lighter;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: red;
+  opacity: 1;
+}
 html .log section .form-displaying-bis form div {
   width: 567px;
   display: flex;
@@ -2729,6 +2740,151 @@ html body section .collection-shop-items .product-men {
   padding-bottom: 20px;
   padding-left: 0;
   padding-right: 0;
+}
+
+html body section .checkout-header {
+  margin-top: 100px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+html body section .checkout-header .checkout-header-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+html body section .checkout-header .checkout-header-row .checkout-header-img {
+  position: relative;
+  left: -1rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+  margin-left: 0;
+  margin-right: 0;
+}
+html body section .checkout-header .checkout-header-row .checkout-header-img img {
+  width: 150px;
+  height: 150px;
+}
+html body section .checkout-header .checkout-header-row .checkout-header-span {
+  position: relative;
+  left: -1rem;
+  margin-top: 0;
+  margin-bottom: 50px;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+html body section .checkout-header .checkout-header-row .checkout-header-span span:nth-child(1) {
+  font-size: 35px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  color: #343A40;
+  opacity: 1;
+}
+html body section .checkout-header .checkout-header-row .checkout-header-span span:nth-child(2) {
+  font-size: 25px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 0.7;
+}
+html body .accordeon-checkout .card-checkout .card-header-checkout .title-checkout button {
+  font-size: 35px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
+  width: auto;
+  height: 8rem;
+}
+
+html body .cookie-alert-bis {
+  position: fixed !important;
+}
+html body button {
+  border-radius: 22px !important;
+}
+
+html body header {
+  position: absolute;
+}
+html body header .displaying-responsiveMenu {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background-color: #FFC107;
+}
+html body header .displaying-responsiveMenu .col-md-6 {
+  height: 60px;
+  width: 50px;
+}
+html body header .displaying-responsiveMenu .col-md-6 .action {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  height: 60px;
+  width: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+html body header .displaying-responsiveMenu .col-md-6 .action:hover span:nth-child(1) {
+  transform: rotate(90deg);
+}
+html body header .displaying-responsiveMenu .col-md-6 .action:hover span:nth-chil(2) {
+  transform: rotate(90deg) translate(-10px, 0);
+}
+html body header .displaying-responsiveMenu .col-md-6 .action .menu-cross {
+  position: absolute;
+  height: 25px !important;
+  width: 2px;
+  border: none;
+  box-shadow: none;
+  background-color: #23272A;
+  opacity: 1;
+  transition: transform 0.7s ease;
+  transform-origin: center;
+}
+html body header .displaying-responsiveMenu .responsive-menu-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.6666666667em;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: #23272A;
+  opacity: 1;
+}
+html body #nav-barResponsive {
+  display: none;
+}
+html body .nav-barResponsive {
+  background-color: white;
+}
+html body .nav-barResponsive .nav-bar-displaying {
+  padding: 15px;
+  border-bottom: 1px solid #23272A;
+}
+html body .nav-barResponsive .nav-bar-displaying .nav-bar-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+html body .nav-barResponsive .nav-bar-displaying .nav-bar-item a span {
+  font-size: 1em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  color: #23272A;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=index.css.map */

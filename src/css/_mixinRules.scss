@@ -35,6 +35,10 @@
     }
 
     .col {
+        &-md-2 {
+            @include noPaddingMaring()
+        }
+
         &-md-4 {
             @include noPaddingMaring;
         }
@@ -187,37 +191,49 @@
     left: 0;
 }
 
+@mixin phoneResponsive {
+    @media only screen and (max-widt:786px) {
+        @content;
+    }
+}
+
 // Terminer le putain de mixin pour le responsive (les dimensions à optimiser) //responsive making
-@mixin responsive($media) {
-    @if $media>=1800 or $media>=1900 {
+// @mixin responsive($media) {
+//     @if $media>=1800 or $media>=1900 {
 
-        //bigScreen of Opera
-        @media only screen and (min-width : 1800px) and (max-width:1899px) {
-            @content;
-        }
-    }
+//         //bigScreen of Opera
+//         @media only screen and (min-width : 1800px) and (max-width:1899px) {
+//             @content;
+//         }
+//     }
 
-    @else if $media>=1300 or $media <=1795 {
+//     @else if $media>=1300 or $media <=1795 {
 
-        //Screen of Chrome 
-        @media only screen and (min-width: 1300px) and (max-width: 1795) {
-            @content;
-        }
-    }
+//         //Screen of Chrome 
+//         @media only screen and (min-width: 1300px) and (max-width: 1795) {
+//             @content;
+//         }
+//     }
 
-    @else if $media>=1900 {
-        @media only screen and (max-width: 1900px) {
-            @content;
-        }
-    }
+//     @else if $media>=1900 {
+//         @media only screen and (max-width: 1900px) {
+//             @content;
+//         }
+//     }
 
-    @else if $media <=785 {
-        @media only screen and (max-width: 785px) {
-            @content;
-        }
+//     @else if $media <=785 {
+//         @media only screen and (max-width: 785px) {
+//             @content;
+//         }
+//     }
+// }
+
+@mixin responsiveSmartphone {
+    @media only screen and (max-width:450px) {
+        @content;
     }
 }
 
 @mixin responsiveSizing($property, $minimumFontSize, $maximumFontSize) {
-      #{$property}: calc((#{$minimumFontSize}px) + (#{$maximumFontSize} - #{$minimumFontSize}) * ((100vw - 768px) / (1920 - 768)));
+    #{$property}: calc((#{$minimumFontSize}px) + (#{$maximumFontSize} - #{$minimumFontSize}) * ((100vw - 768px) / (1920 - 768)));
 }
