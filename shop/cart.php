@@ -105,6 +105,9 @@
     </div>";
         echo "<div class=\"cart-proceed\">
         <p>Total = ".($cart_data->total_cost*1.2+8)."€</p>
+        <form>
+            <input type='hidden' value=".($cart_data->total_cost*1.2+8)." name='price'>
+        </form>
         <a href=\"../paymentSystem/checkout.php\">Proceder à l'achat</a>
         </div>";
 
