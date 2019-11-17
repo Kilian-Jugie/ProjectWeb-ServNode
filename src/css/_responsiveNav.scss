@@ -97,7 +97,7 @@ html {
 
                     a {
                         span {
-                            @include innerBanner($defaultSizeFont, lighter, 1px, $colorMoreBlack, 1);
+                            @include fontRule(16, 16, lighter, none, none , none, 1px, $colorMoreBlack, 1);
                         }
                     }
                 }
