@@ -32,8 +32,8 @@
         $cart_data = file_get_contents("http://www.bdecesi-api.ml/api/cart_data/".$_SESSION['user_log']->user_id);
         $cart_detail = file_get_contents("http://www.bdecesi-api.ml/api/cart_detail/".$_SESSION['user_log']->user_id);
 
-        echo $cart_data;
-        echo $cart_detail;
+        //echo $cart_data;
+        //echo $cart_detail;
 
         $cart_data = json_decode($cart_data);
         $cart_data = $cart_data[0];
@@ -44,32 +44,45 @@
         
         for($i = 0; $i < $cart_data->nb_product; $i++) {
             echo "<div class=\"cart-item\">
+            <script>
+                                function incrementCart(q) {
+                                    const http = new XMLHttpRequest();
+                                    const url = 'http://bdecesi-api.ml/api/update_product_cart/".$_SESSION['user_log']->user_id."';
+
+                                    http.onreadystatechange = function() {
+                                        document.location.reload(true);
+                                    }
+
+                                    http.open(\"PUT\", url, true);
+                                    http.setRequestHeader('Content-Type', 'application/json');
+                                    q = q + ".$cart_detail[$i]->quantity."
+                                    http.send(\"{ \\\"stock_id\\\": ".$cart_detail[$i]->id_stock.", \\\"quantity\\\": \"+q+\"}\");
+                                }
+
+                                function deleteItem() {
+                                    const http = new XMLHttpRequest();
+                                    const url = 'http://bdecesi-api.ml/api/delete_product_cart/".$_SESSION['user_log']->user_id."';
+
+                                    http.onreadystatechange = function() {
+                                        document.location.reload(true);
+                                    }
+
+                                    http.open(\"DELETE\", url, true);
+                                    http.setRequestHeader('Content-Type', 'application/json');
+                                    http.send(\"{ \\\"id_stock\\\": ".$cart_detail[$i]->id_stock."}\");
+                                }
+                            </script>
                     <img src=\"../src/img/associationImg/ballIsLifeImage.png\" alt=\"imgContact\" class=\"cart-associationImg\">
                     <div class=\"cart-titleAndQuantity\">
                         <h2>".$cart_detail[$i]->label."</h2>
                         <div>
-                        <script type=\"text/javascript\">
-                            function incrementCart() {
-                                console.log(\"Incremented\");
-                                const http = new XMLHttpRequest();
-                                const url = 'http://bdecesi-api/api/update_product_cart/".$_SESSION['user_log']->user_id.";
-                                http.open(\"PUT\", url);
-                                http.send(\"{ \\\"stock_id\\\": ".$cart_detail[$i]->id_stock.", \\\"quantity\\\": ".($cart_detail[$i]->quantity+1)."}\");
-                            }
-                        </script>
-                            <button onclick=function incrementCart() {
-                                console.log(\"Incremented\");
-                                const http = new XMLHttpRequest();
-                                const url = 'http://bdecesi-api/api/update_product_cart/".$_SESSION['user_log']->user_id.";
-                                http.open(\"PUT\", url);
-                                http.send(\"{ \\\"stock_id\\\": ".$cart_detail[$i]->id_stock.", \\\"quantity\\\": ".($cart_detail[$i]->quantity+1)."}\");
-                            }>+</button>
+                            <button onclick=\"incrementCart(1);\">+</button>
                             <span>".$cart_detail[$i]->quantity."</span>
-                            <button>-</button>
+                            <button onclick=\"incrementCart(-1);\">-</button>
                         </div>
                     </div>
                     <p class=\"cart-bordered\">".$cart_detail[$i]->label_size."</p>
-                    <button>remove item</button>
+                    <button onclick=\"deleteItem()\">remove item</button>
                     <div class=\"cart-price\">
                         <p>prix/unit = ".$cart_detail[$i]->cost/$cart_detail[$i]->quantity."€</p>
                         <p>prix = ".$cart_detail[$i]->cost."€</p>
