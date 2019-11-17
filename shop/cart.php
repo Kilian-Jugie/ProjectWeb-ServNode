@@ -45,6 +45,19 @@
         for($i = 0; $i < $cart_data->nb_product; $i++) {
             echo "<div class=\"cart-item\">
             <script>
+                function deleteItem() {
+                    const http = new XMLHttpRequest();
+                    const url = 'http://bdecesi-api.ml/api/delete_product_cart/".$_SESSION['user_log']->user_id."';
+
+                    http.onreadystatechange = function() {
+                        document.location.reload(true);
+                    }
+
+                    http.open(\"DELETE\", url, true);
+                    http.setRequestHeader('Content-Type', 'application/json');
+                    http.send(\"{ \\\"id_stock\\\": ".$cart_detail[$i]->id_stock."}\");
+                }
+
                                 function incrementCart(q) {
                                     const http = new XMLHttpRequest();
                                     const url = 'http://bdecesi-api.ml/api/update_product_cart/".$_SESSION['user_log']->user_id."';
@@ -56,21 +69,15 @@
                                     http.open(\"PUT\", url, true);
                                     http.setRequestHeader('Content-Type', 'application/json');
                                     q = q + ".$cart_detail[$i]->quantity."
-                                    http.send(\"{ \\\"stock_id\\\": ".$cart_detail[$i]->id_stock.", \\\"quantity\\\": \"+q+\"}\");
-                                }
-
-                                function deleteItem() {
-                                    const http = new XMLHttpRequest();
-                                    const url = 'http://bdecesi-api.ml/api/delete_product_cart/".$_SESSION['user_log']->user_id."';
-
-                                    http.onreadystatechange = function() {
-                                        document.location.reload(true);
+                                    if(q<=0) {
+                                        deleteItem();
                                     }
-
-                                    http.open(\"DELETE\", url, true);
-                                    http.setRequestHeader('Content-Type', 'application/json');
-                                    http.send(\"{ \\\"id_stock\\\": ".$cart_detail[$i]->id_stock."}\");
+                                    else {
+                                        http.send(\"{ \\\"stock_id\\\": ".$cart_detail[$i]->id_stock.", \\\"quantity\\\": \"+q+\"}\");
+                                    }
                                 }
+
+                                
                             </script>
                     <img src=\"../src/img/associationImg/ballIsLifeImage.png\" alt=\"imgContact\" class=\"cart-associationImg\">
                     <div class=\"cart-titleAndQuantity\">
