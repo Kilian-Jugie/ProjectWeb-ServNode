@@ -168,6 +168,7 @@ html body .container-fluid .inner-banner {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  display: block;
 }
 @media only screen and (max-width: 768px) {
   html body .container-fluid .inner-banner {
@@ -408,7 +409,7 @@ section .container-fluid .displaying-whoAreWeImage .resize-whoAreWeImage {
 }
 @media only screen and (max-width: 768px) {
   .displaying-dashBoard .dashboard .first div:nth-child(1) {
-    border-radius: 0, 0, 0, 0;
+    border-radius: 0 0 0 0;
   }
 }
 .displaying-dashBoard .dashboard .second div:nth-child(1) {
@@ -416,7 +417,7 @@ section .container-fluid .displaying-whoAreWeImage .resize-whoAreWeImage {
 }
 @media only screen and (max-width: 768px) {
   .displaying-dashBoard .dashboard .second div:nth-child(1) {
-    border-radius: 0, 0, 0, 0;
+    border-radius: 0 0 0 0;
   }
 }
 .displaying-dashBoard .dashboard .second div:nth-child(4) {
@@ -424,7 +425,7 @@ section .container-fluid .displaying-whoAreWeImage .resize-whoAreWeImage {
 }
 @media only screen and (max-width: 768px) {
   .displaying-dashBoard .dashboard .second div:nth-child(4) {
-    border-radius: 0, 0, 0, 0;
+    border-radius: 0 0 0 0;
   }
 }
 
@@ -2673,6 +2674,14 @@ html body header .displaying-responsiveMenu .responsive-menu-title {
   letter-spacing: 1px;
   color: #23272A;
   opacity: 1;
+}
+html body .header-responsive {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  html body .header-responsive {
+    display: block;
+  }
 }
 html body .header-responsive .header-responsive-row {
   display: flex;

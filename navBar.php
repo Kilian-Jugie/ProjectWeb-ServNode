@@ -74,7 +74,7 @@
 
 <div class="container-fluid header-responsive" id="header-numero-dos">
     <div class="row header-responsive-row">
-        <img src="<?php echo $pathImg ?>src/img/contactFormImage/cesiBlancFondTransparant.png" />
+        <a href="<?php echo $pathEcole ?>index.php"><img src="<?php echo $pathImg ?>src/img/contactFormImage/cesiBlancFondTransparant.png" /></a>
     </div>
 </div>
 

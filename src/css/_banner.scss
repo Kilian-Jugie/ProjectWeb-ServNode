@@ -10,6 +10,7 @@ html {
                 top: 40%;
                 left: 10%;
                 @include headerPos(flex, column, center, center);
+                display: block;
 
                 @include responsiveSmartphone {
                     display: none;

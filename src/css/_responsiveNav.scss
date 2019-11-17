@@ -63,6 +63,12 @@ html {
         }
 
         .header-responsive {
+            display: none;
+
+            @include responsiveSmartphone {
+                display: block;
+            }
+
             .header-responsive-row {
                 @include headerPos(flex, row, center, center);
                 background-color: $colorMoreBlack;

@@ -13,7 +13,7 @@ $customer = \Stripe\Customer::create(array(
 ));
 
 $charge = \Stripe\Charge::create(array(
-    "amount" => 5000,
+    "amount" => $POST['price'],
     "currency" => "eur",
     "description" => "test",
     "customer" => $customer->id
