@@ -3,8 +3,7 @@ body {
 
         h1 {
             margin-top: 6VH;
-            @include fontRule(2.6em, bold, none, none, center);
-            @include innerBanner(auto, auto, 1px, $colorBlack, 1);
+            @include fontRule(32, 41.6, bold, none, none, center, 1px, $colorBlack, 1);
         }
 
         .row {
@@ -26,15 +25,13 @@ body {
 
                 h2 {
                     @include marginRule(1VH, 1VH, 0, 0);
-                    @include fontRule(2em, none, none, none, center);
-                    @include innerBanner(auto, auto, 1px, $colorBlack, 1);
+                    @include fontRule(24, 32, none, none, none, center, 1px, $colorBlack, 1);
                 }
 
                 p {
                     @include marginRule(1VH, 1VH, 0, 0);
                     max-width: 30vw;
-                    @include fontRule(1.1em, lighter, none, none, justify);
-                    @include innerBanner(auto, auto, 1px, $colorBlack, 1);
+                    @include fontRule(11.2, 17.6, lighter, none, none, justify, 1px, $colorBlack, 1);
                 }
 
                 a {

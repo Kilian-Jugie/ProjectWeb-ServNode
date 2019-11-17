@@ -4,14 +4,14 @@ body {
             @include resizeImg(none, 70VH);
 
             button {
-                @include buttonStyle($sizeFont+2);
+                @include buttonStyle(16px);
                 text-decoration: none;
                 position: absolute;
                 font-size: 2VH;
-                @include resizeImg(4vw, 7VH);
+                @include resizeImg(9vw, 7VH);
                 @include headerPos(flex, row, center, center);
                 height: none;
-                transform: translate(33vw, 5VH);
+                transform: translate(31vw, 5VH);
 
             }
 

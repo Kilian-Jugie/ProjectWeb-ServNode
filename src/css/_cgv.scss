@@ -8,25 +8,22 @@ body {
             margin-bottom: 7VH;
 
             h1 {
-                @include fontRule(none, none, none, none, center);
+                @include fontRule(20.8, 35.2, none, none, none, center, 1px, $colorBlack, 1);
                 @include marginRule(3VH, 15VH, 0, 0);
-                @include innerBanner($titleSize, bolder, 1px, $colorBlack, 1);
             }
 
             h2 {
-                @include fontRule(1.6em, bold, none, none, left);
+                @include fontRule(16, 25.6, bold, none, none, left, 1px, $colorBlack, 1);
                 @include marginRule(2VH, 2VH, 0, 0);
-                @include innerBanner(none, none, 1px, $colorBlack, 1);
             }
 
             h3 {
-                @include fontRule(1.3em, none, none, none, left);
+                @include fontRule(14.4, 20.8, none, none, none, left, 1px, $colorBlack, 0.8);
                 @include marginRule(1VH, 1VH, 0, 0);
-                @include innerBanner(none, bold, 1px, $colorBlack, 0.8);
             }
 
             p {
-                @include fontRule(1em, none, none, none, justify);
+                @include fontRule(11.2, 16, none, none, none, justify, 1px, $colorBlack, 1);
                 @include marginRule(0.5VH, 0.5VH, 0, 0);
                 word-wrap: break-word;
             }

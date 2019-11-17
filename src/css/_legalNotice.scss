@@ -11,16 +11,15 @@ body {
             max-width: 60vw;
 
             h1 {
-                @include fontRule(2em, bold, none, none, center);
+                @include fontRule(24, 32, bold, none, none, center, 1px, $colorBlack, 1);
                 @include marginRule(2VH, 2VH, 1vw, 1vw);
                 @include paddingRule(2VH, 2VH, 1vw, 1vw);
-                position: absolute;
-                transform: translate(19vw, -12VH);
+                width: -moz-fit-content;
                 background-color: #ffffff;
             }
 
             p {
-                @include fontRule(1em, none, none, none, justify);
+                @include fontRule(11.2, 16, none, none, none, justify, 1px, $colorBlack, 0.8);
                 @include marginRule(0.5VH, 0.5VH, 0, 0);
                 word-wrap: break-word;
             }

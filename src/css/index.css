@@ -51,8 +51,11 @@ html body .col-md-8 {
   margin: 0;
 }
 html body a {
-  font-size: none;
+  font-size: calc((nonepx) + (none - none) * ((100vw - 768px) / (1920 - 768)));
   font-weight: none;
+  font-style: none;
+  text-decoration: none;
+  text-align: left;
   letter-spacing: none;
   color: #FFC107;
   opacity: 1;
@@ -94,8 +97,8 @@ html body .header .pos-nav-menu span a {
   color: #343A40;
   font-weight: bolder;
   letter-spacing: 1px;
-  padding: 10px;
-  font-size: 12px;
+  padding: 1vh;
+  font-size: 3vh;
 }
 html body .header .pos-nav-menu span a::after {
   position: absolute;
@@ -120,18 +123,21 @@ html body .pos-icon {
   align-items: center;
 }
 html body .pos-icon a {
-  padding-right: 20px;
+  padding-right: 2vh;
 }
 html body .pos-icon a .pseudo {
-  font-size: 12px;
+  font-size: calc((12px) + (12 - 12) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
 }
 html body .pos-icon a button {
-  border-radius: 22px;
-  font-size: 10px;
+  border-radius: 2.1vh;
+  font-size: 1vh;
   border-width: 2px;
 }
 html body .pos-icon a img {
@@ -154,15 +160,21 @@ html body .container-fluid .inner-banner {
   align-items: center;
 }
 html body .container-fluid .inner-banner div:nth-child(1) span {
-  font-size: 25px;
+  font-size: calc((25px) + (25 - 25) * ((100vw - 768px) / (1920 - 768)));
   font-weight: none;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: white;
   opacity: 0.6;
 }
 html body .container-fluid .inner-banner div:nth-child(2) span {
-  font-size: 35px;
+  font-size: calc((35px) + (35 - 35) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: white;
   opacity: 1;
@@ -171,16 +183,16 @@ html body .container-fluid .inner-banner div:nth-child(3) {
   margin-top: 20px;
 }
 html body .container-fluid .inner-banner div:nth-child(3) button:nth-child(1) {
-  border-radius: 22px;
-  font-size: 12px;
+  border-radius: 2.1vh;
+  font-size: 3vh;
   border-width: 2px;
 }
 html body .container-fluid .inner-banner div:nth-child(4) {
   margin-top: 20px;
 }
 html body .container-fluid .inner-banner div:nth-child(4) button:nth-child(1) {
-  border-radius: 22px;
-  font-size: 12px;
+  border-radius: 2.1vh;
+  font-size: 3vh;
   border-width: 2px;
 }
 
@@ -201,7 +213,7 @@ section .container-fluid .row .col-md-7 {
   align-items: center;
 }
 section .container-fluid .row .col-md-7 .displaying-school-text {
-  padding: 130px 70px 70px 200px;
+  padding: 13vh 7vh 7vh 20vh;
 }
 section .container-fluid .row .momo {
   height: 100px;
@@ -210,8 +222,11 @@ section .container-fluid .row div:nth-child(3) .displaying-title {
   position: relative;
   bottom: 370%;
   left: 35%;
-  font-size: 35px;
+  font-size: calc((35pxpx) + (35px - 35px) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
@@ -237,8 +252,11 @@ section .container-fluid .row div:nth-child(3) .displaying-image .resize-logo-im
 }
 
 section .container-fluid .pos-whoAreWe .title-whoAreWe {
-  font-size: 35px;
+  font-size: calc((35px) + (35 - 35) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
@@ -258,7 +276,7 @@ section .container-fluid .pos-whoAreWe .title-whoAreWe span::before {
   bottom: none;
 }
 section .container-fluid .pos-whoAreWe .displaying-whoAreWe {
-  padding: 130px 70px 70px 200px;
+  padding: 13vh 7vh 7vh 20vh;
 }
 section .container-fluid .displaying-whoAreWeImage {
   margin-top: 50px;
@@ -298,8 +316,11 @@ section .container-fluid .displaying-whoAreWeImage .resize-whoAreWeImage {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
+  font-size: calc((25pxpx) + (25px - 25px) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: white;
   opacity: 1;
@@ -309,8 +330,11 @@ section .container-fluid .displaying-whoAreWeImage .resize-whoAreWeImage {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 16.6666666667px;
+  font-size: calc((16.7pxpx) + (16.7px - 16.7px) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: white;
   opacity: 1;
@@ -327,8 +351,11 @@ section .container-fluid .displaying-whoAreWeImage .resize-whoAreWeImage {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
+  font-size: calc((25pxpx) + (25px - 25px) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #FFC107;
   opacity: 1;
@@ -338,8 +365,11 @@ section .container-fluid .displaying-whoAreWeImage .resize-whoAreWeImage {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 16.6666666667px;
+  font-size: calc((17.6pxpx) + (17.6px - 17.6px) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #FFC107;
   opacity: 1;
@@ -357,8 +387,11 @@ section .container-fluid .displaying-whoAreWeImage .resize-whoAreWeImage {
   align-items: center;
 }
 .displaying-dashBoard .dashboard .row .title-dashBoard div:nth-child(1) span {
-  font-size: 25px;
+  font-size: calc((25pxpx) + (25px - 25px) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #FFC107;
   opacity: 0.6;
@@ -395,8 +428,11 @@ body footer .footerMenu ul li {
 }
 body footer .footerMenu ul li a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: calc((12.8px) + (16 - 12.8) * ((100vw - 768px) / (1920 - 768)));
   font-weight: none;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 0px;
   color: #343A40;
   opacity: 1;
@@ -424,7 +460,7 @@ body footer .socialMedia a img {
   margin-left: 15px;
   margin-right: 15px;
   border: 1px solid #000000;
-  border-radius: 6px;
+  border-radius: 5px;
   transition: background-color 0.2s ease-in 0s;
 }
 body footer .socialMedia a .fbColor:hover {
@@ -446,8 +482,11 @@ body footer .subscribeForm form .subscribeText {
   justify-content: center;
   align-items: center;
   height: default;
-  font-size: 16px;
+  font-size: calc((16px) + (16 - 16) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 0.7;
@@ -494,9 +533,7 @@ body .mini-header a img {
 Contact form CSS
 */
 body .container-fluid .content-contact {
-  width: none;
-  height: 500px;
-  margin-bottom: 80px;
+  margin-bottom: 7.4vh;
 }
 body .container-fluid .content-contact .contactImg {
   display: flex;
@@ -504,66 +541,107 @@ body .container-fluid .content-contact .contactImg {
   justify-content: flex-end;
   align-items: flex-start;
 }
-body .container-fluid .content-contact .contactImg .img-avionPapier {
-  position: absolute;
-  top: 205px;
-  right: -26px;
-  bottom: none;
-  left: none;
-  width: 153px;
-  height: none;
-}
 body .container-fluid .content-contact .contactImg img {
-  width: 500px;
-  height: none;
+  width: 36.4vw;
+  height: auto;
+  transform: translate(-5.2vw);
+}
+body .container-fluid .content-contact .contactForm {
+  display: flex;
+  flex-direction: column;
 }
 body .container-fluid .content-contact .contactForm h1 {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 25px;
+  width: 16.5vw;
+  height: 10vh;
+  align-self: center;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-3vw);
+  margin-bottom: 2.8vh;
+  font-size: calc((14.4px) + (25 - 14.4) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #FFC107;
   opacity: 1;
+  background-image: url("../img/contactFormImage/paperplaneImage.png");
+  background-size: 4vw;
+  background-repeat: no-repeat;
+  background-position: 12.5vw;
 }
 body .container-fluid .content-contact .contactForm form {
-  margin-left: 15%;
+  margin-left: 15vh;
+}
+body .container-fluid .content-contact .contactForm form .spaced {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 24.7vw;
+  padding-left: 0.3vw;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  margin-left: none;
+  margin-right: none;
 }
 body .container-fluid .content-contact .contactForm form input {
-  width: 250px;
-  height: 40px;
+  width: 11.8vw;
+  height: 4vh;
   border: 1px solid #505050;
   border-radius: 5px;
   background-color: #505050;
   color: #ffffff;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 5px;
-  margin-right: 5px;
+  font-size: calc((9.6px) + (16 - 9.6) * ((100vw - 768px) / (1920 - 768)));
+  font-weight: none;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
+  letter-spacing: 1px;
+  color: white;
+  opacity: 1;
 }
 body .container-fluid .content-contact .contactForm form .longInput {
-  width: 515px;
-  height: 40px;
+  width: 24.4vw;
+  height: 4vh;
   border: 1px solid #505050;
   border-radius: 5px;
   background-color: #505050;
   color: #ffffff;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 5px;
-  margin-right: 5px;
+  font-size: calc((9.6px) + (16 - 9.6) * ((100vw - 768px) / (1920 - 768)));
+  font-weight: none;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
+  letter-spacing: 1px;
+  color: white;
+  opacity: 1;
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
+  margin-left: 0.3vw;
+  margin-right: 0.3vw;
 }
 body .container-fluid .content-contact .contactForm form textarea {
-  width: 515px;
-  height: 80px;
+  width: 24.4vw;
+  height: 8vh;
   border: 1px solid #505050;
   border-radius: 5px;
   background-color: #505050;
   color: #ffffff;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 5px;
-  margin-right: 5px;
+  font-size: calc((9.6px) + (16 - 9.6) * ((100vw - 768px) / (1920 - 768)));
+  font-weight: none;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
+  letter-spacing: 1px;
+  color: white;
+  opacity: 1;
+  margin-top: 0.8vw;
+  margin-bottom: 0.8vw;
+  margin-left: 0.3vw;
+  margin-right: 0.3vw;
 }
 body .container-fluid .content-contact .contactForm form div:nth-child(5) {
   display: flex;
@@ -572,18 +650,21 @@ body .container-fluid .content-contact .contactForm form div:nth-child(5) {
   align-items: center;
 }
 body .container-fluid .content-contact .contactForm form div:nth-child(5) button {
-  width: 100px;
-  height: 30px;
+  width: 7.5vw;
+  height: 3.6vh;
   border: 1px solid #ffc107;
   border-radius: 5px;
   background-color: #ffc107;
   color: #ffffff;
-  margin-top: 15px;
+  margin-top: 0.8vw;
   margin-bottom: 0;
-  margin-left: 5px;
-  margin-right: 5px;
-  font-size: 16px;
+  margin-left: 0.3vw;
+  margin-right: 0.3vw;
+  font-size: calc((9.6px) + (16 - 9.6) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: white;
   opacity: 1;
@@ -594,8 +675,8 @@ html body .displaying-Faq {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
-  margin-bottom: 0px;
+  margin-top: 9vh;
+  margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
 }
@@ -612,19 +693,22 @@ html body .displaying-questions {
 }
 html body .displaying-questions .container h4 {
   text-align: center;
-  margin-top: 100px;
-  margin-bottom: 30px;
+  margin-top: 9vh;
+  margin-bottom: 3vh;
   margin-left: 0;
   margin-right: 0;
-  font-size: 25px;
+  font-size: calc((20.8px) + (25 - 20.8) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bold;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
 }
 html body .displaying-questions .container .displaying-card {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 2vh;
   margin-left: 0;
   margin-right: 0;
   border: none;
@@ -650,20 +734,20 @@ body .container-fluid .content {
   height: 70VH;
 }
 body .container-fluid .content button {
-  border-radius: 22px;
-  font-size: 12px;
+  border-radius: 2.1vh;
+  font-size: 16px;
   border-width: 2px;
   text-decoration: none;
   position: absolute;
   font-size: 2VH;
-  width: 4vw;
+  width: 9vw;
   height: 7VH;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   height: none;
-  transform: translate(33vw, 5VH);
+  transform: translate(31vw, 5VH);
 }
 body .container-fluid .content div {
   display: flex;
@@ -726,8 +810,11 @@ body .container-fluid .content-bis .errorText h1 {
   margin-bottom: 1VH;
   margin-left: 0;
   margin-right: 0;
-  font-size: 35px;
+  font-size: calc((25.6px) + (35.2 - 25.6) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
@@ -739,8 +826,8 @@ body .container-fluid .content-bis .errorText p {
   margin-right: 0;
 }
 body .container-fluid .content-bis .errorText button {
-  border-radius: 22px;
-  font-size: 12px;
+  border-radius: 2.1vh;
+  font-size: 3vh;
   border-width: 2px;
 }
 body .container-fluid .content-bis .digit {
@@ -763,7 +850,7 @@ body .container-fluid .content-bis .digit .zeroDigit {
 }
 
 html body .container-fluid .team-header {
-  margin-top: 100px;
+  margin-top: 10vh;
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
@@ -773,15 +860,21 @@ html body .container-fluid .team-header {
   align-items: center;
 }
 html body .container-fluid .team-header div:nth-child(1) span {
-  font-size: 35px;
+  font-size: calc((22.4px) + (35.2 - 22.4) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
 }
 html body .container-fluid .team-header div:nth-child(2) span {
-  font-size: 25px;
+  font-size: calc((20.8px) + (24 - 20.8) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 0.5;
@@ -803,14 +896,25 @@ html body section .container-fluid .row .team-text {
   align-items: center;
 }
 html body section .container-fluid .row .team-text .displaying-school-team-text {
-  padding: 200px 200px 70px 200px;
+  padding: 20vh 20vh 7vh 20vh;
+  font-size: calc((11.2px) + (16 - 11.2) * ((100vw - 768px) / (1920 - 768)));
+  font-weight: none;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
 }
 html body section .container-fluid .row div:nth-child(3) .team-displaying-title {
   position: relative;
   bottom: 564%;
-  left: 53%;
-  font-size: 35px;
+  left: 48%;
+  font-size: calc((20.8px) + (35.2 - 20.8) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
@@ -841,8 +945,11 @@ html body section .container-fluid .row .team-list-displaying {
   align-items: center;
 }
 html body section .container-fluid .row .team-list-displaying span a {
-  font-size: 35px;
+  font-size: calc((22.4px) + (35.2 - 22.4) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
@@ -850,7 +957,7 @@ html body section .container-fluid .row .team-list-displaying span a {
 }
 html body section .container-fluid .row .team-list-displaying span a:nth-child(1)::before {
   position: absolute;
-  top: 21px;
+  top: 24px;
   width: 100%;
   bottom: -1px;
   height: 5px;
@@ -863,7 +970,7 @@ html body section .container-fluid .row .team-list-displaying span a:nth-child(1
 }
 html body section .container-fluid .row .team-list-displaying span a:nth-child(2)::before {
   position: absolute;
-  top: 21px;
+  top: 24px;
   width: 100%;
   bottom: -1px;
   height: 5px;
@@ -876,7 +983,7 @@ html body section .container-fluid .row .team-list-displaying span a:nth-child(2
 }
 html body section .container-fluid .row .team-list-displaying span a:nth-child(3)::before {
   position: absolute;
-  top: 21px;
+  top: 24px;
   width: 100%;
   bottom: -1px;
   height: 5px;
@@ -889,7 +996,7 @@ html body section .container-fluid .row .team-list-displaying span a:nth-child(3
 }
 html body section .container-fluid .row .team-list-displaying span a:nth-child(4)::before {
   position: absolute;
-  top: 21px;
+  top: 24px;
   width: 100%;
   bottom: -1px;
   height: 5px;
@@ -919,8 +1026,11 @@ html body .displaying-title-whoWeAre {
   align-items: center;
 }
 html body .displaying-title-whoWeAre .title-whoWeAre span {
-  font-size: 35px;
+  font-size: calc((22.4px) + (35.2 - 22.4) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
@@ -962,15 +1072,21 @@ html body section .displaying-image-whoWeAre .center-teamate .displaying-teamate
   align-items: center;
 }
 html body section .displaying-image-whoWeAre .center-teamate .displaying-teamate .resize-image-teamate div span:nth-child(1) {
-  font-size: 16px;
+  font-size: calc((16px) + (16 - 16) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
 }
 html body section .displaying-image-whoWeAre .center-teamate .displaying-teamate .resize-image-teamate div span:nth-child(2) {
-  font-size: 16px;
+  font-size: calc((16px) + (16 - 16) * ((100vw - 768px) / (1920 - 768)));
   font-weight: none;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 0.6;
@@ -1004,15 +1120,21 @@ html body section .displaying-teamate-bis .container .resize-image-teamate-bis d
   align-items: center;
 }
 html body section .displaying-teamate-bis .container .resize-image-teamate-bis div span:nth-child(1) {
-  font-size: 16px;
+  font-size: calc((16px) + (16 - 16) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
 }
 html body section .displaying-teamate-bis .container .resize-image-teamate-bis div span:nth-child(2) {
-  font-size: 16px;
+  font-size: calc((16px) + (16 - 16) * ((100vw - 768px) / (1920 - 768)));
   font-weight: none;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 0.6;
@@ -1033,8 +1155,11 @@ html body section .displaying-pourquoi-bde .displaying-pourquoi-bde-row .contain
   position: relative;
   bottom: 300%;
   left: 53%;
-  font-size: 35px;
+  font-size: calc((22.4px) + (35.2 - 22.4) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
@@ -1079,11 +1204,14 @@ html body section .displaying-pourquoi-bde .displaying-block-container .row .col
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 0;
-  padding-right: 40px;
+  padding-right: 4vh;
 }
 html body section .displaying-pourquoi-bde .displaying-block-container .row .color-black-pourquoi-bde-col span {
-  font-size: 16px;
+  font-size: calc((11.2px) + (16 - 11.2) * ((100vw - 768px) / (1920 - 768)));
   font-weight: none;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: none;
   color: white;
   opacity: 0.6;
@@ -1096,22 +1224,28 @@ html body section .container-fluid .displaying-tools .displaying-tools-col {
 }
 html body section .container-fluid .displaying-tools .displaying-tools-col div:nth-child(1) {
   padding-top: 0;
-  padding-bottom: 40px;
-  padding-left: 0;
+  padding-bottom: 4vh;
+  padding-left: 1vh;
   padding-right: 0;
-  font-size: 25px;
+  font-size: calc((20.8px) + (24 - 20.8) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
 }
 html body section .container-fluid .displaying-tools .displaying-tools-col div:nth-child(2) {
   padding-top: 0;
-  padding-bottom: 10px;
-  padding-left: 50px;
-  padding-right: 50px;
-  font-size: 16px;
+  padding-bottom: 1vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  font-size: calc((11.2px) + (16 - 11.2) * ((100vw - 768px) / (1920 - 768)));
   font-weight: none;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: none;
   color: #343A40;
   opacity: 1;
@@ -1124,11 +1258,14 @@ html body section .container-fluid .displaying-tools .displaying-tools-col div:n
 }
 html body section .container-fluid .displaying-tools .displaying-tools-col div:nth-child(3) span:nth-child(1) {
   padding-top: 0;
-  padding-bottom: 10px;
+  padding-bottom: 1vh;
   padding-left: 0;
   padding-right: 0;
-  font-size: 16px;
+  font-size: calc((11.2px) + (16 - 11.2) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: none;
   color: #343A40;
   opacity: 1;
@@ -1142,8 +1279,8 @@ html body section .container-fluid .displaying-tools .displaying-tools-col div:n
 html body section .container-fluid .displaying-tools .displaying-tools-col div:nth-child(3) span:nth-child(2) span {
   padding-top: 0;
   padding-bottom: 0;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 1vh;
+  padding-right: 1vh;
 }
 html body section .container-fluid .displaying-tools .displaying-tools-col div:nth-child(3) span:nth-child(2) span img {
   width: 30px;
@@ -1171,59 +1308,56 @@ body .cgv .content-cgv {
   margin-bottom: 7VH;
 }
 body .cgv .content-cgv h1 {
-  font-size: none;
+  font-size: calc((20.8px) + (35.2 - 20.8) * ((100vw - 768px) / (1920 - 768)));
   font-weight: none;
   font-style: none;
   text-decoration: none;
   text-align: center;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
   margin-top: 3VH;
   margin-bottom: 15VH;
   margin-left: 0;
   margin-right: 0;
-  font-size: 35px;
-  font-weight: bolder;
-  letter-spacing: 1px;
-  color: #343A40;
-  opacity: 1;
 }
 body .cgv .content-cgv h2 {
-  font-size: 1.6em;
+  font-size: calc((16px) + (25.6 - 16) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bold;
   font-style: none;
   text-decoration: none;
   text-align: left;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
   margin-top: 2VH;
   margin-bottom: 2VH;
   margin-left: 0;
   margin-right: 0;
-  font-size: none;
-  font-weight: none;
-  letter-spacing: 1px;
-  color: #343A40;
-  opacity: 1;
 }
 body .cgv .content-cgv h3 {
-  font-size: 1.3em;
+  font-size: calc((14.4px) + (20.8 - 14.4) * ((100vw - 768px) / (1920 - 768)));
   font-weight: none;
   font-style: none;
   text-decoration: none;
   text-align: left;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 0.8;
   margin-top: 1VH;
   margin-bottom: 1VH;
   margin-left: 0;
   margin-right: 0;
-  font-size: none;
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: #343A40;
-  opacity: 0.8;
 }
 body .cgv .content-cgv p {
-  font-size: 1em;
+  font-size: calc((11.2px) + (16 - 11.2) * ((100vw - 768px) / (1920 - 768)));
   font-weight: none;
   font-style: none;
   text-decoration: none;
   text-align: justify;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
   margin-top: 0.5VH;
   margin-bottom: 0.5VH;
   margin-left: 0;
@@ -1260,11 +1394,14 @@ body .legal-notice .content-legal-notice {
   max-width: 60vw;
 }
 body .legal-notice .content-legal-notice h1 {
-  font-size: 2em;
+  font-size: calc((24px) + (32 - 24) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bold;
   font-style: none;
   text-decoration: none;
   text-align: center;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
   margin-top: 2VH;
   margin-bottom: 2VH;
   margin-left: 1vw;
@@ -1273,16 +1410,18 @@ body .legal-notice .content-legal-notice h1 {
   padding-bottom: 2VH;
   padding-left: 1vw;
   padding-right: 1vw;
-  position: absolute;
-  transform: translate(19vw, -12VH);
+  width: -moz-fit-content;
   background-color: #ffffff;
 }
 body .legal-notice .content-legal-notice p {
-  font-size: 1em;
+  font-size: calc((11.2px) + (16 - 11.2) * ((100vw - 768px) / (1920 - 768)));
   font-weight: none;
   font-style: none;
   text-decoration: none;
   text-align: justify;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 0.8;
   margin-top: 0.5VH;
   margin-bottom: 0.5VH;
   margin-left: 0;
@@ -1302,20 +1441,25 @@ body .cpds .cpds-content {
   margin-bottom: 7VH;
 }
 body .cpds .cpds-content h1 {
+  font-size: calc((20.8px) + (35.2 - 20.8) * ((100vw - 768px) / (1920 - 768)));
+  font-weight: none;
+  font-style: none;
+  text-decoration: none;
   text-align: center;
-  font-size: 35px;
-  font-weight: bolder;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
   margin-top: 3VH;
-  margin-bottom: 12VH;
+  margin-bottom: 15VH;
   margin-left: 0;
   margin-right: 0;
 }
 body .cpds .cpds-content h2 {
-  font-size: 25px;
-  font-weight: bolder;
+  font-size: calc((16px) + (25.6 - 16) * ((100vw - 768px) / (1920 - 768)));
+  font-weight: bold;
+  font-style: none;
+  text-decoration: none;
+  text-align: left;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
@@ -1325,22 +1469,28 @@ body .cpds .cpds-content h2 {
   margin-right: 0;
 }
 body .cpds .cpds-content h3 {
-  font-size: 1.3em;
+  font-size: calc((14.4px) + (20.8 - 14.4) * ((100vw - 768px) / (1920 - 768)));
   font-weight: none;
   font-style: none;
   text-decoration: none;
   text-align: left;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 0.8;
   margin-top: 1VH;
   margin-bottom: 1VH;
   margin-left: 0;
   margin-right: 0;
 }
 body .cpds .cpds-content p {
-  font-size: 1em;
+  font-size: calc((11.2px) + (16 - 11.2) * ((100vw - 768px) / (1920 - 768)));
   font-weight: none;
   font-style: none;
   text-decoration: none;
   text-align: justify;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
   margin-top: 0.5VH;
   margin-bottom: 0.5VH;
   margin-left: 0;
@@ -1372,18 +1522,24 @@ body .cpds .cpds-content div {
   margin-right: 1vw;
 }
 body .cpds .cpds-content div thead th {
-  font-size: 1.1em;
+  font-size: calc((11.2px) + (17.6 - 11.2) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bold;
   font-style: none;
   text-decoration: none;
   text-align: left;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
 }
 body .cpds .cpds-content div tbody td {
-  font-size: 0.8em;
+  font-size: calc((8px) + (12.8 - 8) * ((100vw - 768px) / (1920 - 768)));
   font-weight: lighter;
   font-style: none;
   text-decoration: none;
   text-align: justify;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
 }
 
 html #rain-theme section .construct-page .construct-content-page {
@@ -1393,13 +1549,16 @@ html #rain-theme section .construct-page .construct-content-page {
   align-items: center;
 }
 html #rain-theme section .construct-page .construct-content-page div:nth-child(2) {
-  font-size: 35px;
+  font-size: calc((20.8px) + (35 - 20.8) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 2vh;
+  margin-bottom: 5vh;
   margin-left: 0;
   margin-right: 0;
 }
@@ -1434,8 +1593,11 @@ html .log section .form-displaying form {
   align-items: center;
 }
 html .log section .form-displaying form h3 {
-  font-size: auto;
+  font-size: calc((16pxpx) + (16px - 16px) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: white;
   opacity: 1;
@@ -1448,14 +1610,17 @@ html .log section .form-displaying form div {
   align-items: flex-end !important;
 }
 html .log section .form-displaying form div p {
-  font-size: auto;
+  font-size: calc((16pxpx) + (16px - 16px) * ((100vw - 768px) / (1920 - 768)));
   font-weight: auto;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: white;
   opacity: 1;
 }
 html .log section .form-displaying form input {
-  border-radius: 22px;
+  border-radius: 2.1vh;
 }
 html .log section .form-displaying a {
   color: white;
@@ -1482,8 +1647,11 @@ html .log section .form-displaying-bis form {
   align-items: center;
 }
 html .log section .form-displaying-bis form h3 {
-  font-size: auto;
+  font-size: calc((16pxpx) + (16px - 16px) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: white;
   opacity: 1;
@@ -1496,14 +1664,17 @@ html .log section .form-displaying-bis form div {
   align-items: center !important;
 }
 html .log section .form-displaying-bis form div p {
-  font-size: auto;
+  font-size: calc((16pxpx) + (16px - 16px) * ((100vw - 768px) / (1920 - 768)));
   font-weight: auto;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: white;
   opacity: 1;
 }
 html .log section .form-displaying-bis form input {
-  border-radius: 22px;
+  border-radius: 2.1vh;
 }
 html .log section .form-displaying-bis form input .label {
   border-radius: 22px;
@@ -1518,13 +1689,11 @@ html .log section .form-displaying-bis a:hover {
 
 body .displaying-association h1 {
   margin-top: 6VH;
-  font-size: 2.6em;
+  font-size: calc((32px) + (41.6 - 32) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bold;
   font-style: none;
   text-decoration: none;
   text-align: center;
-  font-size: auto;
-  font-weight: auto;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
@@ -1554,13 +1723,11 @@ body .displaying-association .row .associationText h2 {
   margin-bottom: 1VH;
   margin-left: 0;
   margin-right: 0;
-  font-size: 2em;
+  font-size: calc((24px) + (32 - 24) * ((100vw - 768px) / (1920 - 768)));
   font-weight: none;
   font-style: none;
   text-decoration: none;
   text-align: center;
-  font-size: auto;
-  font-weight: auto;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
@@ -1571,13 +1738,11 @@ body .displaying-association .row .associationText p {
   margin-left: 0;
   margin-right: 0;
   max-width: 30vw;
-  font-size: 1.1em;
+  font-size: calc((11.2px) + (17.6 - 11.2) * ((100vw - 768px) / (1920 - 768)));
   font-weight: lighter;
   font-style: none;
   text-decoration: none;
   text-align: justify;
-  font-size: auto;
-  font-weight: auto;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
@@ -1631,13 +1796,11 @@ body .displaying-event h1 {
   margin-bottom: 6VH;
   margin-left: 0;
   margin-right: 0;
-  font-size: 2.6em;
+  font-size: calc((32px) + (41.6 - 32) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bold;
   font-style: none;
   text-decoration: none;
   text-align: center;
-  font-size: auto;
-  font-weight: auto;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
@@ -1671,13 +1834,11 @@ body .displaying-event .row .ImageAndDate p {
   padding-right: 0.5vw;
   border: 1px solid #808080;
   border-radius: 5px;
-  font-size: 1.2em;
+  font-size: calc((16px) + (19.2 - 16) * ((100vw - 768px) / (1920 - 768)));
   font-weight: none;
   font-style: none;
   text-decoration: none;
   text-align: center;
-  font-size: auto;
-  font-weight: auto;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
@@ -1702,13 +1863,11 @@ body .displaying-event .row .associationText h2 {
   margin-bottom: 1VH;
   margin-left: 0;
   margin-right: 0;
-  font-size: 2em;
+  font-size: calc((20.8px) + (32 - 20.8) * ((100vw - 768px) / (1920 - 768)));
   font-weight: none;
   font-style: none;
   text-decoration: none;
   text-align: center;
-  font-size: auto;
-  font-weight: auto;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
@@ -1719,13 +1878,11 @@ body .displaying-event .row .associationText p {
   margin-left: 0;
   margin-right: 0;
   max-width: 30vw;
-  font-size: 12.8px;
+  font-size: calc((8px) + (17.6 - 8) * ((100vw - 768px) / (1920 - 768)));
   font-weight: lighter;
   font-style: none;
   text-decoration: none;
   text-align: justify;
-  font-size: auto;
-  font-weight: auto;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
@@ -1775,7 +1932,7 @@ html body .header-shop {
   opacity: 1;
 }
 html body .header-shop .row {
-  height: 80px;
+  height: 8vh;
 }
 html body .header-shop .row .pos-logo-shop {
   display: flex;
@@ -1784,11 +1941,11 @@ html body .header-shop .row .pos-logo-shop {
   align-items: center;
   padding-top: 0;
   padding-bottom: 0;
-  padding-left: 20px;
+  padding-left: 2vh;
   padding-right: 0;
 }
 html body .header-shop .row .pos-logo-shop img {
-  height: 50px;
+  height: 5vh;
 }
 html body .header-shop .row .pos-nav-menu-shop {
   display: flex;
@@ -1801,8 +1958,8 @@ html body .header-shop .row .pos-nav-menu-shop span a {
   color: white;
   font-weight: bold;
   letter-spacing: 1px;
-  padding: 10px;
-  font-size: 12px;
+  padding: 1vh;
+  font-size: 3vh;
 }
 html body .header-shop .row .pos-nav-menu-shop span a::after {
   position: absolute;
@@ -1827,17 +1984,17 @@ html body .header-shop .row .pos-icon-shop {
   align-items: center;
 }
 html body .header-shop .row .pos-icon-shop a {
-  padding-right: 20px;
+  padding-right: 2vh;
 }
 html body .header-shop .row .pos-icon-shop a button {
-  border-radius: 22px;
-  font-size: 10px;
+  border-radius: 2.1vh;
+  font-size: 1vh;
   border-width: 2px;
 }
 html body .header-shop .row .pos-icon-shop a img {
   color: #343A40;
-  width: 30px;
-  height: 30px;
+  width: 3vh;
+  height: 3vh;
 }
 html body .header-shop .second-shop-nav {
   opacity: 1;
@@ -1848,7 +2005,7 @@ html body .header-shop .second-shop-nav .second-shop-nav-row {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 70px;
+  height: 7vh;
 }
 html body .header-shop .second-shop-nav .second-shop-nav-row .second-shop-nav-col {
   display: flex;
@@ -1859,23 +2016,29 @@ html body .header-shop .second-shop-nav .second-shop-nav-row .second-shop-nav-co
 html body .header-shop .second-shop-nav .second-shop-nav-row .second-shop-nav-col span {
   padding-top: 0;
   padding-bottom: 0;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 1vh;
+  padding-right: 1vh;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 10px;
+  margin-left: 1vh;
   margin-right: 0;
 }
 html body .header-shop .second-shop-nav .second-shop-nav-row .second-shop-nav-col span a {
-  font-size: 11.4285714286px;
+  font-size: calc((11.4px) + (11.4 - 11.4) * ((100vw - 768px) / (1920 - 768)));
   font-weight: auto;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: white;
   opacity: 1;
 }
 html body .header-shop .second-shop-nav .second-shop-nav-row .second-shop-nav-col span a:hover {
-  font-size: 11.4285714286px;
+  font-size: calc((11.4px) + (11.4 - 11.4) * ((100vw - 768px) / (1920 - 768)));
   font-weight: auto;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #FFC107;
   opacity: 1;
@@ -1889,16 +2052,19 @@ html body .header-shop .second-shop-nav .second-shop-nav-row .second-shop-nav-co
 html body .header-shop .second-shop-nav .second-shop-nav-row .second-shop-nav-col-bis span {
   padding-top: 0;
   padding-bottom: 0;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 1vh;
+  padding-right: 1vh;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 10px;
+  margin-left: 1vh;
   margin-right: 0;
 }
 html body .header-shop .second-shop-nav .second-shop-nav-row .second-shop-nav-col-bis span a {
-  font-size: 11.4285714286px;
+  font-size: calc((11.4px) + (11.4 - 11.4) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #8D0D02;
   opacity: 1;
@@ -1915,22 +2081,28 @@ html body .shop-banner .shop-inner-banner {
   transform: translate(-50%);
   background-color: white;
   opacity: 0.8;
-  border-radius: 10px;
+  border-radius: 1vh;
   padding-top: 1VH;
   padding-bottom: 2VH;
   padding-left: 1vw;
   padding-right: 1vw;
 }
 html body .shop-banner .shop-inner-banner div:nth-child(1) span {
-  font-size: auto;
+  font-size: calc((16px) + (16 - 16) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bold;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: auto;
   color: #343A40;
   opacity: 0.8;
 }
 html body .shop-banner .shop-inner-banner div:nth-child(2) span {
-  font-size: auto;
+  font-size: calc((16px) + (16 - 16) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bold;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: auto;
   color: #23272A;
   opacity: 1;
@@ -1945,7 +2117,7 @@ html body .shop-banner .shop-inner-banner div:nth-child(3) div {
   align-items: center;
 }
 html body .reduction {
-  height: 60px;
+  height: 6vh;
   background-color: #FFC107;
   display: flex;
   flex-direction: column;
@@ -1953,15 +2125,21 @@ html body .reduction {
   align-items: center;
 }
 html body .reduction span:nth-child(1) {
-  font-size: auto;
+  font-size: calc((16px) + (16 - 16) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: white;
   opacity: 1;
 }
 html body .reduction span:nth-child(2) {
-  font-size: auto;
+  font-size: calc((16px) + (16 - 16) * ((100vw - 768px) / (1920 - 768)));
   font-weight: none;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: none;
   color: white;
   opacity: 1;
@@ -1988,14 +2166,17 @@ html body section .type-shop .type-shop-row .type-shop-col .type-shop-button-dis
   align-items: flex-end;
 }
 html body section .type-shop .type-shop-row .type-shop-col .type-shop-button-displaying .type-shop-button-displaying-row button {
-  border-radius: 22px;
-  font-size: 16px;
+  border-radius: 2.1vh;
+  font-size: calc((16px) + (16 - 16) * ((100vw - 768px) / (1920 - 768)));
   font-weight: lighter;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: white;
   opacity: 1;
-  width: 150px;
-  height: 40px;
+  width: 15vh;
+  height: 4vh;
 }
 html body section .shop-collab {
   display: flex;
@@ -2010,15 +2191,21 @@ html body section .shop-collab div {
   align-items: center;
 }
 html body section .shop-collab div span:nth-child(1) {
-  font-size: 25px;
+  font-size: calc((25px) + (25 - 25) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
 }
 html body section .shop-collab div span:nth-child(2) {
-  font-size: 16px;
+  font-size: calc((16px) + (16 - 16) * ((100vw - 768px) / (1920 - 768)));
   font-weight: none;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
@@ -2052,15 +2239,21 @@ html body section .shop-collab-img .shop-collab-row .shop-collab-col-un div {
   align-items: flex-start;
 }
 html body section .shop-collab-img .shop-collab-row .shop-collab-col-un div span:nth-child(1) {
-  font-size: 16px;
+  font-size: calc((16px) + (16 - 16) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
 }
 html body section .shop-collab-img .shop-collab-row .shop-collab-col-un div div .lighter-font {
-  font-size: 16px;
-  font-weight: lighter !important;
+  font-size: calc((16px) + (16 - 16) * ((100vw - 768px) / (1920 - 768)));
+  font-weight: lighter;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 0.6;
@@ -2080,15 +2273,21 @@ html body section .shop-collab-img .shop-collab-row .shop-collab-col-deux div {
   align-items: flex-start;
 }
 html body section .shop-collab-img .shop-collab-row .shop-collab-col-deux div span:nth-child(1) {
-  font-size: 16px;
+  font-size: calc((16px) + (16 - 16) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
 }
 html body section .shop-collab-img .shop-collab-row .shop-collab-col-deux div div .lighter-font {
-  font-size: 16px;
-  font-weight: lighter !important;
+  font-size: calc((16px) + (16 - 16) * ((100vw - 768px) / (1920 - 768)));
+  font-weight: lighter;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 0.6;
@@ -2100,13 +2299,16 @@ html body section .collection-shop-title {
   align-items: center;
 }
 html body section .collection-shop-title span {
-  font-size: 25px;
+  font-size: calc((25px) + (25 - 25) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
   padding-top: 0;
-  padding-bottom: 50px;
+  padding-bottom: 5vh;
   padding-left: 0;
   padding-right: 0;
 }
@@ -2122,11 +2324,14 @@ body .stores-displaying {
   align-items: center;
 }
 body .stores-displaying h1 {
-  font-size: 3em;
+  font-size: calc((48px) + (48 - 48) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bold;
   font-style: none;
   text-decoration: none;
   text-align: center;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
   padding-top: 0;
   padding-bottom: 2VH;
   padding-left: 0;
@@ -2135,11 +2340,6 @@ body .stores-displaying h1 {
   margin-bottom: 3VH;
   margin-left: 0;
   margin-right: 0;
-  font-size: auto;
-  font-weight: bolder;
-  letter-spacing: 1px;
-  color: #343A40;
-  opacity: 1;
 }
 body .stores-displaying .stores-content {
   display: flex;
@@ -2162,11 +2362,14 @@ body .stores-displaying .stores-content .store h2 {
   position: relative;
   top: 50VH;
   transform: translate(0, -50%);
-  font-size: 5em;
+  font-size: calc((80px) + (80 - 80) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bold;
   font-style: none;
   text-decoration: none;
   text-align: center;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
   letter-spacing: 5px;
 }
 body .stores-displaying .stores-content .store h2 a {
@@ -2200,11 +2403,14 @@ body .cart-displaying {
   align-items: center;
 }
 body .cart-displaying h1 {
-  font-size: 2em;
+  font-size: calc((24px) + (32 - 24) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bold;
   font-style: none;
   text-decoration: none;
   text-align: center;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
   padding-top: 0;
   padding-bottom: 2VH;
   padding-left: 0;
@@ -2262,11 +2468,14 @@ body .cart-displaying .cart-content .cart-item .cart-titleAndQuantity div {
   align-items: center;
 }
 body .cart-displaying .cart-content .cart-item .cart-titleAndQuantity h2 {
-  font-size: 1.4em;
+  font-size: calc((17.6px) + (22.4 - 17.6) * ((100vw - 768px) / (1920 - 768)));
   font-weight: none;
   font-style: none;
   text-decoration: none;
   text-align: center;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
   margin-top: 2VH;
   margin-bottom: 6VH;
   margin-left: 0;
@@ -2279,11 +2488,14 @@ body .cart-displaying .cart-content .cart-item .cart-titleAndQuantity span {
   padding-right: 1vw;
 }
 body .cart-displaying .cart-content .cart-item p {
-  font-size: 1em;
+  font-size: calc((11.2px) + (16 - 11.2) * ((100vw - 768px) / (1920 - 768)));
   font-weight: none;
   font-style: none;
   text-decoration: none;
   text-align: justify;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
   margin-bottom: 0;
 }
 body .cart-displaying .cart-content .cart-item button {
@@ -2293,11 +2505,19 @@ body .cart-displaying .cart-content .cart-item button {
   align-items: center;
   min-width: 1.5vw;
   width: -moz-fit-content;
-  height: 3VH;
+  height: 4VH;
   border: 1px solid #505050;
-  border-radius: 10px;
+  border-radius: 8px;
   background-color: #505050;
   color: #ffffff;
+  font-size: calc((11.2px) + (16 - 11.2) * ((100vw - 768px) / (1920 - 768)));
+  font-weight: bold;
+  font-style: none;
+  text-decoration: none;
+  text-align: left;
+  letter-spacing: 1px;
+  color: #ffffff;
+  opacity: 1;
 }
 body .cart-displaying .cart-content .cart-item .cart-price {
   display: flex;
@@ -2330,11 +2550,14 @@ body .cart-displaying .cart-content .cart-sum .cart-sumPrice {
   align-items: flex-start;
 }
 body .cart-displaying .cart-content .cart-sum p {
-  font-size: 1em;
+  font-size: calc((11.2px) + (16 - 11.2) * ((100vw - 768px) / (1920 - 768)));
   font-weight: none;
   font-style: none;
   text-decoration: none;
   text-align: justify;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
   margin-bottom: 0;
 }
 body .cart-displaying .cart-content .cart-proceed {
@@ -2353,11 +2576,14 @@ body .cart-displaying .cart-content .cart-proceed {
   border-bottom: 3px solid #505050;
 }
 body .cart-displaying .cart-content .cart-proceed p {
-  font-size: 1em;
+  font-size: calc((11.2px) + (16 - 11.2) * ((100vw - 768px) / (1920 - 768)));
   font-weight: none;
   font-style: none;
   text-decoration: none;
   text-align: justify;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
   margin-top: 3VH;
   margin-bottom: 3VH;
   margin-left: 0;
@@ -2370,13 +2596,21 @@ body .cart-displaying .cart-content .cart-proceed a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-size: calc((11.2px) + (16 - 11.2) * ((100vw - 768px) / (1920 - 768)));
+  font-weight: bold;
+  font-style: none;
+  text-decoration: none;
+  text-align: left;
+  letter-spacing: 1px;
+  color: #343A40;
+  opacity: 1;
   min-width: 1.5vw;
   text-decoration: none;
   margin-top: 3VH;
   margin-bottom: 3VH;
   margin-left: 0;
   margin-right: 0;
-  width: 8vw;
+  width: 10vw;
   height: 5VH;
   border: 1px solid #ffc107;
   border-radius: 10px;
@@ -2410,21 +2644,24 @@ html body .shop-banner .row-men {
 html body .shop-banner .row-men .col-men {
   padding-top: 0;
   padding-bottom: 0;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 3vh;
+  padding-right: 3vh;
 }
 html body .shop-banner .row-men .col-men button {
-  font-size: 16px;
+  font-size: calc((16px) + (16 - 16) * ((100vw - 768px) / (1920 - 768)));
   font-weight: lighter;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: white;
   opacity: 1;
-  width: 150px;
-  height: 40px;
-  border-radius: 22px;
+  width: 15vh;
+  height: 4vh;
+  border-radius: 2.1vh;
 }
 html body .reduction {
-  height: 60px;
+  height: 6vh;
   background-color: #FFC107;
   display: flex;
   flex-direction: column;
@@ -2432,21 +2669,27 @@ html body .reduction {
   align-items: center;
 }
 html body .reduction span:nth-child(1) {
-  font-size: auto;
+  font-size: calc((16px) + (16 - 16) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: white;
   opacity: 1;
 }
 html body .reduction span:nth-child(2) {
-  font-size: auto;
+  font-size: calc((16px) + (16 - 16) * ((100vw - 768px) / (1920 - 768)));
   font-weight: none;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: none;
   color: white;
   opacity: 1;
 }
 html body .reduction-men {
-  height: 100px;
+  height: 10vh;
 }
 html body section .type-shop .type-shop-row .type-shop-col {
   width: 50%;
@@ -2463,24 +2706,27 @@ html body section .type-shop .type-shop-row .type-shop-col .type-shop-img {
 html body section .type-shop .type-shop-row .type-shop-col button {
   position: relative;
   top: -20%;
-  border-radius: 22px;
+  border-radius: 2.1vh;
 }
 html body section .men {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 50;
+  padding-bottom: 50;
   padding-left: 0;
   padding-right: 0;
 }
 html body section .men span {
-  font-size: 35px;
+  font-size: calc((35px) + (35 - 35) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
 }
 html body section .collection-shop-items .product-men {
   padding-top: 0;
-  padding-bottom: 20px;
+  padding-bottom: 2vh;
   padding-left: 0;
   padding-right: 0;
 }

@@ -42,7 +42,7 @@ html {
                 padding-right: $padding*2;
 
                 .pseudo {
-                    @include innerBanner($sizeFont+2, bolder, 1px, $colorBlack, 1);
+                    @include fontRule(12, 12, bolder, none, none, none, 1px, $colorBlack, 1);
                 }
 
                 button {

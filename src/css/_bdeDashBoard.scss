@@ -15,12 +15,12 @@
 
                 div:nth-child(1) {
                     @include headerPos(flex, row, center, center);
-                    @include innerBanner($mediumTitle, bolder, 1px, white, 1);
+                    @include fontRule(25px, 25px, bolder, none, none, none, 1px, white, 1);
                 }
 
                 div:nth-child(2) {
                     @include headerPos(flex, row, center, center);
-                    @include innerBanner($mediumTitle/1.5, bolder, 1px, white, 1);
+                    @include fontRule(16.7px, 16.7px, bolder, none, none, none, 1px, white, 1);
                 }
             }
 
@@ -30,12 +30,12 @@
 
                 div:nth-child(1) {
                     @include headerPos(flex, row, center, center);
-                    @include innerBanner($mediumTitle, bolder, 1px, $colorYellow, 1);
+                    @include fontRule(25px, 25px, bolder, none, none, none, 1px, $colorYellow, 1);
                 }
 
                 div:nth-child(2) {
                     @include headerPos(flex, row, center, center);
-                    @include innerBanner($mediumTitle/1.5, bolder, 1px, $colorYellow, 1);
+                    @include fontRule(17.6px, 17.6px, bolder, none, none, none, 1px, $colorYellow, 1);
                 }
             }
 
@@ -46,7 +46,7 @@
                     @include headerPos(flex, row, center, center);
 
                     span {
-                        @include innerBanner($mediumTitle, bolder, 1px, $colorYellow, 0.6);
+                        @include fontRule(25px, 25px, bolder, none, none, none, 1px, $colorYellow, 0.6);
                     }
                 }
             }
