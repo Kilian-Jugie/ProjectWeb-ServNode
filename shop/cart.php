@@ -20,34 +20,35 @@
     <?php
     include 'shopNavBar.php';
     ?>
-    
+
+
     <?php
     echo "<br><br><br><br><br><br>";
     //session_start();
-        echo "<div class=\"container-fluid cart-displaying\">
+    echo "<div class=\"container-fluid cart-displaying\">
         <h1>Voici votre panier !</h1>
         
         <div class=\"row cart-content\">";
 
-        $cart_data = file_get_contents("http://www.bdecesi-api.ml/api/cart_data/".$_SESSION['user_log']->user_id);
-        $cart_detail = file_get_contents("http://www.bdecesi-api.ml/api/cart_detail/".$_SESSION['user_log']->user_id);
+    $cart_data = file_get_contents("http://www.bdecesi-api.ml/api/cart_data/" . $_SESSION['user_log']->user_id);
+    $cart_detail = file_get_contents("http://www.bdecesi-api.ml/api/cart_detail/" . $_SESSION['user_log']->user_id);
 
-        //echo $cart_data;
-        //echo $cart_detail;
+    //echo $cart_data;
+    //echo $cart_detail;
 
-        $cart_data = json_decode($cart_data);
-        $cart_data = $cart_data[0];
+    $cart_data = json_decode($cart_data);
+    $cart_data = $cart_data[0];
 
-        $cart_detail = json_decode($cart_detail);
-        //$cart_detail = $cart_detail[0];
+    $cart_detail = json_decode($cart_detail);
+    //$cart_detail = $cart_detail[0];
 
-        
-        for($i = 0; $i < $cart_data->nb_product; $i++) {
-            echo "<div class=\"cart-item\">
+
+    for ($i = 0; $i < $cart_data->nb_product; $i++) {
+        echo "<div class=\"cart-item\">
             <script>
                 function deleteItem() {
                     const http = new XMLHttpRequest();
-                    const url = 'http://bdecesi-api.ml/api/delete_product_cart/".$_SESSION['user_log']->user_id."';
+                    const url = 'http://bdecesi-api.ml/api/delete_product_cart/" . $_SESSION['user_log']->user_id . "';
 
                     http.onreadystatechange = function() {
                         document.location.reload(true);
@@ -55,12 +56,12 @@
 
                     http.open(\"DELETE\", url, true);
                     http.setRequestHeader('Content-Type', 'application/json');
-                    http.send(\"{ \\\"id_stock\\\": ".$cart_detail[$i]->id_stock."}\");
+                    http.send(\"{ \\\"id_stock\\\": " . $cart_detail[$i]->id_stock . "}\");
                 }
 
                                 function incrementCart(q) {
                                     const http = new XMLHttpRequest();
-                                    const url = 'http://bdecesi-api.ml/api/update_product_cart/".$_SESSION['user_log']->user_id."';
+                                    const url = 'http://bdecesi-api.ml/api/update_product_cart/" . $_SESSION['user_log']->user_id . "';
 
                                     http.onreadystatechange = function() {
                                         document.location.reload(true);
@@ -68,12 +69,12 @@
 
                                     http.open(\"PUT\", url, true);
                                     http.setRequestHeader('Content-Type', 'application/json');
-                                    q = q + ".$cart_detail[$i]->quantity."
+                                    q = q + " . $cart_detail[$i]->quantity . "
                                     if(q<=0) {
                                         deleteItem();
                                     }
                                     else {
-                                        http.send(\"{ \\\"stock_id\\\": ".$cart_detail[$i]->id_stock.", \\\"quantity\\\": \"+q+\"}\");
+                                        http.send(\"{ \\\"stock_id\\\": " . $cart_detail[$i]->id_stock . ", \\\"quantity\\\": \"+q+\"}\");
                                     }
                                 }
 
@@ -81,26 +82,26 @@
                             </script>
                     <img src=\"../src/img/associationImg/ballIsLifeImage.png\" alt=\"imgContact\" class=\"cart-associationImg\">
                     <div class=\"cart-titleAndQuantity\">
-                        <h2>".$cart_detail[$i]->label."</h2>
+                        <h2>" . $cart_detail[$i]->label . "</h2>
                         <div>
                             <button onclick=\"incrementCart(1);\">+</button>
-                            <span>".$cart_detail[$i]->quantity."</span>
+                            <span>" . $cart_detail[$i]->quantity . "</span>
                             <button onclick=\"incrementCart(-1);\">-</button>
                         </div>
                     </div>
-                    <p class=\"cart-bordered\">".$cart_detail[$i]->label_size."</p>
+                    <p class=\"cart-bordered\">" . $cart_detail[$i]->label_size . "</p>
                     <button onclick=\"deleteItem()\">remove item</button>
                     <div class=\"cart-price\">
-                        <p>prix/unit = ".$cart_detail[$i]->cost/$cart_detail[$i]->quantity."€</p>
-                        <p>prix = ".$cart_detail[$i]->cost."€</p>
+                        <p>prix/unit = " . $cart_detail[$i]->cost / $cart_detail[$i]->quantity . "€</p>
+                        <p>prix = " . $cart_detail[$i]->cost . "€</p>
                     </div>
                 </div>";
-        } 
-        echo "<div class=\"cart-sum\">
+    }
+    echo "<div class=\"cart-sum\">
         <div class=\"cart-sumPrice\">
-            <p>sous-total = ".$cart_data->total_cost."€</p>
+            <p>sous-total = " . $cart_data->total_cost . "€</p>
             <p>frais de livraison = 8€</p>
-            <p>TVA = ".($cart_data->total_cost*1.2)."€</p>
+            <p>TVA = " . ($cart_data->total_cost * 1.2) . "€</p>
         </div>
     </div>";
         echo "<div class=\"cart-proceed\">
@@ -108,14 +109,16 @@
         <form>
             <input type='hidden' value=".($cart_data->total_cost*1.2+8)." name='price'>
         </form>
+
         <a href=\"../paymentSystem/checkout.php\">Proceder à l'achat</a>
         </div>";
 
-        echo "</div>
+    echo "</div>
         </div>";
     ?>
-    <!--
-    <div class="container-fluid cart-displaying">
+
+
+    <!-- <div class="container-fluid cart-displaying">
         <h1>Voici votre panier !</h1>
         <div class="row cart-content">
             <div class="cart-item">
@@ -135,40 +138,6 @@
                     <p>prix = 119.96€</p>
                 </div>
             </div>
-            <div class="cart-item">
-                <img src="../src/img/associationImg/ballIsLifeImage.png" alt="imgContact" class="cart-associationImg">
-                <div class="cart-titleAndQuantity">
-                    <h2>Hoodie Cesi gris-chiné</h2>
-                    <div>
-                        <button>+</button>
-                        <span>1</span>
-                        <button>-</button>
-                    </div>
-                </div>
-                <p class="cart-bordered">M</p>
-                <button>remove item</button>
-                <div class="cart-price">
-                    <p>prix/unit = 29.99€</p>
-                    <p>prix = 29.99€</p>
-                </div>
-            </div>
-            <div class="cart-item">
-                <img src="../src/img/associationImg/ballIsLifeImage.png" alt="imgContact" class="cart-associationImg">
-                <div class="cart-titleAndQuantity">
-                    <h2>Hoodie Cesi gris-chiné</h2>
-                    <div>
-                        <button>+</button>
-                        <span>3</span>
-                        <button>-</button>
-                    </div>
-                </div>
-                <p class="cart-bordered">M</p>
-                <button>remove item</button>
-                <div class="cart-price">
-                    <p>prix/unit = 29.99€</p>
-                    <p>prix = 89.97€</p>
-                </div>
-            </div>
             <div class="cart-sum">
                 <div class="cart-sumPrice">
                     <p>sous-total = 239.92€</p>
@@ -182,8 +151,7 @@
             </div>
 
         </div>
-    </div>
--->
+    </div> -->
     <?php
     include 'footer.php';
     ?>
