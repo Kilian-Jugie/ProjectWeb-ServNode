@@ -1836,6 +1836,12 @@ html body .header-shop {
   opacity: 0.8;
   height: 80px;
   opacity: 1;
+  display: block;
+}
+@media only screen and (max-width: 768px) {
+  html body .header-shop {
+    display: none;
+  }
 }
 html body .header-shop .row {
   height: 80px;

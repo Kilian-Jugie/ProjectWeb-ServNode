@@ -4,6 +4,12 @@ html {
             @include headerBackground($colorBlack);
             opacity: 1;
 
+            display: block;
+
+            @include responsiveSmartphone {
+                display: none;
+            }
+
             .row {
                 height: 80px;
 
