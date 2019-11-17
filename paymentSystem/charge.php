@@ -7,13 +7,15 @@ $last_name = $POST['last_name'];
 $email = $POST['mail'];
 $token = $POST['stripeToken'];
 
+session_start();
+
 $customer = \Stripe\Customer::create(array(
     "email" => $email,
     "source" => $token
 ));
 
 $charge = \Stripe\Charge::create(array(
-    "amount" => $POST['price'],
+    "amount" => (int)($_SESSION['price']*100),
     "currency" => "eur",
     "description" => "test",
     "customer" => $customer->id
