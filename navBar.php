@@ -12,7 +12,7 @@
 
         </div>
         <?php
-        //session_start();
+        session_start();
         if (isset($_SESSION['user_log'])) {
             echo "
                     <div class='col-md-4 pos-icon'>
@@ -23,7 +23,7 @@
                 ";
         } else {
             echo "<div class='col-md-4 pos-icon'>
-            <a href=''><span>Bonjour suceurDeQueue</span></a>
+            <a href=''><span>Bonjour</span></a>
             <a href=' {$pathForLog}login.php'><button type='button' class='btn btn-outline-dark'>Se connecter</button></a>
             <a href='#'><img src='{$pathImg}src/img/headerImage/searchIcon.png' alt='icon de la barre de recherche' /></a>
         </div>";

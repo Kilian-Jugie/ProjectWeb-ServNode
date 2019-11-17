@@ -15,7 +15,7 @@ if (isset($_POST['submit'])) {
                 "campus_id" => $get_user_data[0]->id_campus
             ];
             $_SESSION['user_log'] = $user;
-            header("Location: ./index/login.php");
+            header("Location: login.php");
         } else {
             header("Location: login.php?error=password");
         }

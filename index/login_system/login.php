@@ -4,7 +4,8 @@
     if (isset($_SESSION['user_log'])) {
 
         //if session is active, it's gonna redirect to the homePage with session name on the top to the right.
-        include '../index.php';
+        //include '../../index.php';
+        header('Location: ../../index.php');
     } else {
         echo "<html>
 
