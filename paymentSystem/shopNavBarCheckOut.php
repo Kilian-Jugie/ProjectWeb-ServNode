@@ -12,7 +12,7 @@
 
         </div>
         <?php
-        session_start();
+        //session_start();
         if (isset($_SESSION['user_log'])) {
             echo "  
                     <div class='col-md-4 pos-icon-shop'>
