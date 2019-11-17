@@ -58,6 +58,10 @@ html {
                         @include fontRule(16px, 16px, bolder, none, none , none, 1px, white, 1);
                     }
 
+                    .error-message {
+                        @include innerBanner(lighter, bolder, 1px, red, 1);
+                    }
+
                     div {
                         width: 567px;
                         @include headerPos(flex, row, center !important, center !important);

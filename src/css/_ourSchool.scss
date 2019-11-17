@@ -15,6 +15,10 @@ section {
 
                 .displaying-school-text {
                     padding: $padding*13 $padding*7 $padding*7 $padding*20;
+
+                    @include responsiveSmartphone {
+                        margin-top: 200px;
+                    }
                 }
             }
 
@@ -27,6 +31,10 @@ section {
                     @include displayingTitleAndLogo(relative, 370%, 35%);
                     @include fontRule(35px, 35px, bolder, none, none, none, 1px, $colorBlack, 1);
 
+                    @include responsiveSmartphone {
+                        @include displayingTitleAndLogo(relative, 470%, 32%);
+                    }
+
                     span::before {
                         @include beforeTitle(51px, 5px, -60px, 25px, "");
                     }
@@ -34,6 +42,10 @@ section {
 
                 .displaying-image {
                     @include displayingTitleAndLogo(relative, 380%, 32%);
+
+                    @include responsiveSmartphone {
+                        @include displayingTitleAndLogo(relative, 800%, 32%);
+                    }
 
                     .resize-logo-image {
                         @include resizeImg(300px, 300px);

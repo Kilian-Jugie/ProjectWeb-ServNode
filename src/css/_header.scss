@@ -3,6 +3,10 @@ html {
         .header {
             @include headerBackground(white);
 
+            @include responsiveSmartphone {
+                display: none;
+            }
+
             .pos-logo {
                 @include headerPos(flex, row, flex-start, none);
 

@@ -37,7 +37,7 @@
             </div>
             <div class="store bordeaux" id="bordeaux">
                 <div class="opacity"></div>
-                <h2><a href="">Bordeaux</a></h2>
+                <h2><a href="../index.php">Bordeaux</a></h2>
             </div>
             <div class="store lyon" id="lyon">
                 <div class="opacity"></div>

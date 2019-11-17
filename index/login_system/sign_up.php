@@ -24,6 +24,15 @@
         <div class='container form-displaying-bis'>
             <form action="add_user.php" method="POST" enctype="multipart/form-data">
                 <h3> Créer un compte</h3>
+                <?php
+                if (isset($errorMessage)) {
+                    echo "<div class='error-message'>
+                    {$errorMessage}
+                </div>";
+                } else {
+                    echo "";
+                }
+                ?>
                 <div>
                     <p>Prénom</p>
                 </div>
@@ -74,7 +83,7 @@
                     <p>Choisi une belle photo de profil!</p>
                 </div>
                 <input type="file" name="image"><br>
-                <input class='form-control label' type="checkbox" name="news_letter">
+                <input class='form-control label' type="checkbox" required name="news_letter">
                 <label for="news_letter"></label>
                 <br>
                 <div>
