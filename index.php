@@ -48,7 +48,7 @@
         ?>
      <div class="container-fluid">
          <img class="image-size" src="src/img/headerImage/bannerImage.jpg" alt="image de fond du home page du BDE de Cesi" />
-         <div class="inner-banner">
+         <div class="inner-banner" id="banner-index-momo">
              <div>
                  <span>
                      SITE DU BUREAU DES ELEVES

@@ -1,6 +1,7 @@
 html {
     body {
         @include resetToZero;
+        @include setMax;
 
         a {
             @include fontRule(none, none, none, none, none, left, none, $colorYellow, 1);

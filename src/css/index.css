@@ -17,6 +17,13 @@ html body {
   width: 100%;
   height: 100%;
   overflow-X: hidden;
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-width: 768px) {
+  html body {
+    overflow-X: hidden;
+  }
 }
 html body .container {
   padding: 0;
@@ -80,6 +87,11 @@ html body .header {
   background-color: white;
   opacity: 0.8;
   height: 80px;
+}
+@media only screen and (max-width: 768px) {
+  html body .header {
+    display: none;
+  }
 }
 html body .header .pos-logo {
   display: flex;
@@ -162,6 +174,12 @@ html body .container-fluid .inner-banner {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  display: block;
+}
+@media only screen and (max-width: 768px) {
+  html body .container-fluid .inner-banner {
+    display: none;
+  }
 }
 html body .container-fluid .inner-banner div:nth-child(1) span {
   font-size: calc((25px) + (25 - 25) * ((100vw - 768px) / (1920 - 768)));
@@ -219,6 +237,11 @@ section .container-fluid .row .col-md-7 {
 section .container-fluid .row .col-md-7 .displaying-school-text {
   padding: 13vh 7vh 7vh 20vh;
 }
+@media only screen and (max-width: 768px) {
+  section .container-fluid .row .col-md-7 .displaying-school-text {
+    margin-top: 200px;
+  }
+}
 section .container-fluid .row .momo {
   height: 100px;
 }
@@ -235,6 +258,13 @@ section .container-fluid .row div:nth-child(3) .displaying-title {
   color: #343A40;
   opacity: 1;
 }
+@media only screen and (max-width: 768px) {
+  section .container-fluid .row div:nth-child(3) .displaying-title {
+    position: relative;
+    bottom: 470%;
+    left: 32%;
+  }
+}
 section .container-fluid .row div:nth-child(3) .displaying-title span::before {
   position: absolute;
   width: 51px;
@@ -249,6 +279,13 @@ section .container-fluid .row div:nth-child(3) .displaying-image {
   position: relative;
   bottom: 380%;
   left: 32%;
+}
+@media only screen and (max-width: 768px) {
+  section .container-fluid .row div:nth-child(3) .displaying-image {
+    position: relative;
+    bottom: 800%;
+    left: 32%;
+  }
 }
 section .container-fluid .row div:nth-child(3) .displaying-image .resize-logo-image {
   width: 300px;
@@ -403,11 +440,26 @@ section .container-fluid .displaying-whoAreWeImage .resize-whoAreWeImage {
 .displaying-dashBoard .dashboard .first div:nth-child(1) {
   border-radius: 22px 0 0 0;
 }
+@media only screen and (max-width: 768px) {
+  .displaying-dashBoard .dashboard .first div:nth-child(1) {
+    border-radius: 0 0 0 0;
+  }
+}
 .displaying-dashBoard .dashboard .second div:nth-child(1) {
   border-radius: 0 0 0 22px;
 }
+@media only screen and (max-width: 768px) {
+  .displaying-dashBoard .dashboard .second div:nth-child(1) {
+    border-radius: 0 0 0 0;
+  }
+}
 .displaying-dashBoard .dashboard .second div:nth-child(4) {
   border-radius: 0 0 22px 0;
+}
+@media only screen and (max-width: 768px) {
+  .displaying-dashBoard .dashboard .second div:nth-child(4) {
+    border-radius: 0 0 0 0;
+  }
 }
 
 body footer .footerMenu {
@@ -2811,8 +2863,15 @@ html body button {
 
 html body header {
   position: absolute;
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  html body header {
+    display: block;
+  }
 }
 html body header .displaying-responsiveMenu {
+  z-index: 1000;
   position: fixed;
   right: 0;
   bottom: 0;
@@ -2862,6 +2921,29 @@ html body header .displaying-responsiveMenu .responsive-menu-title {
   color: #23272A;
   opacity: 1;
 }
+html body .header-responsive {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  html body .header-responsive {
+    display: block;
+  }
+}
+html body .header-responsive .header-responsive-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #23272A;
+}
+html body .header-responsive .header-responsive-row img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 70px;
+  height: 70px;
+}
 html body #nav-barResponsive {
   display: none;
 }
@@ -2874,7 +2956,7 @@ html body .nav-barResponsive .nav-bar-displaying {
 }
 html body .nav-barResponsive .nav-bar-displaying .nav-bar-item {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 5px;
