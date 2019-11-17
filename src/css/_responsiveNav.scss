@@ -1,69 +1,79 @@
 html {
     body {
-        .responsive-nav {
+        header {
+            position: absolute;
 
-            .action {
-                position: relative;
-                display: block;
-                cursor: pointer;
-                height: 60px;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
+            .displaying-responsiveMenu {
+                position: fixed;
+                right: 0;
+                bottom: 0;
+                background-color: $colorYellow;
 
-                &:hover {
-                    span:nth-child(1) {
-                        transform: rotate(90deg);
-                    }
+                .col-md-6 {
+                    height: 60px;
+                    width: 50px;
 
-                    span:nth-child(2) {
-                        transform: rotate(90deg) translate(-10px, 0);
+                    .action {
+                        position: relative;
+                        display: block;
+                        cursor: pointer;
+                        height: 60px;
+                        width: 50px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+
+                        &:hover {
+                            span:nth-child(1) {
+                                transform: rotate(90deg);
+                            }
+
+                            span:nth-chil(2) {
+                                transform: rotate(90deg) translate(-10px, 0);
+                            }
+                        }
+
+                        .menu-cross {
+                            position: absolute;
+                            height: 25px !important;
+                            width: 2px;
+                            border: none;
+                            box-shadow: none;
+                            background-color: $colorMoreBlack;
+                            opacity: 1;
+                            transition: transform 0.7s ease;
+                            transform-origin: center;
+                        }
                     }
                 }
 
-                .displaying-action {
+                .responsive-menu-title {
                     @include headerPos(flex, row, center, center);
-
-                    .menu-cross {
-                        position: absolute;
-                        height: 25px !important;
-                        width: 3px;
-                        border: none;
-                        box-shadow: none;
-                        background-color: $colorMoreBlack;
-                        opacity: 0.4;
-                        transition: transform 0.7s ease;
-                        transform-origin: center;
-                    }
+                    cursor: pointer;
+                    @include innerBanner($defaultSizeFont/1.5, bolder, 1px, $colorMoreBlack, 1);
                 }
-
             }
+        }
 
-            #toggle {
-                @include resizeImg(50px, 50px);
-                // display: none;
-            }
+        #nav-barResponsive {
+            display: none;
+        }
 
-            #toggle:checked+.responsive-menu {
-                display: block;
-            }
+        .nav-barResponsive {
+            background-color: white;
 
-            .responsive-menu {
-                display: none;
+            .nav-bar-displaying {
+                padding: 15px;
+                border-bottom: 1px solid $colorMoreBlack;
 
-                div:nth-child(1) {
-                    border-top: 1px rgba(0, 0, 0, 0.5) solid;
-                }
-
-                .responsive-menu-item {
+                .nav-bar-item {
                     @include headerPos(flex, row, center, center);
-                    @include paddingRule(12.5px, 12.5px, 0, 0);
-                    border-bottom: 1px rgba(0, 0, 0, 0.5) solid;
+                    padding: 5px;
 
-                    span {
-                        a {
-                            @include innerBanner($defaultSizeFont, lighter, 1px, $colorBlack, 0.6);
+                    a {
+                        span {
+                            @include innerBanner($defaultSizeFont, lighter, 1px, $colorMoreBlack, 1);
                         }
                     }
                 }
