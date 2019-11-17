@@ -17,7 +17,7 @@ html {
                     @include headerPos(flex, column, center, center);
 
                     h3 {
-                        @include innerBanner(auto, bolder, 1px, white, 1);
+                        @include fontRule(16px, 16px, bolder, none, none , none, 1px, white, 1);
                     }
 
                     div {
@@ -25,7 +25,7 @@ html {
                         @include headerPos(flex, row, flex-start !important, flex-end !important);
 
                         p {
-                            @include innerBanner(auto, auto, 1px, white, 1);
+                            @include fontRule(16px, 16px, auto, none, none , none, 1px, white, 1);
                         }
                     }
 
@@ -55,7 +55,7 @@ html {
                     @include headerPos(flex, column, center, center);
 
                     h3 {
-                        @include innerBanner(auto, bolder, 1px, white, 1);
+                        @include fontRule(16px, 16px, bolder, none, none , none, 1px, white, 1);
                     }
 
                     div {
@@ -63,7 +63,7 @@ html {
                         @include headerPos(flex, row, center !important, center !important);
 
                         p {
-                            @include innerBanner(auto, auto, 1px, white, 1);
+                            @include fontRule(16px, 16px, auto, none, none , none, 1px, white, 1);
                         }
                     }
 

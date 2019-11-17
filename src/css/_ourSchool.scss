@@ -25,7 +25,7 @@ section {
             div:nth-child(3) {
                 .displaying-title {
                     @include displayingTitleAndLogo(relative, 370%, 35%);
-                    @include innerBanner($titleSize, bolder, 1px, $colorBlack, 1);
+                    @include fontRule(35px, 35px, bolder, none, none, none, 1px, $colorBlack, 1);
 
                     span::before {
                         @include beforeTitle(51px, 5px, -60px, 25px, "");

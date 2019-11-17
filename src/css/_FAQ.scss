@@ -2,7 +2,7 @@ html {
     body {
         .displaying-Faq {
             @include headerPos(flex, row, center, center);
-            @include marginRule(100px, 0px, 0, 0);
+            @include marginRule(9vh, 0, 0, 0);
 
             img {
                 @include resizeImg(300px, 232px);
@@ -16,12 +16,12 @@ html {
             .container {
                 h4 {
                     text-align: center;
-                    @include marginRule(100px, 30px, 0, 0);
-                    @include innerBanner($mediumTitle, bold, 1px, $colorBlack, 1);
+                    @include marginRule(9vh, 3vh, 0, 0);
+                    @include fontRule(20.8, 25, bold, none, none, none, 1px, $colorBlack, 1);
                 }
 
                 .displaying-card {
-                    @include marginRule(0, 20px, 0, 0);
+                    @include marginRule(0, 2vh, 0, 0);
                     border: none;
 
                     .effect-faq {

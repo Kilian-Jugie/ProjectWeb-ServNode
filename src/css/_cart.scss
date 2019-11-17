@@ -3,7 +3,7 @@ body {
         @include headerPos(flex, column, center, center);
 
         h1 {
-            @include fontRule(2em, bold, none, none, center);
+            @include fontRule(24, 32, bold, none, none, center, 1px, $colorBlack, 1);
             @include paddingRule(0, 2VH, 0, 0);
             @include marginRule(3VH, 3VH, 0, 0);
             width: 100vw;
@@ -40,7 +40,7 @@ body {
                     }
 
                     h2 {
-                        @include fontRule(1.4em, none, none, none, center);
+                        @include fontRule(17.6, 22.4, none, none, none, center, 1px, $colorBlack, 1);
                         @include marginRule(2VH, 6VH, 0, 0);
                     }
 
@@ -51,16 +51,17 @@ body {
                 }
 
                 p {
-                    @include fontRule(1em, none, none, none, justify);
+                    @include fontRule(11.2, 16, none, none, none, justify, 1px, $colorBlack, 1);
                     margin-bottom: 0;
                 }
 
                 button {
                     @include headerPos(flex, row, center, center);
                     min-width: 1.5vw;
-                    @include resizeImg(-moz-fit-content, 3VH);
-                    @include borderRule(1px, solid, #505050, 10px);
+                    @include resizeImg(-moz-fit-content, 4VH);
+                    @include borderRule(1px, solid, #505050, 8px);
                     @include colorRule(#505050, #ffffff);
+                    @include fontRule(11.2, 16, bold, none, none, left, 1px, #ffffff, 1);
                 }
 
                 .cart-price {
@@ -84,7 +85,7 @@ body {
                 }
 
                 p {
-                    @include fontRule(1em, none, none, none, justify);
+                    @include fontRule(11.2, 16, none, none, none, justify, 1px, $colorBlack, 1);
                     margin-bottom: 0;
                 }
             }
@@ -98,7 +99,7 @@ body {
                 border-bottom: 3px solid #505050;
 
                 p {
-                    @include fontRule(1em, none, none, none, justify);
+                    @include fontRule(11.2, 16, none, none, none, justify, 1px, $colorBlack, 1);
                     @include marginRule(3VH, 3VH, 0, 0);
                     align-self: flex-end;
                     margin-bottom: 0;
@@ -106,10 +107,11 @@ body {
 
                 a {
                     @include headerPos(flex, row, center, center);
+                    @include fontRule(11.2, 16, bold, none, none, left, 1px, $colorBlack, 1);
                     min-width: 1.5vw;
                     text-decoration: none;
                     @include marginRule(3VH, 3VH, 0, 0);
-                    @include resizeImg(8vw, 5VH);
+                    @include resizeImg(10vw, 5VH);
                     @include borderRule(1px, solid, #ffc107, 10px);
                     @include colorRule(#ffc107, #ffffff);
                     align-self: center;

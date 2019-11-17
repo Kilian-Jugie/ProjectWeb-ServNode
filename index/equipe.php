@@ -67,8 +67,8 @@
                 <div class="col-md-8 team-text">
                     <div class="displaying-school-team-text">
                         Le CESI est une école d'ingénieur certifié par le CTI. Sa différence majeur vis-à-vis des autres écoles est
-                        a modularité du cursus qu'on peut y suivre et la méthode d'apprentissage. En effet, au fur et a mesure de leur scolarité
-                        es eleves, en fonction de leur envie futur vont pouvoir choisir des spécialisations. Ce choix d'enseignement permet aux
+                        la modularité du cursus qu'on peut y suivre et la méthode d'apprentissage. En effet, au fur et a mesure de leur scolarité
+                        les eleves, en fonction de leur envie futur vont pouvoir choisir des spécialisations. Ce choix d'enseignement permet aux
                         eleves d'etre parfaitement adapté au domaine qu'il visent et de limiter l'apprentissage de domaine inutile proffessionellement
                         parlant. Enfin la methode PBL est une méthode d'apprentissage consistant à mettre les eleves en face de probleme et de stimuler
                         leur envie de rechercher les solutions a ce probleme dans le but de leur apprendre a apprendre par eux meme. En effet cette
