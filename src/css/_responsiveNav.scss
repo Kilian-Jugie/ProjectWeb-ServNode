@@ -1,0 +1,73 @@
+html {
+    body {
+        .responsive-nav {
+
+            .action {
+                position: relative;
+                display: block;
+                cursor: pointer;
+                height: 60px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                &:hover {
+                    span:nth-child(1) {
+                        transform: rotate(90deg);
+                    }
+
+                    span:nth-child(2) {
+                        transform: rotate(90deg) translate(-10px, 0);
+                    }
+                }
+
+                .displaying-action {
+                    @include headerPos(flex, row, center, center);
+
+                    .menu-cross {
+                        position: absolute;
+                        height: 25px !important;
+                        width: 3px;
+                        border: none;
+                        box-shadow: none;
+                        background-color: $colorMoreBlack;
+                        opacity: 0.4;
+                        transition: transform 0.7s ease;
+                        transform-origin: center;
+                    }
+                }
+
+            }
+
+            #toggle {
+                @include resizeImg(50px, 50px);
+                // display: none;
+            }
+
+            #toggle:checked+.responsive-menu {
+                display: block;
+            }
+
+            .responsive-menu {
+                display: none;
+
+                div:nth-child(1) {
+                    border-top: 1px rgba(0, 0, 0, 0.5) solid;
+                }
+
+                .responsive-menu-item {
+                    @include headerPos(flex, row, center, center);
+                    @include paddingRule(12.5px, 12.5px, 0, 0);
+                    border-bottom: 1px rgba(0, 0, 0, 0.5) solid;
+
+                    span {
+                        a {
+                            @include innerBanner($defaultSizeFont, lighter, 1px, $colorBlack, 0.6);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -3,5 +3,9 @@ html {
         .cookie-alert-bis {
             position: fixed !important;
         }
+
+        button {
+            border-radius: $radius !important;
+        }
     }
 }

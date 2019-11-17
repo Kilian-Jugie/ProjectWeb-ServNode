@@ -246,10 +246,10 @@
          </div>
      </section>
      <div class="alert text-center cookiealert cookie-alert-bis show" role="alert">
-         <b>Do you like cookies?</b> &#x1F36A; We use cookies to ensure you get the best experience on our website. <a href="https://cookiesandyou.com/" target="_blank">Learn more</a>
+         <b>Tu aimes les cookies?</b> &#x1F36A; Nous les utilisons pour que tu aies une meilleure experience du site <a href="https://cookiesandyou.com/" target="_blank">En savoir plus</a>
 
          <button type="button" class="btn btn-warning btn-sm acceptcookies" aria-label="Close">
-             I agree
+             Je mange
          </button>
 
          <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>

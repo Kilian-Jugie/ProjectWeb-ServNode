@@ -1,4 +1,4 @@
-<div class="container-fluid header">
+<div class="container-fluid header" style="display:block">
     <div class="row">
         <div class="col-md-4 pos-logo">
             <a href="<?php echo $pathEcole ?>index.php"><img src="<?php echo $pathImg ?>src/img/headerImage/cesiLogo.svg" alt="image du logo de cesi" /></a>
