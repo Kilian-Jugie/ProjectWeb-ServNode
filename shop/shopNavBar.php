@@ -24,7 +24,7 @@
                 ";
         } else {
             echo "<div class='col-md-4 pos-icon-shop'>
-            <a href=''><span></span></a>
+            <a href=''><span>Bonjour</span></a>
             <a href='cart.php'><img src='../src/img/shop/shopping-cart.svg' /></a>
             <a href='../index/login_system/login.php'><button type='button' class='btn btn-outline-warning'>Se connecter</button></a>
             <a href='#'><img src='../src/img/headerImage/searchIonWhite.png' alt='icon de la barre de recherche' /></a>
