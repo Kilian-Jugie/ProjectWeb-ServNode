@@ -2,8 +2,14 @@ html {
     body {
         header {
             position: absolute;
+            display: none;
+
+            @include responsiveSmartphone {
+                display: block;
+            }
 
             .displaying-responsiveMenu {
+                z-index: 1000;
                 position: fixed;
                 right: 0;
                 bottom: 0;
@@ -56,6 +62,24 @@ html {
             }
         }
 
+        .header-responsive {
+            display: none;
+
+            @include responsiveSmartphone {
+                display: block;
+            }
+
+            .header-responsive-row {
+                @include headerPos(flex, row, center, center);
+                background-color: $colorMoreBlack;
+
+                img {
+                    @include marginRule(10px, 10px, 0, 0);
+                    @include resizeImg(70px, 70px);
+                }
+            }
+        }
+
         #nav-barResponsive {
             display: none;
         }
@@ -68,7 +92,7 @@ html {
                 border-bottom: 1px solid $colorMoreBlack;
 
                 .nav-bar-item {
-                    @include headerPos(flex, row, center, center);
+                    @include headerPos(flex, column, center, center);
                     padding: 5px;
 
                     a {

@@ -2,18 +2,18 @@ html {
     body {
         .container-fluid {
             .team-header {
-                @include marginRule(100px, 0, 0, 0);
+                @include marginRule(10vh, 0, 0, 0);
                 @include headerPos(flex, column, center, center);
 
                 div:nth-child(1) {
                     span {
-                        @include innerBanner($titleSize, bolder, 1px, $colorBlack, 1);
+                        @include fontRule(22.4, 35.2, bolder, none, none, none, 1px, $colorBlack, 1);
                     }
                 }
 
                 div:nth-child(2) {
                     span {
-                        @include innerBanner($mediumTitle, bolder, 1px, $colorBlack, 0.5);
+                        @include fontRule(20.8, 24, bolder, none, none, none, 1px, $colorBlack, 0.5);
                     }
                 }
             }
@@ -39,13 +39,15 @@ html {
 
                         .displaying-school-team-text {
                             padding: $padding*20 $padding*20 $padding*7 $padding*20;
+                            
+                            @include fontRule(11.2, 16, none, none, none, none, 1px, $colorBlack, 1);
                         }
                     }
 
                     div:nth-child(3) {
                         .team-displaying-title {
-                            @include displayingTitleAndLogo(relative, 564%, 53%);
-                            @include innerBanner($titleSize, bolder, 1px, $colorBlack, 1);
+                            @include displayingTitleAndLogo(relative, 564%, 48%);
+                            @include fontRule(20.8, 35.2, bolder, none, none, none, 1px, $colorBlack, 1);
 
                             span::before {
                                 @include beforeTitle(51px, 5px, -60px, 25px, "");
@@ -66,7 +68,7 @@ html {
 
                         span {
                             a {
-                                @include innerBanner($titleSize, bolder, 1px, $colorBlack, 1);
+                                @include fontRule(22.4, 35.2, bolder, none, none, none, 1px, $colorBlack, 1);
                                 position: relative;
 
                                 &:nth-child(1)::before {
@@ -114,7 +116,7 @@ html {
             .title-whoWeAre {
 
                 span {
-                    @include innerBanner($titleSize, bolder, 1px, $colorBlack, 1);
+                    @include fontRule(22.4, 35.2, bolder, none, none, none, 1px, $colorBlack, 1);
 
                     &::before {
                         @include beforeTitle(51px, 5px, -60px, 25px, "a");
@@ -144,11 +146,11 @@ html {
                                 @include headerPos(flex, column, center, center);
 
                                 span:nth-child(1) {
-                                    @include innerBanner($defaultSizeFont, bolder, 1px, $colorBlack, 1);
+                                    @include fontRule(16, 16, bolder, none, none, none, 1px, $colorBlack, 1);
                                 }
 
                                 span:nth-child(2) {
-                                    @include innerBanner($defaultSizeFont, none, 1px, $colorBlack, 0.6);
+                                    @include fontRule(16, 16, none, none, none, none, 1px, $colorBlack, 0.6);
                                 }
                             }
                         }
@@ -175,11 +177,11 @@ html {
                             @include headerPos(flex, column, center, center);
 
                             span:nth-child(1) {
-                                @include innerBanner($defaultSizeFont, bolder, 1px, $colorBlack, 1);
+                                @include fontRule(16, 16, bolder, none, none, none, 1px, $colorBlack, 1);
                             }
 
                             span:nth-child(2) {
-                                @include innerBanner($defaultSizeFont, none, 1px, $colorBlack, 0.6);
+                                @include fontRule(16, 16, none, none, none, none, 1px, $colorBlack, 0.6);
                             }
                         }
                     }
@@ -206,7 +208,7 @@ html {
                     .container-fluid {
                         .team-displaying-title-pourquoi {
                             @include displayingTitleAndLogo(relative, 300%, 53%);
-                            @include innerBanner($titleSize, bolder, 1px, $colorBlack, 1);
+                            @include fontRule(22.4, 35.2, bolder, none, none, none, 1px, $colorBlack, 1);
 
                             span::before {
                                 @include beforeTitle(51px, 5px, -60px, 25px, "");
@@ -236,10 +238,10 @@ html {
 
                         .color-black-pourquoi-bde-col {
                             @include headerPos(flex, row, center, center);
-                            @include paddingRule(0, 0, 0, 40px);
+                            @include paddingRule(0, 0, 0, 4vh);
 
                             span {
-                                @include innerBanner($defaultSizeFont, none, none, white, 0.6);
+                                @include fontRule(11.2, 16, none, none, none, none, none, white, 0.6);
                             }
                         }
                     }
@@ -254,28 +256,28 @@ html {
                         @include headerPos(flex, column, center, center);
 
                         div:nth-child(1) {
-                            @include paddingRule(0, 40px, 0, 0);
-                            @include innerBanner($mediumTitle, bolder, 1px, $colorBlack, 1);
+                            @include paddingRule(0, 4vh, 1vh, 0);
+                            @include fontRule(20.8, 24, bolder, none, none, none, 1px, $colorBlack, 1);
                         }
 
                         div:nth-child(2) {
-                            @include paddingRule(0, 10px, 50px, 50px);
-                            @include innerBanner($defaultSizeFont, none, none, $colorBlack, 1);
+                            @include paddingRule(0, 1vh, 5vh, 5vh);
+                            @include fontRule(11.2, 16, none, none, none, none, none, $colorBlack, 1);
                         }
 
                         div:nth-child(3) {
                             @include headerPos(flex, column, center, center);
 
                             span:nth-child(1) {
-                                @include paddingRule(0, 10px, 0, 0);
-                                @include innerBanner($defaultSizeFont, bolder, none, $colorBlack, 1);
+                                @include paddingRule(0, 1vh, 0, 0);
+                                @include fontRule(11.2, 16, bolder, none, none, none, none, $colorBlack, 1);
                             }
 
                             span:nth-child(2) {
                                 @include headerPos(flex, row, center, center);
 
                                 span {
-                                    @include paddingRule(0, 0, 10px, 10px);
+                                    @include paddingRule(0, 0, 1vh, 1vh);
 
                                     img {
                                         @include resizeImg(30px, 30px);
