@@ -89,8 +89,15 @@
                     </div>
                 </div>";
         } 
+        echo "<div class=\"cart-sum\">
+        <div class=\"cart-sumPrice\">
+            <p>sous-total = ".$cart_data->total_cost."€</p>
+            <p>frais de livraison = 8€</p>
+            <p>TVA = ".($cart_data->total_cost*1.2)."€</p>
+        </div>
+    </div>";
         echo "<div class=\"cart-proceed\">
-        <p>Total = ".$cart_data->total_cost."€</p>
+        <p>Total = ".($cart_data->total_cost*1.2+8)."€</p>
         <a href=\"../paymentSystem/checkout.php\">Proceder à l'achat</a>
         </div>";
 
