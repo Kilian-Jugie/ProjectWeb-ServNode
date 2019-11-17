@@ -2,7 +2,7 @@ section {
     .container-fluid {
         .pos-whoAreWe {
             .title-whoAreWe {
-                @include fontRule(35px, 35px, bolder, none, none, none, 1px, $colorBlack, 1);
+                @include fontRule(35, 35, bolder, none, none, none, 1px, $colorBlack, 1);
                 @include headerPos(flex, row, center, center);
 
                 span::before {

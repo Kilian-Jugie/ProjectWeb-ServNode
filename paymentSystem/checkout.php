@@ -7,10 +7,20 @@
     }else{
         header("index.php");
     }
+
+    
+        
 ?>
 
 <!DOCTYPE html>
 <html>
+
+<?php
+    session_start();
+    echo "<script>
+        var user_id = " . $_SESSION['user_log']->user_id . ";
+        </script>";
+?>
 
 <head>
     <meta charset="utf-8" />
@@ -88,7 +98,15 @@
                 <div id="card-errors" role="alert">
                 </div>
             </div>
-            <button>Effectuer la transaction</button>
+            <script>
+                function requestTransaction() {
+                    const http = new XMLHttpRequest();
+                    const url = 'http://bdecesi-api.ml/api/add_order/'+user_id;
+                    http.open("POST", url, true);
+                    http.send();
+                }
+            </script>
+            <button onclick="requestTransaction();">Effectuer la transaction</button>
         </form>
     </div>
                 </div>

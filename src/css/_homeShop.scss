@@ -11,14 +11,14 @@ html {
             }
 
             .row {
-                height: 80px;
+                height: 8vh;
 
                 .pos-logo-shop {
                     @include headerPos(flex, row, flex-start, center);
-                    @include paddingRule(0, 0, 20px, 0);
+                    @include paddingRule(0, 0, 2vh, 0);
 
                     img {
-                        height: 50px;
+                        height: 5vh;
                     }
                 }
 
@@ -58,7 +58,7 @@ html {
 
                         img {
                             color: $colorBlack;
-                            @include resizeImg(30px, 30px);
+                            @include resizeImg(3vh, 3vh);
                         }
                     }
                 }
@@ -70,20 +70,20 @@ html {
                 .second-shop-nav-row {
                     background-color: $colorMoreBlack;
                     @include headerPos(flex, row, center, center);
-                    height: 70px;
+                    height: 7vh;
 
                     .second-shop-nav-col {
                         @include headerPos(flex, row, flex-start, center);
 
                         span {
-                            @include paddingRule(0, 0, 12px, 12px);
-                            @include marginRule(0, 0, 10px, 0);
+                            @include paddingRule(0, 0, 1vh, 1vh);
+                            @include marginRule(0, 0, 1vh, 0);
 
                             a {
-                                @include fontRule(11.4px, 11.4px, auto, none, none , none, 1px, white, 1);
+                                @include fontRule(11.4, 11.4, auto, none, none , none, 1px, white, 1);
 
                                 &:hover {
-                                    @include fontRule(11.4px, 11.4px, auto, none, none , none, 1px, $colorYellow, 1);
+                                    @include fontRule(11.4, 11.4, auto, none, none , none, 1px, $colorYellow, 1);
                                 }
                             }
                         }
@@ -93,11 +93,11 @@ html {
                         @include headerPos(flex, row, flex-end, center);
 
                         span {
-                            @include paddingRule(0, 0, 12px, 12px);
-                            @include marginRule(0, 0, 10px, 0);
+                            @include paddingRule(0, 0, 1vh, 1vh);
+                            @include marginRule(0, 0, 1vh, 0);
 
                             a {
-                                @include fontRule(11.4px, 11.4px, bolder, none, none , none, 1px, #8D0D02, 1);
+                                @include fontRule(11.4, 11.4, bolder, none, none , none, 1px, #8D0D02, 1);
                             }
                         }
                     }
@@ -114,18 +114,18 @@ html {
                 transform: translate(-50%);
                 background-color: white;
                 opacity: 0.8;
-                border-radius: 10px;
+                border-radius: 1vh;
                 @include paddingRule(1VH, 2VH, 1vw, 1vw);
 
                 div:nth-child(1) {
                     span {
-                        @include fontRule(16px, 16px, bold, none, none , none, auto, $colorBlack, 0.8);
+                        @include fontRule(16, 16, bold, none, none , none, auto, $colorBlack, 0.8);
                     }
                 }
 
                 div:nth-child(2) {
                     span {
-                        @include fontRule(16px, 16px, bold, none, none , none, auto, $colorMoreBlack, 1);
+                        @include fontRule(16, 16, bold, none, none , none, auto, $colorMoreBlack, 1);
                     }
                 }
 
@@ -141,16 +141,16 @@ html {
         }
 
         .reduction {
-            height: 60px;
+            height: 6vh;
             background-color: $colorYellow;
             @include headerPos(flex, column, center, center);
 
             span:nth-child(1) {
-                @include fontRule(16px, 16px, bolder, none, none , none, 1px, white, 1);
+                @include fontRule(16, 16, bolder, none, none , none, 1px, white, 1);
             }
 
             span:nth-child(2) {
-                @include fontRule(16px, 16px, none, none, none , none, none, white, 1);
+                @include fontRule(16, 16, none, none, none , none, none, white, 1);
             }
         }
 
@@ -175,8 +175,8 @@ html {
 
                                 button {
                                     border-radius: $radius;
-                                    @include fontRule(16px, 16px, lighter, none, none , none, 1px, white, 1);
-                                    @include resizeImg(150px, 40px);
+                                    @include fontRule(16, 16, lighter, none, none , none, 1px, white, 1);
+                                    @include resizeImg(15vh, 4vh);
                                 }
                             }
                         }
@@ -193,11 +193,11 @@ html {
                     @include headerPos(flex, column, center, center);
 
                     span:nth-child(1) {
-                        @include fontRule(25px, 25px, bolder, none, none , none, 1px, $colorBlack, 1);
+                        @include fontRule(25, 25, bolder, none, none , none, 1px, $colorBlack, 1);
                     }
 
                     span:nth-child(2) {
-                        @include fontRule(16px, 16px, none, none, none , none, 1px, $colorBlack, 1);
+                        @include fontRule(16, 16, none, none, none , none, 1px, $colorBlack, 1);
                     }
                 }
             }
@@ -221,12 +221,12 @@ html {
                             @include headerPos(flex, column, flex-start, flex-start);
 
                             span:nth-child(1) {
-                                @include fontRule(16px, 16px, bolder, none, none , none, 1px, $colorBlack, 1);
+                                @include fontRule(16, 16, bolder, none, none , none, 1px, $colorBlack, 1);
                             }
 
                             div {
                                 .lighter-font {
-                                    @include fontRule(16px, 16px, lighter, none, none , none, 1px, $colorBlack, 0.6);
+                                    @include fontRule(16, 16, lighter, none, none , none, 1px, $colorBlack, 0.6);
                                 }
                             }
 
@@ -244,12 +244,12 @@ html {
                             @include headerPos(flex, column, flex-start, flex-start);
 
                             span:nth-child(1) {
-                                @include fontRule(16px, 16px, bolder, none, none , none, 1px, $colorBlack, 1);
+                                @include fontRule(16, 16, bolder, none, none , none, 1px, $colorBlack, 1);
                             }
 
                             div {
                                 .lighter-font {
-                                    @include fontRule(16px, 16px, lighter, none, none , none, 1px, $colorBlack, 0.6);
+                                    @include fontRule(16, 16, lighter, none, none , none, 1px, $colorBlack, 0.6);
                                 }
                             }
 
@@ -264,8 +264,8 @@ html {
                 @include headerPos(flex, row, center, center);
 
                 span {
-                    @include fontRule(25px, 25px, bolder, none, none , none, 1px, $colorBlack, 1);
-                    @include paddingRule(0, 50px, 0, 0);
+                    @include fontRule(25, 25, bolder, none, none , none, 1px, $colorBlack, 1);
+                    @include paddingRule(0, 5vh, 0, 0);
                 }
             }
 

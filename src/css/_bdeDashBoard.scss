@@ -35,7 +35,7 @@
 
                 div:nth-child(2) {
                     @include headerPos(flex, row, center, center);
-                    @include fontRule(16.7px, 16.7px, bolder, none, none, none, 1px, $colorYellow, 1);
+                    @include fontRule(17.6px, 17.6px, bolder, none, none, none, 1px, $colorYellow, 1);
                 }
             }
 

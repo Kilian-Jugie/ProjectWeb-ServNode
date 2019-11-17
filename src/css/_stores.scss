@@ -3,7 +3,7 @@ body {
         @include headerPos(flex, column, center, center);
 
         h1 {
-            @include fontRule(48px, 48px, bold, none, none, center, 1px, $colorBlack, 1);
+            @include fontRule(48, 48, bold, none, none, center, 1px, $colorBlack, 1);
             @include paddingRule(0, 2VH, 0, 0);
             @include marginRule(10VH, 3VH, 0, 0);
         }
@@ -22,7 +22,7 @@ body {
                     position: relative;
                     top: 50VH;
                     transform: translate(0, -50%);
-                    @include fontRule(80px, 80px, bold, none, none, center, 1px, $colorBlack, 1);
+                    @include fontRule(80, 80, bold, none, none, center, 1px, $colorBlack, 1);
                     letter-spacing: 5px;
 
                     a {

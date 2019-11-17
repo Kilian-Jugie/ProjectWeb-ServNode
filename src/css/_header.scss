@@ -46,7 +46,7 @@ html {
                 padding-right: $padding*2;
 
                 .pseudo {
-                    @include fontRule(12px, 12px, bolder, none, none, none, 1px, $colorBlack, 1);
+                    @include fontRule(12, 12, bolder, none, none, none, 1px, $colorBlack, 1);
                 }
 
                 button {

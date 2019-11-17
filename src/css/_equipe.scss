@@ -46,8 +46,8 @@ html {
 
                     div:nth-child(3) {
                         .team-displaying-title {
-                            @include displayingTitleAndLogo(relative, 564%, 53%);
-                            @include fontRule(22.4, 35.2, bolder, none, none, none, 1px, $colorBlack, 1);
+                            @include displayingTitleAndLogo(relative, 564%, 48%);
+                            @include fontRule(20.8, 35.2, bolder, none, none, none, 1px, $colorBlack, 1);
 
                             span::before {
                                 @include beforeTitle(51px, 5px, -60px, 25px, "");
