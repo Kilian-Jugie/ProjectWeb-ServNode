@@ -18,8 +18,8 @@
                     <div class='col-md-4 pos-icon-shop'>
                         <a href=''><span>Bonjour " . $_SESSION['user_log']->pseudo . "<span></a>
                         <a href='cart.php'><img src='../src/img/shop/shopping-cart.svg' /></a>
-                        <a href='../index/login_system/Log_outScript.php'><button type='button' class='btn btn-outline-dark'> Se deconnecter</button></a>
-                        <a href='#'><img src=../src/img/headerImage/searchIcon.png' alt='icon de la barre de recherche' /></a>
+                        <a href='../index/login_system/Log_outScript.php'><button type='button' class='btn btn-warning'> Se deconnecter</button></a>
+                        <a href='#'><img src='../src/img/headerImage/searchIonWhite.png' alt='icon de la barre de recherche' /></a>
                     </div>
                 ";
         } else {
