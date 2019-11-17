@@ -98,9 +98,12 @@
     height: 100%;
 }
 
-@mixin innerBanner($sizeFont, $weightFont, $letterSpacing, $color, $opacity) {
-    font-size: $sizeFont;
-    font-weight: $weightFont;
+@mixin fontRule($minimumFontSize, $maximumFontSize, $fontWeight, $fontStyle, $textDecoration, $textAlign, $letterSpacing, $color, $opacity) {
+    @include responsiveSizing("font-size", $minimumFontSize, $maximumFontSize);
+    font-weight: $fontWeight;
+    font-style: $fontStyle;
+    text-decoration: $textDecoration;
+    text-align: $textAlign;
     letter-spacing: $letterSpacing;
     color: $color;
     opacity: $opacity;
@@ -147,6 +150,13 @@
 
 //REMI's MIXIN
 
+@mixin centerDisplay{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
 @mixin paddingRule ($paddingTop, $paddingBottom, $paddingLeft, $paddingRight) {
     padding-top: $paddingTop;
     padding-bottom: $paddingBottom;
@@ -171,17 +181,9 @@
     color: $textColor;
 }
 
-@mixin fontRule($fontSize, $fontWeight, $fontStyle, $textDecoration, $textAlign) {
-    font-size: $fontSize;
-    font-weight: $fontWeight;
-    font-style: $fontStyle;
-    text-decoration: $textDecoration;
-    text-align: $textAlign;
-}
-
 @mixin crossLine {
     position: absolute;
-    top: 21px;
+    top: 24px;
     width: 100%;
     bottom: -1px;
     height: 5px;

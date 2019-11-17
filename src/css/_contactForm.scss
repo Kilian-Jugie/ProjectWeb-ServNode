@@ -5,67 +5,83 @@ Contact form CSS
 body {
     .container-fluid {
         .content-contact {
-            @include resizeImg(none, 500px);
-            margin-bottom: 80px;
+            margin-bottom: 7.4vh;
 
             .contactImg {
                 @include headerPos(flex, row, flex-end, flex-start);
 
-                .img-avionPapier {
-                    position: absolute;
-                    @include displayingMano(205px, -26px, none, none);
-                    @include resizeImg(153px, none);
-                }
+                
 
-                img {
-
-                    @include resizeImg(500px, none);
-                    // transform: translate(100px);
+                img
+                {
+                    @include resizeImg(36.4vw);
+                    transform: translate(-5.2vw);
                 }
             }
 
             .contactForm {
-
+                display: flex;
+                flex-direction: column;
                 h1 {
-                    text-align: center;
-                    margin-bottom: 30px;
-                    @include innerBanner($mediumTitle, bolder, 1px, $colorYellow, 1);
+                    width: 16.5vw;
+                    height: 10vh;
+                    align-self: center;
+                    @include centerDisplay;
+                    transform: translate(-3vw);
+                    margin-bottom: 2.8vh;
+                    @include fontRule(14.4, 25, bolder, none, none, none, 1px, $colorYellow, 1);
+                    background-image: url("../img/contactFormImage/paperplaneImage.png");
+                    background-size: 4vw;
+                    background-repeat: no-repeat;
+                    background-position: 12.5vw;
                 }
 
                 form {
 
-                    margin-left: 15%;
+                    margin-left: 15vh;
+
+                    .spaced
+                    {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        width: 24.7vw;
+                        padding-left: 0.3vw;
+                        @include marginRule(1vh, 1vh, none, none);
+                    }
 
                     input {
-                        @include resizeImg(250px, 40px);
+                        @include resizeImg(11.8vw, 4vh);
                         @include borderRule(1px, solid, #505050, 5px);
                         @include colorRule(#505050, #ffffff);
-                        @include marginRule(10px, 10px, 5px, 5px);
+                        @include fontRule(9.6, 16, none, none, none, none, 1px, white, 1);
                     }
 
                     .longInput {
-                        @include resizeImg(515px, 40px);
+                        @include resizeImg(24.4vw, 4vh);
                         @include borderRule(1px, solid, #505050, 5px);
                         @include colorRule(#505050, #ffffff);
-                        @include marginRule(10px, 10px, 5px, 5px);
+                        @include fontRule(9.6, 16, none, none, none, none, 1px, white, 1);
+                        @include marginRule(0.5vw, 0.5vw, 0.3vw, 0.3vw);
                     }
 
                     textarea {
-                        @include resizeImg(515px, 80px);
+                        @include resizeImg(24.4vw, 8vh);
                         @include borderRule(1px, solid, #505050, 5px);
                         @include colorRule(#505050, #ffffff);
-                        @include marginRule(15px, 15px, 5px, 5px);
+                        @include fontRule(9.6, 16, none, none, none, none, 1px, white, 1);
+                        @include marginRule(0.8vw, 0.8vw, 0.3vw, 0.3vw);
                     }
 
                     div:nth-child(5) {
                         @include headerPos(flex, row, flex-start, center);
 
                         button {
-                            @include resizeImg(100px, 30px);
+                            @include resizeImg(7.5vw, 3.6vh);
                             @include borderRule(1px, solid, #ffc107, 5px);
                             @include colorRule(#ffc107, #ffffff);
-                            @include marginRule(15px, 0, 5px, 5px);
-                            @include innerBanner($defaultSizeFont, bolder, 1px, white, 1);
+                            @include marginRule(0.8vw, 0, 0.3vw, 0.3vw);
+                            @include fontRule(9.6, 16, bolder, none, none, none, 1px, white, 1);
                         }
                     }
                 }

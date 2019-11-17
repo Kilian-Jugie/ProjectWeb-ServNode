@@ -18,13 +18,13 @@ html {
 
                 div:nth-child(1) {
                     span {
-                        @include innerBanner($mediumTitle, none, 1px, white, 0.6);
+                        @include fontRule(25, 25, none, none, none, none, 1px, white, 0.6);
                     }
                 }
 
                 div:nth-child(2) {
                     span {
-                        @include innerBanner($titleSize, bolder, 1px, white, 1);
+                        @include fontRule(35, 35, bolder, none, none, none, 1px, white, 1);
                     }
                 }
 

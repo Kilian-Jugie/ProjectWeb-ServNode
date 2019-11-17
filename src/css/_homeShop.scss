@@ -80,10 +80,10 @@ html {
                             @include marginRule(0, 0, 10px, 0);
 
                             a {
-                                @include innerBanner($defaultSizeFont/1.4, auto, 1px, white, 1);
+                                @include fontRule(11.4px, 11.4px, auto, none, none , none, 1px, white, 1);
 
                                 &:hover {
-                                    @include innerBanner($defaultSizeFont/1.4, auto, 1px, $colorYellow, 1);
+                                    @include fontRule(11.4px, 11.4px, auto, none, none , none, 1px, $colorYellow, 1);
                                 }
                             }
                         }
@@ -97,7 +97,7 @@ html {
                             @include marginRule(0, 0, 10px, 0);
 
                             a {
-                                @include innerBanner($defaultSizeFont/1.4, bolder, 1px, #8D0D02, 1);
+                                @include fontRule(11.4px, 11.4px, bolder, none, none , none, 1px, #8D0D02, 1);
                             }
                         }
                     }
@@ -107,8 +107,6 @@ html {
 
         .shop-banner {
             @include headerPos(flex, row, center, center);
-
-            .image-banner {}
 
             .shop-inner-banner {
                 top: 50%;
@@ -121,13 +119,13 @@ html {
 
                 div:nth-child(1) {
                     span {
-                        @include innerBanner(auto, bold, auto, $colorBlack, 0.8);
+                        @include fontRule(16px, 16px, bold, none, none , none, auto, $colorBlack, 0.8);
                     }
                 }
 
                 div:nth-child(2) {
                     span {
-                        @include innerBanner(auto, bold, auto, $colorMoreBlack, 1);
+                        @include fontRule(16px, 16px, bold, none, none , none, auto, $colorMoreBlack, 1);
                     }
                 }
 
@@ -148,11 +146,11 @@ html {
             @include headerPos(flex, column, center, center);
 
             span:nth-child(1) {
-                @include innerBanner(auto, bolder, 1px, white, 1);
+                @include fontRule(16px, 16px, bolder, none, none , none, 1px, white, 1);
             }
 
             span:nth-child(2) {
-                @include innerBanner(auto, none, none, white, 1);
+                @include fontRule(16px, 16px, none, none, none , none, none, white, 1);
             }
         }
 
@@ -177,7 +175,7 @@ html {
 
                                 button {
                                     border-radius: $radius;
-                                    @include innerBanner($defaultSizeFont, lighter, 1px, white, 1);
+                                    @include fontRule(16px, 16px, lighter, none, none , none, 1px, white, 1);
                                     @include resizeImg(150px, 40px);
                                 }
                             }
@@ -195,11 +193,11 @@ html {
                     @include headerPos(flex, column, center, center);
 
                     span:nth-child(1) {
-                        @include innerBanner($mediumTitle, bolder, 1px, $colorBlack, 1);
+                        @include fontRule(25px, 25px, bolder, none, none , none, 1px, $colorBlack, 1);
                     }
 
                     span:nth-child(2) {
-                        @include innerBanner($defaultSizeFont, none, 1px, $colorBlack, 1);
+                        @include fontRule(16px, 16px, none, none, none , none, 1px, $colorBlack, 1);
                     }
                 }
             }
@@ -223,12 +221,12 @@ html {
                             @include headerPos(flex, column, flex-start, flex-start);
 
                             span:nth-child(1) {
-                                @include innerBanner($defaultSizeFont, bolder, 1px, $colorBlack, 1);
+                                @include fontRule(16px, 16px, bolder, none, none , none, 1px, $colorBlack, 1);
                             }
 
                             div {
                                 .lighter-font {
-                                    @include innerBanner($defaultSizeFont, lighter !important, 1px, $colorBlack, 0.6);
+                                    @include fontRule(16px, 16px, lighter, none, none , none, 1px, $colorBlack, 0.6);
                                 }
                             }
 
@@ -246,12 +244,12 @@ html {
                             @include headerPos(flex, column, flex-start, flex-start);
 
                             span:nth-child(1) {
-                                @include innerBanner($defaultSizeFont, bolder, 1px, $colorBlack, 1);
+                                @include fontRule(16px, 16px, bolder, none, none , none, 1px, $colorBlack, 1);
                             }
 
                             div {
                                 .lighter-font {
-                                    @include innerBanner($defaultSizeFont, lighter !important, 1px, $colorBlack, 0.6);
+                                    @include fontRule(16px, 16px, lighter, none, none , none, 1px, $colorBlack, 0.6);
                                 }
                             }
 
@@ -266,7 +264,7 @@ html {
                 @include headerPos(flex, row, center, center);
 
                 span {
-                    @include innerBanner($mediumTitle, bolder, 1px, $colorBlack, 1);
+                    @include fontRule(25px, 25px, bolder, none, none , none, 1px, $colorBlack, 1);
                     @include paddingRule(0, 50px, 0, 0);
                 }
             }

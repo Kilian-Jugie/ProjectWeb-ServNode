@@ -24,7 +24,7 @@ body {
 
                 h1 {
                     @include marginRule(1VH, 1VH, 0, 0);
-                    @include innerBanner($titleSize, bolder, 1px, $colorBlack, 1);
+                    @include fontRule(25.6, 35.2, bolder, none, none, none, 1px, $colorBlack, 1);
                 }
 
                 p {

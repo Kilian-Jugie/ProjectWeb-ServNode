@@ -14,7 +14,7 @@ html {
                     @include paddingRule(0, 0, 30px, 30px);
 
                     button {
-                        @include innerBanner($defaultSizeFont, lighter, 1px, white, 1);
+                        @include fontRule(16px, 16px, lighter, none, none , none, 1px, white, 1);
                         @include resizeImg(150px, 40px);
                         border-radius: $radius;
                     }
@@ -29,11 +29,11 @@ html {
             @include headerPos(flex, column, center, center);
 
             span:nth-child(1) {
-                @include innerBanner(auto, bolder, 1px, white, 1);
+                @include fontRule(16px, 16px, bolder, none, none , none, 1px, white, 1);
             }
 
             span:nth-child(2) {
-                @include innerBanner(auto, none, none, white, 1);
+                @include fontRule(16px, 16px, none, none, none , none, none, white, 1);
             }
         }
 
@@ -69,7 +69,7 @@ html {
                 @include paddingRule(50px, 50px, 0, 0);
 
                 span {
-                    @include innerBanner($titleSize, bolder, 1px, $colorBlack, 1);
+                    @include fontRule(35px, 35px, bolder, none, none , none, 1px, $colorBlack, 1);
                 }
             }
 
