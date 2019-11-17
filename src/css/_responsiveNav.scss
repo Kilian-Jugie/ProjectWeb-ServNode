@@ -57,7 +57,7 @@ html {
                 .responsive-menu-title {
                     @include headerPos(flex, row, center, center);
                     cursor: pointer;
-                    @include innerBanner($defaultSizeFont/1.5, bolder, 1px, $colorMoreBlack, 1);
+                    @include fontRule(10.6, 10.6, bolder, none, none , none, 1px, $colorMoreBlack, 1);
                 }
             }
         }
