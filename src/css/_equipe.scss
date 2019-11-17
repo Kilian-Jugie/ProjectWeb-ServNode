@@ -39,8 +39,12 @@ html {
 
                         .displaying-school-team-text {
                             padding: $padding*20 $padding*20 $padding*7 $padding*20;
-                            
+
                             @include fontRule(11.2, 16, none, none, none, none, 1px, $colorBlack, 1);
+
+                            @include responsiveSmartphone {
+                                padding: $padding $padding*20 $padding*20 $padding*20;
+                            }
                         }
                     }
 
@@ -240,6 +244,10 @@ html {
                             @include headerPos(flex, row, center, center);
                             @include paddingRule(0, 0, 0, 4vh);
 
+                            @include responsiveSmartphone {
+                                @include paddingRule(0, 0, 4vh, 4vh);
+                            }
+
                             span {
                                 @include fontRule(11.2, 16, none, none, none, none, none, white, 0.6);
                             }
@@ -254,6 +262,7 @@ html {
                 .displaying-tools {
                     .displaying-tools-col {
                         @include headerPos(flex, column, center, center);
+                        @include marginRule(0, 15px, 0, 0);
 
                         div:nth-child(1) {
                             @include paddingRule(0, 4vh, 1vh, 0);

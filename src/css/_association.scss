@@ -34,15 +34,19 @@ body {
                     @include fontRule(11.2, 17.6, lighter, none, none, justify, 1px, $colorBlack, 1);
                 }
 
-                a {
-                    text-decoration: none;
-                    font-size: 2VH;
-                    @include resizeImg(13vw, 5VH);
-                    @include borderRule(1px, solid, #ffc107, 22px);
-                    @include colorRule(#ffc107, #ffffff);
-                    @include headerPos(flex, row, center, center);
-                    @include marginRule(1VH, 1VH, 0, 0);
+                div {
+                    a {
+                        text-align: center;
+                        text-decoration: none;
+                        font-size: 1VH;
+                        @include resizeImg(13vw, 5VH);
+                        @include borderRule(1px, solid, #ffc107, 22px);
+                        @include colorRule(#ffc107, #ffffff);
+                        @include headerPos(flex, row, center, center);
+                        @include marginRule(1VH, 1VH, 0, 0);
+                    }
                 }
+
             }
         }
 

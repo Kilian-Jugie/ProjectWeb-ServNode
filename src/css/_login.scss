@@ -17,7 +17,7 @@ html {
                     @include headerPos(flex, column, center, center);
 
                     h3 {
-                        @include fontRule(16, 16, bolder, none, none , none, 1px, white, 1);
+                        @include fontRule(16, 16, bolder, none, none, none, 1px, white, 1);
                     }
 
                     div {
@@ -25,7 +25,7 @@ html {
                         @include headerPos(flex, row, flex-start !important, flex-end !important);
 
                         p {
-                            @include fontRule(16, 16, auto, none, none , none, 1px, white, 1);
+                            @include fontRule(16, 16, auto, none, none, none, 1px, white, 1);
                         }
                     }
 
@@ -55,11 +55,11 @@ html {
                     @include headerPos(flex, column, center, center);
 
                     h3 {
-                        @include fontRule(16, 16, bolder, none, none , none, 1px, white, 1);
+                        @include fontRule(16, 16, bolder, none, none, none, 1px, white, 1);
                     }
 
                     .error-message {
-                        @include fontRule(16, 16, bolder, none, none , none, 1px, red, 1);
+                        @include fontRule(16, 16, bolder, none, none, none, 1px, red, 1);
                     }
 
                     div {
@@ -67,7 +67,7 @@ html {
                         @include headerPos(flex, row, center !important, center !important);
 
                         p {
-                            @include fontRule(16, 16, auto, none, none , none, 1px, white, 1);
+                            @include fontRule(16, 16, auto, none, none, none, 1px, white, 1);
                         }
                     }
 

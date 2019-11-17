@@ -60,7 +60,7 @@
         }
         if (isset($_SESSION['user_log'])) {
             echo "        <div class='col-md-1 nav-bar-item'>
-            <a href='{$pathForLog}Log_outScript.php'><button type='button' class='btn btn-warning'>Se connecter</button></a>
+            <a href='{$pathForLog}Log_outScript.php'><button type='button' class='btn btn-warning'>Se déconnecter</button></a>
         </div>
         <div class='col-md-1 nav-bar-item'>
             <span class='pseudo'>Bonjour " .  $_SESSION['user_log']->pseudo . "</span>
