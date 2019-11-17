@@ -2,7 +2,7 @@
 if (isset($_POST['submit'])) {
     $POST = filter_var_array($_POST, FILTER_SANITIZE_STRING);
     if (isset($POST['user_email']) && isset($POST['password'])) {
-        $get_user_data = file_get_contents("http://www.bdecesi-api.ml/api/user_data/" . $POST['user_email']);
+        $get_user_data = file_get_contents("http://www.bdecesi-api.ml/api/data_when_connect/" . $POST['user_email']);
         $get_user_data = json_decode($get_user_data);
         if ($get_user_data[0]->password == $POST['password']) {
             session_start();
