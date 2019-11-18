@@ -59,6 +59,20 @@ body {
                     @include headerPos(flex, row, center, center);
                     @include marginRule(1VH, 1VH, 0, 0);
                 }
+
+                div
+                {
+                    .reactionButton
+                    {
+                        font-size: 2VH;
+                        @include resizeImg(13vw, 5VH);
+                        @include fitContent(width);
+                        @include borderRule(1px, solid, #ffc107, 5px);
+                        @include colorRule(#ffc107, #ffffff);
+                        @include headerPos(flex, row, center, center);
+                        @include marginRule(1VH, 1VH, 1vw, 1vw);
+                    }
+                }
             }
         }
 

@@ -789,7 +789,7 @@ body .container-fluid .content {
   width: none;
   height: 70VH;
 }
-body .container-fluid .content button {
+body .container-fluid .content .error404button {
   border-radius: 2.1vh;
   font-size: 16px;
   border-width: 2px;
@@ -1971,6 +1971,26 @@ body .displaying-event .row .associationText a {
   margin-left: 0;
   margin-right: 0;
 }
+body .displaying-event .row .associationText div .reactionButton {
+  font-size: 2VH;
+  width: 13vw;
+  height: 5VH;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #ffc107;
+  border-radius: 5px;
+  background-color: #ffc107;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1VH;
+  margin-bottom: 1VH;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
 body .displaying-event .content {
   display: flex;
   flex-direction: row;
@@ -2873,10 +2893,10 @@ html body .accordeon-checkout .card-checkout .card-header-checkout .title-checko
 }
 
 html body .cookie-alert-bis {
-  position: fixed !important;
+  position: fixed;
 }
-html body button {
-  border-radius: 2.1vh !important;
+html body .acceptcookies {
+  border-radius: 2.1vh;
 }
 
 html body header {
