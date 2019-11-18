@@ -25,8 +25,14 @@ $reactions = file_get_contents("http://www.bdecesi-api.ml/api/all_reaction");
                 <input type=\"hidden\" name=\"pub_id\" value=\"" . $event->id_pub . "\">
                 <input type=\"hidden\" name=\"user_id\" value=\"" . $_SESSION['user_log']->user_id . "\">
                 <input type=\"submit\" value=\"Participer\">
-                </form>
-                <div><a href=\"#\">Accéder à l'association</a></div>";
+                </form>";
+                echo "<form method=\"post\"action=\"addCommentaire.php\">
+                <input type=\"hidden\" name=\"pub_id\" value=\"" . $event->id_pub . "\">
+                <input type=\"hidden\" name=\"user_id\" value=\"" . $_SESSION['user_log']->user_id . "\">
+                <input type=\"text\" name=\"content\">
+                <input type=\"submit\" name=\"Envoyer\">
+                </form>";
+                echo "<div><a href=\"#\">Accéder à l'association</a></div>";
             echo "</div>
         </div>" ;
         }
