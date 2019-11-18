@@ -9,7 +9,11 @@ html {
 
             .row-men {
                 position: absolute;
-                @include headerPos(flex, column, center, center);
+                @include headerPos(flex, row, center, center);
+
+                @include responsiveSmartphone {
+                    @include headerPos(flex, column, center, center);
+                }
 
                 .col-men {
                     @include paddingRule(0, 2vh, 3vh, 3vh);

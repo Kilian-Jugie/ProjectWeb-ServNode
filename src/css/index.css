@@ -2407,7 +2407,7 @@ html body section .collection-shop-title span {
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
-  padding-top: 0;
+  padding-top: 5vh;
   padding-bottom: 5vh;
   padding-left: 0;
   padding-right: 0;
@@ -2741,9 +2741,17 @@ html body .shop-banner .image-banner-bis {
 html body .shop-banner .row-men {
   position: absolute;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  html body .shop-banner .row-men {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 html body .shop-banner .row-men .col-men {
   padding-top: 0;
