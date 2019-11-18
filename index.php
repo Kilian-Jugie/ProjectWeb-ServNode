@@ -7,6 +7,11 @@
         "event" => $get_digit["event"],
         "followers" => $get_digit["follower"]
     ];
+
+    require_once "index/download_imgs.php";
+
+    zipImages();
+
     ?>
 
  <!DOCTYPE html>
