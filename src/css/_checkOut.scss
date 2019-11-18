@@ -24,11 +24,11 @@ html {
                         @include headerPos(flex, column, center, center);
 
                         span:nth-child(1) {
-                            @include innerBanner($titleSize, bolder, 2px, $colorBlack, 1);
+                            @include fontRule(35, 35, bolder, none, none , none, 2px, $colorBlack, 1);
                         }
 
                         span:nth-child(2) {
-                            @include innerBanner($mediumTitle, lighter, 1px, $colorBlack, 0.7);
+                            @include fontRule(25, 25, lighter, none, none , none, 1px, $colorBlack, 0.7);
                         }
                     }
                 }
@@ -42,7 +42,7 @@ html {
 
 
                         button {
-                            @include innerBanner($titleSize, bolder, 1px, $colorBlack, 1);
+                            @include fontRule(35, 35, bolder, none, none , none, 1px, $colorBlack, 1);
                             @include resizeImg(auto, 8rem);
                         }
                     }

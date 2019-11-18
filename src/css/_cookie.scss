@@ -1,11 +1,11 @@
 html {
     body {
         .cookie-alert-bis {
-            position: fixed !important;
+            position: fixed;
         }
 
-        button {
-            border-radius: $radius !important;
+        .acceptcookies {
+            border-radius: $radius;
         }
     }
 }

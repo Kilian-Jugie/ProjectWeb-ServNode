@@ -30,7 +30,7 @@
             <div class="col-md-5 errorText">
                 <h1>YOU SHALL NOT PASS !</h1>
                 <p>Nous sommes désolé mais vous n'avez pas acces à cette page.</p>
-                <a href="../index.php"><button type="button" class="btn btn-warning">Go back Home</button></a>
+                <a href="../index.php"><button type="button" class="btn btn-warning error404Button">Go back Home</button></a>
             </div>
 
             <div class="digit">

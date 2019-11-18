@@ -114,7 +114,7 @@ html body .header .pos-nav-menu span a {
   font-weight: bolder;
   letter-spacing: 1px;
   padding: 1vh;
-  font-size: 3vh;
+  font-size: 1vh;
 }
 html body .header .pos-nav-menu span a::after {
   position: absolute;
@@ -357,7 +357,7 @@ section .container-fluid .displaying-whoAreWeImage .resize-whoAreWeImage {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: calc((25pxpx) + (25px - 25px) * ((100vw - 768px) / (1920 - 768)));
+  font-size: calc((25px) + (25 - 25) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
   font-style: none;
   text-decoration: none;
@@ -371,7 +371,7 @@ section .container-fluid .displaying-whoAreWeImage .resize-whoAreWeImage {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: calc((16.7pxpx) + (16.7px - 16.7px) * ((100vw - 768px) / (1920 - 768)));
+  font-size: calc((17.6px) + (17.6 - 17.6) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
   font-style: none;
   text-decoration: none;
@@ -392,7 +392,7 @@ section .container-fluid .displaying-whoAreWeImage .resize-whoAreWeImage {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: calc((25pxpx) + (25px - 25px) * ((100vw - 768px) / (1920 - 768)));
+  font-size: calc((25px) + (25 - 25) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
   font-style: none;
   text-decoration: none;
@@ -406,7 +406,7 @@ section .container-fluid .displaying-whoAreWeImage .resize-whoAreWeImage {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: calc((17.6pxpx) + (17.6px - 17.6px) * ((100vw - 768px) / (1920 - 768)));
+  font-size: calc((17.6px) + (17.6 - 17.6) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
   font-style: none;
   text-decoration: none;
@@ -428,7 +428,7 @@ section .container-fluid .displaying-whoAreWeImage .resize-whoAreWeImage {
   align-items: center;
 }
 .displaying-dashBoard .dashboard .row .title-dashBoard div:nth-child(1) span {
-  font-size: calc((25pxpx) + (25px - 25px) * ((100vw - 768px) / (1920 - 768)));
+  font-size: calc((25px) + (25 - 25) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
   font-style: none;
   text-decoration: none;
@@ -789,7 +789,7 @@ body .container-fluid .content {
   width: none;
   height: 70VH;
 }
-body .container-fluid .content button {
+body .container-fluid .content .error404button {
   border-radius: 2.1vh;
   font-size: 16px;
   border-width: 2px;
@@ -961,6 +961,11 @@ html body section .container-fluid .row .team-text .displaying-school-team-text 
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
+}
+@media only screen and (max-width: 768px) {
+  html body section .container-fluid .row .team-text .displaying-school-team-text {
+    padding: 1vh 20vh 20vh 20vh;
+  }
 }
 html body section .container-fluid .row div:nth-child(3) .team-displaying-title {
   position: relative;
@@ -1262,6 +1267,14 @@ html body section .displaying-pourquoi-bde .displaying-block-container .row .col
   padding-left: 0;
   padding-right: 4vh;
 }
+@media only screen and (max-width: 768px) {
+  html body section .displaying-pourquoi-bde .displaying-block-container .row .color-black-pourquoi-bde-col {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 4vh;
+    padding-right: 4vh;
+  }
+}
 html body section .displaying-pourquoi-bde .displaying-block-container .row .color-black-pourquoi-bde-col span {
   font-size: calc((11.2px) + (16 - 11.2) * ((100vw - 768px) / (1920 - 768)));
   font-weight: none;
@@ -1277,6 +1290,10 @@ html body section .container-fluid .displaying-tools .displaying-tools-col {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 0;
+  margin-bottom: 15px;
+  margin-left: 0;
+  margin-right: 0;
 }
 html body section .container-fluid .displaying-tools .displaying-tools-col div:nth-child(1) {
   padding-top: 0;
@@ -1427,7 +1444,9 @@ body .cgv .content-cgv .bordered {
   padding-bottom: 1VH;
   padding-left: 2vw;
   padding-right: 2vw;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
+  width: fit-content;
   max-width: 50vw;
 }
 
@@ -1446,7 +1465,9 @@ body .legal-notice .content-legal-notice {
   padding-bottom: 1VH;
   padding-left: 2vw;
   padding-right: 2vw;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
+  width: fit-content;
   max-width: 60vw;
 }
 body .legal-notice .content-legal-notice h1 {
@@ -1466,7 +1487,9 @@ body .legal-notice .content-legal-notice h1 {
   padding-bottom: 2VH;
   padding-left: 1vw;
   padding-right: 1vw;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
+  width: fit-content;
   background-color: #ffffff;
 }
 body .legal-notice .content-legal-notice p {
@@ -1564,7 +1587,9 @@ body .cpds .cpds-content .bordered {
   margin-bottom: 1VH;
   margin-left: 0.5vw;
   margin-right: 0.5vw;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
+  width: fit-content;
   max-width: 50vw;
 }
 body .cpds .cpds-content div {
@@ -1649,7 +1674,7 @@ html .log section .form-displaying form {
   align-items: center;
 }
 html .log section .form-displaying form h3 {
-  font-size: calc((16pxpx) + (16px - 16px) * ((100vw - 768px) / (1920 - 768)));
+  font-size: calc((16px) + (16 - 16) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
   font-style: none;
   text-decoration: none;
@@ -1666,7 +1691,7 @@ html .log section .form-displaying form div {
   align-items: flex-end !important;
 }
 html .log section .form-displaying form div p {
-  font-size: calc((16pxpx) + (16px - 16px) * ((100vw - 768px) / (1920 - 768)));
+  font-size: calc((16px) + (16 - 16) * ((100vw - 768px) / (1920 - 768)));
   font-weight: auto;
   font-style: none;
   text-decoration: none;
@@ -1703,7 +1728,7 @@ html .log section .form-displaying-bis form {
   align-items: center;
 }
 html .log section .form-displaying-bis form h3 {
-  font-size: calc((16pxpx) + (16px - 16px) * ((100vw - 768px) / (1920 - 768)));
+  font-size: calc((16px) + (16 - 16) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
   font-style: none;
   text-decoration: none;
@@ -1713,8 +1738,11 @@ html .log section .form-displaying-bis form h3 {
   opacity: 1;
 }
 html .log section .form-displaying-bis form .error-message {
-  font-size: lighter;
+  font-size: calc((16px) + (16 - 16) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: red;
   opacity: 1;
@@ -1727,7 +1755,7 @@ html .log section .form-displaying-bis form div {
   align-items: center !important;
 }
 html .log section .form-displaying-bis form div p {
-  font-size: calc((16pxpx) + (16px - 16px) * ((100vw - 768px) / (1920 - 768)));
+  font-size: calc((16px) + (16 - 16) * ((100vw - 768px) / (1920 - 768)));
   font-weight: auto;
   font-style: none;
   text-decoration: none;
@@ -1810,9 +1838,10 @@ body .displaying-association .row .associationText p {
   color: #343A40;
   opacity: 1;
 }
-body .displaying-association .row .associationText a {
+body .displaying-association .row .associationText div a {
+  text-align: center;
   text-decoration: none;
-  font-size: 2VH;
+  font-size: 1VH;
   width: 13vw;
   height: 5VH;
   border: 1px solid #ffc107;
@@ -1869,8 +1898,11 @@ body .displaying-event h1 {
   opacity: 1;
 }
 body .displaying-event .row {
-  width: -moz-fit-content;
+  width: auto;
   height: 70VH;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   border: 2px solid #808080;
   border-radius: 5px;
   padding-top: 1VH;
@@ -1920,6 +1952,10 @@ body .displaying-event .row div .associationImg {
 body .displaying-event .row .associationText {
   display: flex;
   flex-direction: column;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
 }
 body .displaying-event .row .associationText h2 {
   margin-top: 1VH;
@@ -1950,11 +1986,11 @@ body .displaying-event .row .associationText p {
   color: #343A40;
   opacity: 1;
 }
-body .displaying-event .row .associationText a {
+body .displaying-event .row .associationText div a {
   text-decoration: none;
   font-size: 2VH;
   width: 13vw;
-  height: 5VH;
+  height: 4VH;
   border: 1px solid #ffc107;
   border-radius: 5px;
   background-color: #ffc107;
@@ -1965,8 +2001,28 @@ body .displaying-event .row .associationText a {
   align-items: center;
   margin-top: 1VH;
   margin-bottom: 1VH;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+}
+body .displaying-event .row .associationText div .reactionButton {
+  font-size: 2VH;
+  width: 13vw;
+  height: 4VH;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #ffc107;
+  border-radius: 5px;
+  background-color: #ffc107;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1VH;
+  margin-bottom: 1VH;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
 }
 body .displaying-event .content {
   display: flex;
@@ -1974,8 +2030,11 @@ body .displaying-event .content {
   justify-content: center;
   align-items: center;
 }
-body .displaying-event .content p {
+body .displaying-event .content .associationText {
   transform: translate(-2vW);
+}
+body .displaying-event .content .associationText div {
+  transform: translate(-0.5vW);
 }
 body .displaying-event .reverseContent {
   display: flex;
@@ -1983,8 +2042,11 @@ body .displaying-event .reverseContent {
   justify-content: center;
   align-items: center;
 }
-body .displaying-event .reverseContent p {
+body .displaying-event .reverseContent .associationText {
   transform: translate(2vW);
+}
+body .displaying-event .reverseContent .associationText div {
+  transform: translate(0.5vW);
 }
 
 html body .header-shop {
@@ -1993,9 +2055,15 @@ html body .header-shop {
   opacity: 0.8;
   height: 80px;
   opacity: 1;
+  display: block;
+}
+@media only screen and (max-width: 768px) {
+  html body .header-shop {
+    display: none;
+  }
 }
 html body .header-shop .row {
-  height: 8vh;
+  height: 100%;
 }
 html body .header-shop .row .pos-logo-shop {
   display: flex;
@@ -2022,7 +2090,7 @@ html body .header-shop .row .pos-nav-menu-shop span a {
   font-weight: bold;
   letter-spacing: 1px;
   padding: 1vh;
-  font-size: 3vh;
+  font-size: 1vh;
 }
 html body .header-shop .row .pos-nav-menu-shop span a::after {
   position: absolute;
@@ -2156,7 +2224,7 @@ html body .shop-banner .shop-inner-banner div:nth-child(1) span {
   font-style: none;
   text-decoration: none;
   text-align: none;
-  letter-spacing: auto;
+  letter-spacing: 1px;
   color: #343A40;
   opacity: 0.8;
 }
@@ -2166,7 +2234,7 @@ html body .shop-banner .shop-inner-banner div:nth-child(2) span {
   font-style: none;
   text-decoration: none;
   text-align: none;
-  letter-spacing: auto;
+  letter-spacing: 1px;
   color: #23272A;
   opacity: 1;
 }
@@ -2178,6 +2246,16 @@ html body .shop-banner .shop-inner-banner div:nth-child(3) div {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+html body .shop-banner .shop-inner-banner div:nth-child(3) div a button {
+  font-size: calc((10px) + (10 - 10) * ((100vw - 768px) / (1920 - 768)));
+  font-weight: lighter;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
+  letter-spacing: 1px;
+  color: #23272A;
+  opacity: 1;
 }
 html body .reduction {
   height: 6vh;
@@ -2370,7 +2448,7 @@ html body section .collection-shop-title span {
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
-  padding-top: 0;
+  padding-top: 5vh;
   padding-bottom: 5vh;
   padding-left: 0;
   padding-right: 0;
@@ -2567,8 +2645,11 @@ body .cart-displaying .cart-content .cart-item button {
   justify-content: center;
   align-items: center;
   min-width: 1.5vw;
-  width: -moz-fit-content;
+  width: auto;
   height: 4VH;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   border: 1px solid #505050;
   border-radius: 8px;
   background-color: #505050;
@@ -2688,7 +2769,9 @@ body .cart-displaying .cart-content .cart-bordered {
   padding-bottom: 0.5VH;
   padding-left: 0.5vw;
   padding-right: 0.5vw;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
+  width: fit-content;
   max-width: 50vw;
 }
 
@@ -2703,10 +2786,22 @@ html body .shop-banner .image-banner-bis {
 }
 html body .shop-banner .row-men {
   position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  html body .shop-banner .row-men {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 html body .shop-banner .row-men .col-men {
   padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 2vh;
   padding-left: 3vh;
   padding-right: 3vh;
 }
@@ -2793,6 +2888,12 @@ html body section .collection-shop-items .product-men {
   padding-left: 0;
   padding-right: 0;
 }
+html body section .collection-shop-items .product-men .collection-shop-items-col {
+  margin-top: 0;
+  margin-bottom: 2vh;
+  margin-left: 0;
+  margin-right: 0;
+}
 
 html body section .checkout-header {
   margin-top: 100px;
@@ -2831,22 +2932,31 @@ html body section .checkout-header .checkout-header-row .checkout-header-span {
   align-items: center;
 }
 html body section .checkout-header .checkout-header-row .checkout-header-span span:nth-child(1) {
-  font-size: 35px;
+  font-size: calc((35px) + (35 - 35) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 2px;
   color: #343A40;
   opacity: 1;
 }
 html body section .checkout-header .checkout-header-row .checkout-header-span span:nth-child(2) {
-  font-size: 25px;
+  font-size: calc((25px) + (25 - 25) * ((100vw - 768px) / (1920 - 768)));
   font-weight: lighter;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 0.7;
 }
 html body .accordeon-checkout .card-checkout .card-header-checkout .title-checkout button {
-  font-size: 35px;
+  font-size: calc((35px) + (35 - 35) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
@@ -2855,10 +2965,10 @@ html body .accordeon-checkout .card-checkout .card-header-checkout .title-checko
 }
 
 html body .cookie-alert-bis {
-  position: fixed !important;
+  position: fixed;
 }
-html body button {
-  border-radius: 22px !important;
+html body .acceptcookies {
+  border-radius: 2.1vh;
 }
 
 html body header {
@@ -2915,8 +3025,11 @@ html body header .displaying-responsiveMenu .responsive-menu-title {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  font-size: 0.6666666667em;
+  font-size: calc((10.6px) + (10.6 - 10.6) * ((100vw - 768px) / (1920 - 768)));
   font-weight: bolder;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #23272A;
   opacity: 1;
@@ -2962,8 +3075,11 @@ html body .nav-barResponsive .nav-bar-displaying .nav-bar-item {
   padding: 5px;
 }
 html body .nav-barResponsive .nav-bar-displaying .nav-bar-item a span {
-  font-size: 1em;
+  font-size: calc((16px) + (16 - 16) * ((100vw - 768px) / (1920 - 768)));
   font-weight: lighter;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
   letter-spacing: 1px;
   color: #23272A;
   opacity: 1;
