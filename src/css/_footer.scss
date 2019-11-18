@@ -13,7 +13,8 @@ body {
 
                     a {
                         text-decoration: none;
-                        @include innerBanner($defaultSizeFont, none, 0px, $colorBlack, 1);
+                        @include fontRule(12.8, 16, none, none, none, none, 0px, $colorBlack, 1);
+                        
                         @include colorRule(none, #808080);
                         transition: color 0.2s ease-in 0s;
 
@@ -36,7 +37,7 @@ body {
                 img {
                     @include resizeImg(25px, none);
                     @include marginRule(none, none, 15px, 15px);
-                    @include borderRule(1px, solid, #000000, 6px);
+                    @include borderRule(1px, solid, #000000, 5px);
                     transition: background-color 0.2s ease-in 0s;
                 }
 
@@ -68,7 +69,7 @@ body {
                 .subscribeText {
                     @include headerPos(flex, row, center, center);
                     height: default;
-                    @include innerBanner($defaultSizeFont, bolder, 1px, $colorBlack, 0.7);
+                    @include fontRule(16, 16, bolder, none, none, none, 1px, $colorBlack, 0.7);
                     padding-bottom: 10px;
                 }
 

@@ -21,25 +21,14 @@
 </head>
 
 <body>
-    <div class="container-fluid header">
-        <div class="row">
-            <div class="col-md-4 pos-logo">
-                <a href="../index.php"><img src="../src/img/headerImage/cesiLogo.svg" alt="image du logo de cesi" /></a>
-            </div>
-            <div class="col-md-4 pos-nav-menu">
-                <span><a href="../index.php#ecole">ECOLE</a></span>
-                <span><a href="equipe.php">EQUIPE</a></span>
-                <span><a href="../index/association.php">CLUB&ASSOC</a></span>
-                <span><a href="../shop/shopIndex.php">BOUTIQUE</a></span>
-                <span><a href="event.php">EVENT</a></span>
-
-            </div>
-            <div class="col-md-4 pos-icon">
-                <a href="../index/login_system/login.php"><button type="button" class="btn btn-outline-dark">Se connecter</button></a>
-                <a href="#"><img src="../src/img/headerImage/searchIcon.png" alt="icon de la barre de recherche" /></a>
-            </div>
-        </div>
-    </div>
+    <?php
+    $pathEcole = '../';
+    $pathImg = '../';
+    $path = '';
+    $pathForShop = '../shop/';
+    $pathForLog = '../index/login_system/';
+    include '../navBar.php';
+    ?>
 
     <!-- don't delete this cause it solve an issue of relative position on displaying-Faq -->
     <section class="container-fluid">
@@ -68,7 +57,7 @@
                         </h5>
                     </div>
 
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
                             Le montant minimum d'une commande est le montant minimum qu'il faut atteindre pour déclencher une commande.
                             Il n'y a pas de montant minimum! La seule chose à prendre en compte c'est que les frais de ports en-dessous
@@ -193,7 +182,7 @@
                         </h5>
                     </div>
 
-                    <div id="collapseEight" class="collapse show" aria-labelledby="headingEight" data-parent="#accordion">
+                    <div id="collapseEight" class="collapse " aria-labelledby="headingEight" data-parent="#accordion">
                         <div class="card-body">
                             Vous pouvez annuler votre commande tant que votre paquet n'a pas quitté nos entrepôts. Pour ce faire,
                             il vous suffit d'écrire un email à l'attention de notre service client dans lequel vous indiquez le numéro de votre
@@ -258,7 +247,7 @@
                         </h5>
                     </div>
 
-                    <div id="collapseEleven" class="collapse show" aria-labelledby="headingEleven" data-parent="#accordion">
+                    <div id="collapseEleven" class="collapse " aria-labelledby="headingEleven" data-parent="#accordion">
                         <div class="card-body">
                             Plusieurs choix s'offrent à vous. Vous pouvez payer par carte cadeau, carte de crédit, paypal depuis notre site,
                             ou vous pouvez payer en liquide, chèque si vous êtes étudiant à l'école du CESI.
@@ -328,7 +317,7 @@
                         </h5>
                     </div>
 
-                    <div id="collapseFifteen" class="collapse show" aria-labelledby="headingFifteen" data-parent="#accordion">
+                    <div id="collapseFifteen" class="collapse " aria-labelledby="headingFifteen" data-parent="#accordion">
                         <div class="card-body">
                             Les frais d'envoi sont à 8.90 EUR et gratuit à partir de 69.00 EU d'achat.
                         </div>
@@ -386,10 +375,9 @@
                         </h5>
                     </div>
 
-                    <div id="collapseEighteen" class="collapse show" aria-labelledby="headingEighteen" data-parent="#accordion">
+                    <div id="collapseEighteen" class="collapse " aria-labelledby="headingEighteen" data-parent="#accordion">
                         <div class="card-body">
                             Il faut faire parti de l'école CESI pour rentrer dans le BDE.
-
                         </div>
                     </div>
                 </div>

@@ -1,9 +1,10 @@
 html {
     body {
         @include resetToZero;
+        @include setMax;
 
         a {
-            @include innerBanner(none, none, none, $colorYellow, 1);
+            @include fontRule(none, none, none, none, none, left, none, $colorYellow, 1);
         }
 
         a:hover {

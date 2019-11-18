@@ -26,14 +26,13 @@
     </div>
     <div class="container-fluid">
         <div class="row content-contact">
-            <div class="col-md-6 contactImg">
+            <div class="col-md-7 contactImg">
                 <img src="../src/img/contactFormImage/contactUsImage.png" alt="imgContact">
-                <img class="img-avionPapier" src="../src/img/contactFormImage/paperplaneImage.png" alt="avion en papier">
             </div>
-            <div class="col-md-6 contactForm">
+            <div class="col-md-5 contactForm">
                 <h1>CONTACTEZ-NOUS</h1>
                 <form action="/ma-page-de-traitement" method="post">
-                    <div>
+                    <div class="spaced">
                         <input type="text" id="name" placeholder="Prénom..." name="user_name">
 
                         <input type="text" id="name" placeholder="Nom..." name="user_name">

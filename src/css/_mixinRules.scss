@@ -22,6 +22,10 @@
     @include setMax;
     overflow-X: hidden;
 
+    @include responsiveSmartphone {
+        overflow-X: hidden;
+    }
+
     .container {
         @include noPaddingMaring;
 
@@ -35,6 +39,10 @@
     }
 
     .col {
+        &-md-2 {
+            @include noPaddingMaring()
+        }
+
         &-md-4 {
             @include noPaddingMaring;
         }
@@ -90,9 +98,12 @@
     height: 100%;
 }
 
-@mixin innerBanner($sizeFont, $weightFont, $letterSpacing, $color, $opacity) {
-    font-size: $sizeFont;
-    font-weight: $weightFont;
+@mixin fontRule($minimumFontSize, $maximumFontSize, $fontWeight, $fontStyle, $textDecoration, $textAlign, $letterSpacing, $color, $opacity) {
+    @include responsiveSizing("font-size", $minimumFontSize, $maximumFontSize);
+    font-weight: $fontWeight;
+    font-style: $fontStyle;
+    text-decoration: $textDecoration;
+    text-align: $textAlign;
     letter-spacing: $letterSpacing;
     color: $color;
     opacity: $opacity;
@@ -139,6 +150,13 @@
 
 //REMI's MIXIN
 
+@mixin centerDisplay {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
 @mixin paddingRule ($paddingTop, $paddingBottom, $paddingLeft, $paddingRight) {
     padding-top: $paddingTop;
     padding-bottom: $paddingBottom;
@@ -163,17 +181,9 @@
     color: $textColor;
 }
 
-@mixin fontRule($fontSize, $fontWeight, $fontStyle, $textDecoration, $textAlign) {
-    font-size: $fontSize;
-    font-weight: $fontWeight;
-    font-style: $fontStyle;
-    text-decoration: $textDecoration;
-    text-align: $textAlign;
-}
-
 @mixin crossLine {
     position: absolute;
-    top: 21px;
+    top: 24px;
     width: 100%;
     bottom: -1px;
     height: 5px;
@@ -185,33 +195,55 @@
     left: 0;
 }
 
+@mixin phoneResponsive {
+    @media only screen and (max-widt:786px) {
+        @content;
+    }
+}
+
+@mixin fitContent($property) {
+    #{$property}: -webkit-fit-content;
+    #{$property}: -moz-fit-content;
+    #{$property}: fit-content;
+}
+
 // Terminer le putain de mixin pour le responsive (les dimensions à optimiser) //responsive making
-@mixin responsive($media) {
-    @if $media>=1800 or $media>=1900 {
+// @mixin responsive($media) {
+//     @if $media>=1800 or $media>=1900 {
 
-        //bigScreen of Opera
-        @media only screen and (min-width : 1800px) and (max-width:1899px) {
-            @content;
-        }
+//         //bigScreen of Opera
+//         @media only screen and (min-width : 1800px) and (max-width:1899px) {
+//             @content;
+//         }
+//     }
+
+//     @else if $media>=1300 or $media <=1795 {
+
+//         //Screen of Chrome 
+//         @media only screen and (min-width: 1300px) and (max-width: 1795) {
+//             @content;
+//         }
+//     }
+
+//     @else if $media>=1900 {
+//         @media only screen and (max-width: 1900px) {
+//             @content;
+//         }
+//     }
+
+//     @else if $media <=785 {
+//         @media only screen and (max-width: 785px) {
+//             @content;
+//         }
+//     }
+// }
+
+@mixin responsiveSmartphone {
+    @media only screen and (max-width:768px) {
+        @content;
     }
+}
 
-    @else if $media>=1300 or $media <=1795 {
-
-        //Screen of Chrome 
-        @media only screen and (min-width: 1300px) and (max-width: 1795) {
-            @content;
-        }
-    }
-
-    @else if $media>=1900 {
-        @media only screen and (max-width: 1900px) {
-            @content;
-        }
-    }
-
-    @else if $media <=785 {
-        @media only screen and (max-width: 785px) {
-            @content;
-        }
-    }
+@mixin responsiveSizing($property, $minimumFontSize, $maximumFontSize) {
+    #{$property}: calc((#{$minimumFontSize}px) + (#{$maximumFontSize} - #{$minimumFontSize}) * ((100vw - 768px) / (1920 - 768)));
 }

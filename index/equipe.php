@@ -21,25 +21,14 @@
 </head>
 
 <body>
-    <div class="container-fluid header">
-        <div class="row">
-            <div class="col-md-4 pos-logo">
-                <a href="../index.php"><img src="../src/img/headerImage/cesiLogo.svg" alt="image du logo de cesi" /></a>
-            </div>
-            <div class="col-md-4 pos-nav-menu">
-                <span><a href="../index.php#ecole">ECOLE</a></span>
-                <span><a href="equipe.php">EQUIPE</a></span>
-                <span><a href="../index/association.php">CLUB&ASSOC</a></span>
-                <span><a href="../shop/shopIndex.php">BOUTIQUE</a></span>
-                <span><a href="../index/event.php">EVENT</a></span>
-
-            </div>
-            <div class="col-md-4 pos-icon">
-                <a href="../index/login_system/login.php"><button type="button" class="btn btn-outline-dark">Se connecter</button></a>
-                <a href="#"><img src="../src/img/headerImage/searchIcon.png" alt="icon de la barre de recherche" /></a>
-            </div>
-        </div>
-    </div>
+    <?php
+    $pathEcole = '../';
+    $pathImg = '../';
+    $path = '';
+    $pathForShop = '../shop/';
+    $pathForLog = '../index/login_system/';
+    include '../navBar.php';
+    ?>
 
     <!-- don't delete this cause it solve an issue of relative position on displaying-Faq -->
     <section class="container-fluid">
@@ -78,8 +67,8 @@
                 <div class="col-md-8 team-text">
                     <div class="displaying-school-team-text">
                         Le CESI est une école d'ingénieur certifié par le CTI. Sa différence majeur vis-à-vis des autres écoles est
-                        a modularité du cursus qu'on peut y suivre et la méthode d'apprentissage. En effet, au fur et a mesure de leur scolarité
-                        es eleves, en fonction de leur envie futur vont pouvoir choisir des spécialisations. Ce choix d'enseignement permet aux
+                        la modularité du cursus qu'on peut y suivre et la méthode d'apprentissage. En effet, au fur et a mesure de leur scolarité
+                        les eleves, en fonction de leur envie futur vont pouvoir choisir des spécialisations. Ce choix d'enseignement permet aux
                         eleves d'etre parfaitement adapté au domaine qu'il visent et de limiter l'apprentissage de domaine inutile proffessionellement
                         parlant. Enfin la methode PBL est une méthode d'apprentissage consistant à mettre les eleves en face de probleme et de stimuler
                         leur envie de rechercher les solutions a ce probleme dans le but de leur apprendre a apprendre par eux meme. En effet cette

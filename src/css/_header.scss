@@ -3,6 +3,10 @@ html {
         .header {
             @include headerBackground(white);
 
+            @include responsiveSmartphone {
+                display: none;
+            }
+
             .pos-logo {
                 @include headerPos(flex, row, flex-start, none);
 
@@ -21,7 +25,7 @@ html {
                         font-weight: bolder;
                         letter-spacing: 1px;
                         padding: $padding;
-                        font-size: $sizeFont+2;
+                        font-size: $sizeFont;
 
                         &::after {
                             @include undescoreLine(0, $colorBlack);
@@ -39,7 +43,11 @@ html {
             @include headerPos(flex, row, flex-end, center);
 
             a {
-                padding-right: $padding*3;
+                padding-right: $padding*2;
+
+                .pseudo {
+                    @include fontRule(12, 12, bolder, none, none, none, 1px, $colorBlack, 1);
+                }
 
                 button {
                     @include buttonStyle($sizeFont);

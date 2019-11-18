@@ -15,7 +15,11 @@ if (isset($_POST['submit'])) {
                 "campus_id" => $get_user_data[0]->id_campus
             ];
             $_SESSION['user_log'] = $user;
+<<<<<<< HEAD
             header("Location: ../../index.php");
+=======
+            header("Location: login.php");
+>>>>>>> 4c2034474d606f30be72e321b4c55fcb2937895c
         } else {
             header("Location: login.php?info=error_password");
         }
