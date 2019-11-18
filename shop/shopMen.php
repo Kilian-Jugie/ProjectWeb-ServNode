@@ -38,18 +38,8 @@
         </div>
         <div class="container-fluid collection-shop-items">
             <div class="row collection-shop-row product-men">
-                <div class="col-md-3 collection-shop-items-col">
-                    <a href="#"><img src="../src/img/shop/sweat.jfif" alt="image de sweat" /></a>
-                </div>
-                <div class="col-md-3 collection-shop-items-col">
-                    <a href="#"><img src="../src/img/shop/sweat.jfif" alt="image de sweat" /></a>
-                </div>
-                <div class="col-md-3 collection-shop-items-col">
-                    <a href="#"><img src="../src/img/shop/sweat.jfif" alt="image de sweat" /></a>
-                </div>
-                <div class="col-md-3 collection-shop-items-col">
-                    <a href="#"><img src="../src/img/shop/sweat.jfif" alt="image de sweat" /></a>
-                </div>
+                
+                <?php include('displayTopThreeArticle.php');?>
             </div>
         </div>
     </section>
