@@ -40,10 +40,8 @@ include 'request.php';
                 
             }
             if(!empty($jsonArray)){
-                $json_image = json_encode($jsonArray);
-                $json_image = '"nb_image": "'.$arraylength.'", "image": '.$json_image;
-                // print_r($json_image);
-                $new_event->input_image_json_file = $json_image;
+                $json = '{"nb_image": "'.$arraylength.'", "image": '.json_encode($jsonArray).'}';
+                $new_event->input_image_json_file = $json;
                 $response = callAPI('POST', 'http://www.bdecesi-api.ml/api/add_event', json_encode($new_event));
                 if($response == "SQLSTATE[HY000]: General error"){
                     echo "Votre event à bien été crée";
