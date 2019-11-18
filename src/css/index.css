@@ -1952,6 +1952,10 @@ body .displaying-event .row div .associationImg {
 body .displaying-event .row .associationText {
   display: flex;
   flex-direction: column;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
 }
 body .displaying-event .row .associationText h2 {
   margin-top: 1VH;
@@ -1982,11 +1986,11 @@ body .displaying-event .row .associationText p {
   color: #343A40;
   opacity: 1;
 }
-body .displaying-event .row .associationText a {
+body .displaying-event .row .associationText div a {
   text-decoration: none;
   font-size: 2VH;
   width: 13vw;
-  height: 5VH;
+  height: 4VH;
   border: 1px solid #ffc107;
   border-radius: 5px;
   background-color: #ffc107;
@@ -1997,13 +2001,13 @@ body .displaying-event .row .associationText a {
   align-items: center;
   margin-top: 1VH;
   margin-bottom: 1VH;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
 }
 body .displaying-event .row .associationText div .reactionButton {
   font-size: 2VH;
   width: 13vw;
-  height: 5VH;
+  height: 4VH;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -2017,8 +2021,8 @@ body .displaying-event .row .associationText div .reactionButton {
   align-items: center;
   margin-top: 1VH;
   margin-bottom: 1VH;
-  margin-left: 1vw;
-  margin-right: 1vw;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
 }
 body .displaying-event .content {
   display: flex;
@@ -2026,8 +2030,11 @@ body .displaying-event .content {
   justify-content: center;
   align-items: center;
 }
-body .displaying-event .content p {
+body .displaying-event .content .associationText {
   transform: translate(-2vW);
+}
+body .displaying-event .content .associationText div {
+  transform: translate(-0.5vW);
 }
 body .displaying-event .reverseContent {
   display: flex;
@@ -2035,8 +2042,11 @@ body .displaying-event .reverseContent {
   justify-content: center;
   align-items: center;
 }
-body .displaying-event .reverseContent p {
+body .displaying-event .reverseContent .associationText {
   transform: translate(2vW);
+}
+body .displaying-event .reverseContent .associationText div {
+  transform: translate(0.5vW);
 }
 
 html body .header-shop {

@@ -39,6 +39,7 @@ body {
             .associationText {
                 display: flex;
                 flex-direction: column;
+                @include paddingRule(0, 0, 0.5vw, 0.5vw);
 
                 h2 {
                     @include marginRule(1VH, 1VH, 0, 0);
@@ -51,27 +52,27 @@ body {
                     @include fontRule(8, 17.6, lighter, none, none, justify, 1px, $colorBlack, 1);
                 }
 
-                a {
-                    text-decoration: none;
-                    font-size: 2VH;
-                    @include resizeImg(13vw, 5VH);
-                    @include borderRule(1px, solid, #ffc107, 5px);
-                    @include colorRule(#ffc107, #ffffff);
-                    @include headerPos(flex, row, center, center);
-                    @include marginRule(1VH, 1VH, 0, 0);
-                }
+                
 
-                div
-                {
-                    .reactionButton
-                    {
+                div {
+                    a {
+                        text-decoration: none;
                         font-size: 2VH;
-                        @include resizeImg(13vw, 5VH);
+                        @include resizeImg(13vw, 4VH);
+                        @include borderRule(1px, solid, #ffc107, 5px);
+                        @include colorRule(#ffc107, #ffffff);
+                        @include headerPos(flex, row, center, center);
+                        @include marginRule(1VH, 1VH, 0.5vw, 0.5vw);
+                    }
+
+                    .reactionButton {
+                        font-size: 2VH;
+                        @include resizeImg(13vw, 4VH);
                         @include fitContent(width);
                         @include borderRule(1px, solid, #ffc107, 5px);
                         @include colorRule(#ffc107, #ffffff);
                         @include headerPos(flex, row, center, center);
-                        @include marginRule(1VH, 1VH, 1vw, 1vw);
+                        @include marginRule(1VH, 1VH, 0.5vw, 0.5vw);
                     }
                 }
             }
@@ -80,17 +81,29 @@ body {
         .content {
             @include headerPos(flex, row, center, center);
 
-            p {
+            .associationText {
                 transform: translate(-2vW);
+
+                div {
+                    transform: translate(-0.5vW);
+                }
             }
+
+            
         }
 
         .reverseContent {
             @include headerPos(flex, row-reverse, center, center);
 
-            p {
+            .associationText {
                 transform: translate(2vW);
+
+                div {
+                    transform: translate(0.5vW);
+                }
             }
+
+            
         }
     }
 }
