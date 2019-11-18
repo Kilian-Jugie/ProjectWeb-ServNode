@@ -1,14 +1,1 @@
-data = '[
-    {
-        "Updated"
-    },
-    {
-        "test-2"
-    },
-    {
-        "test-3"
-    },
-    {
-        "test-4"
-    }
-]';
+[{"label":"Updated"},{"label":"test-2"},{"label":"test-3"},{"label":"test-4"}]
