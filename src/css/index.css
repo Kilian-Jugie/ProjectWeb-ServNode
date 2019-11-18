@@ -2036,16 +2036,22 @@ body .displaying-event .content .associationText {
 body .displaying-event .content .associationText div {
   transform: translate(-0.5vW);
 }
-body .displaying-event .reverseContent {
+body .displaying-event .content .associationText .form-event-method {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .reverseContent {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
 }
-body .displaying-event .reverseContent .associationText {
+body .reverseContent .associationText {
   transform: translate(2vW);
 }
-body .displaying-event .reverseContent .associationText div {
+body .reverseContent .associationText div {
   transform: translate(0.5vW);
 }
 
@@ -3178,6 +3184,13 @@ html body .article .row .col-md-3 .hover div {
 html body .article .row .col-md-3:hover .hover {
   opacity: 1;
   background-color: beige;
+}
+
+html body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=index.css.map */

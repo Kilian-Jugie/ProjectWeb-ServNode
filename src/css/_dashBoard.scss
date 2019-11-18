@@ -1,0 +1,5 @@
+html {
+    body {
+        @include headerPos(flex, column, center, center);
+    }
+}

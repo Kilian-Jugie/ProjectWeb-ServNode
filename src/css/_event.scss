@@ -52,7 +52,7 @@ body {
                     @include fontRule(8, 17.6, lighter, none, none, justify, 1px, $colorBlack, 1);
                 }
 
-                
+
 
                 div {
                     a {
@@ -87,23 +87,33 @@ body {
                 div {
                     transform: translate(-0.5vW);
                 }
-            }
 
-            
-        }
+                .form-event-method {
+                    @include headerPos(flex, column, center, center);
 
-        .reverseContent {
-            @include headerPos(flex, row-reverse, center, center);
+                    .form-event {
+                        @include headerPos(flex, row, center, center);
 
-            .associationText {
-                transform: translate(2vW);
-
-                div {
-                    transform: translate(0.5vW);
+                        input:nth-child(3) {
+                            text-align: center;
+                        }
+                    }
                 }
             }
-
-            
         }
+    }
+
+    .reverseContent {
+        @include headerPos(flex, row-reverse, center, center);
+
+        .associationText {
+            transform: translate(2vW);
+
+            div {
+                transform: translate(0.5vW);
+            }
+        }
+
+
     }
 }
