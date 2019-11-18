@@ -24,7 +24,9 @@
 
     <?php
     echo "<br><br><br><br><br><br>";
-    //session_start();
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
     echo "<div class=\"container-fluid cart-displaying\">
         <h1>Voici votre panier !</h1>
         
@@ -104,16 +106,16 @@
             <p>TVA = " . ($cart_data->total_cost * 1.2) . "€</p>
         </div>
     </div>";
-        echo "<div class=\"cart-proceed\">
-        <p>Total = ".($cart_data->total_cost*1.2+8)."€</p>";
-        /*<form>
+    echo "<div class=\"cart-proceed\">
+        <p>Total = " . ($cart_data->total_cost * 1.2 + 8) . "€</p>";
+    /*<form>
             <input type='hidden' value=".($cart_data->total_cost*1.2+8)." name='price'>
         </form>*/
 
-        //session_start();
-        $_SESSION['price'] = ($cart_data->total_cost*1.2+8);
+    //session_start();
+    $_SESSION['price'] = ($cart_data->total_cost * 1.2 + 8);
 
-        echo "<a href=\"../paymentSystem/checkout.php\">Proceder à l'achat</a>
+    echo "<a href=\"../paymentSystem/checkout.php\">Proceder à l'achat</a>
         </div>";
 
     echo "</div>

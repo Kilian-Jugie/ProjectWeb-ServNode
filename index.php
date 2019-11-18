@@ -8,7 +8,7 @@
         "followers" => $get_digit["follower"]
     ];
 
-   // require_once "index/download_imgs.php";
+    // require_once "index/download_imgs.php";
 
     //zipImages();
 
