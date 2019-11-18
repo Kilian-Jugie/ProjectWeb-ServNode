@@ -9,12 +9,13 @@ html {
 
             .row-men {
                 position: absolute;
+                @include headerPos(flex, column, center, center);
 
                 .col-men {
-                    @include paddingRule(0, 0, 3vh, 3vh);
+                    @include paddingRule(0, 2vh, 3vh, 3vh);
 
                     button {
-                        @include fontRule(16, 16, lighter, none, none , none, 1px, white, 1);
+                        @include fontRule(16, 16, lighter, none, none, none, 1px, white, 1);
                         @include resizeImg(15vh, 4vh);
                         border-radius: $radius;
                     }
@@ -29,11 +30,11 @@ html {
             @include headerPos(flex, column, center, center);
 
             span:nth-child(1) {
-                @include fontRule(16, 16, bolder, none, none , none, 1px, white, 1);
+                @include fontRule(16, 16, bolder, none, none, none, 1px, white, 1);
             }
 
             span:nth-child(2) {
-                @include fontRule(16, 16, none, none, none , none, none, white, 1);
+                @include fontRule(16, 16, none, none, none, none, none, white, 1);
             }
         }
 
@@ -69,13 +70,17 @@ html {
                 @include paddingRule(50, 50, 0, 0);
 
                 span {
-                    @include fontRule(35, 35, bolder, none, none , none, 1px, $colorBlack, 1);
+                    @include fontRule(35, 35, bolder, none, none, none, 1px, $colorBlack, 1);
                 }
             }
 
             .collection-shop-items {
                 .product-men {
                     @include paddingRule(0, 2vh, 0, 0);
+
+                    .collection-shop-items-col {
+                        @include marginRule(0, 2vh, 0, 0);
+                    }
                 }
             }
         }
