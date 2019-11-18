@@ -31,7 +31,7 @@ body {
             .bordered {
                 @include borderRule(1px, solid, #808080, 2px);
                 @include paddingRule(1VH, 1VH, 2vw, 2vw);
-                width: -moz-fit-content;
+                @include fitContent(width);
                 max-width: 50vw;
             }
         }

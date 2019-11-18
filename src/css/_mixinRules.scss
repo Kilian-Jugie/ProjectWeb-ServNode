@@ -201,6 +201,12 @@
     }
 }
 
+@mixin fitContent($property) {
+    #{$property}: -webkit-fit-content;
+    #{$property}: -moz-fit-content;
+    #{$property}: fit-content;
+}
+
 // Terminer le putain de mixin pour le responsive (les dimensions à optimiser) //responsive making
 // @mixin responsive($media) {
 //     @if $media>=1800 or $media>=1900 {
