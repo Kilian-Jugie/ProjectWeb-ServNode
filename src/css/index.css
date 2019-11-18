@@ -114,7 +114,7 @@ html body .header .pos-nav-menu span a {
   font-weight: bolder;
   letter-spacing: 1px;
   padding: 1vh;
-  font-size: 3vh;
+  font-size: 1vh;
 }
 html body .header .pos-nav-menu span a::after {
   position: absolute;
@@ -962,6 +962,11 @@ html body section .container-fluid .row .team-text .displaying-school-team-text 
   color: #343A40;
   opacity: 1;
 }
+@media only screen and (max-width: 768px) {
+  html body section .container-fluid .row .team-text .displaying-school-team-text {
+    padding: 1vh 20vh 20vh 20vh;
+  }
+}
 html body section .container-fluid .row div:nth-child(3) .team-displaying-title {
   position: relative;
   bottom: 564%;
@@ -1262,6 +1267,14 @@ html body section .displaying-pourquoi-bde .displaying-block-container .row .col
   padding-left: 0;
   padding-right: 4vh;
 }
+@media only screen and (max-width: 768px) {
+  html body section .displaying-pourquoi-bde .displaying-block-container .row .color-black-pourquoi-bde-col {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 4vh;
+    padding-right: 4vh;
+  }
+}
 html body section .displaying-pourquoi-bde .displaying-block-container .row .color-black-pourquoi-bde-col span {
   font-size: calc((11.2px) + (16 - 11.2) * ((100vw - 768px) / (1920 - 768)));
   font-weight: none;
@@ -1277,6 +1290,10 @@ html body section .container-fluid .displaying-tools .displaying-tools-col {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 0;
+  margin-bottom: 15px;
+  margin-left: 0;
+  margin-right: 0;
 }
 html body section .container-fluid .displaying-tools .displaying-tools-col div:nth-child(1) {
   padding-top: 0;
@@ -1813,9 +1830,10 @@ body .displaying-association .row .associationText p {
   color: #343A40;
   opacity: 1;
 }
-body .displaying-association .row .associationText a {
+body .displaying-association .row .associationText div a {
+  text-align: center;
   text-decoration: none;
-  font-size: 2VH;
+  font-size: 1VH;
   width: 13vw;
   height: 5VH;
   border: 1px solid #ffc107;
@@ -2024,7 +2042,7 @@ html body .header-shop {
   }
 }
 html body .header-shop .row {
-  height: 8vh;
+  height: 100%;
 }
 html body .header-shop .row .pos-logo-shop {
   display: flex;
@@ -2051,7 +2069,7 @@ html body .header-shop .row .pos-nav-menu-shop span a {
   font-weight: bold;
   letter-spacing: 1px;
   padding: 1vh;
-  font-size: 3vh;
+  font-size: 1vh;
 }
 html body .header-shop .row .pos-nav-menu-shop span a::after {
   position: absolute;
@@ -2185,7 +2203,7 @@ html body .shop-banner .shop-inner-banner div:nth-child(1) span {
   font-style: none;
   text-decoration: none;
   text-align: none;
-  letter-spacing: auto;
+  letter-spacing: 1px;
   color: #343A40;
   opacity: 0.8;
 }
@@ -2195,7 +2213,7 @@ html body .shop-banner .shop-inner-banner div:nth-child(2) span {
   font-style: none;
   text-decoration: none;
   text-align: none;
-  letter-spacing: auto;
+  letter-spacing: 1px;
   color: #23272A;
   opacity: 1;
 }
@@ -2207,6 +2225,16 @@ html body .shop-banner .shop-inner-banner div:nth-child(3) div {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+html body .shop-banner .shop-inner-banner div:nth-child(3) div a button {
+  font-size: calc((10px) + (10 - 10) * ((100vw - 768px) / (1920 - 768)));
+  font-weight: lighter;
+  font-style: none;
+  text-decoration: none;
+  text-align: none;
+  letter-spacing: 1px;
+  color: #23272A;
+  opacity: 1;
 }
 html body .reduction {
   height: 6vh;
@@ -2399,7 +2427,7 @@ html body section .collection-shop-title span {
   letter-spacing: 1px;
   color: #343A40;
   opacity: 1;
-  padding-top: 0;
+  padding-top: 5vh;
   padding-bottom: 5vh;
   padding-left: 0;
   padding-right: 0;
@@ -2732,10 +2760,22 @@ html body .shop-banner .image-banner-bis {
 }
 html body .shop-banner .row-men {
   position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  html body .shop-banner .row-men {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 html body .shop-banner .row-men .col-men {
   padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 2vh;
   padding-left: 3vh;
   padding-right: 3vh;
 }
@@ -2821,6 +2861,12 @@ html body section .collection-shop-items .product-men {
   padding-bottom: 2vh;
   padding-left: 0;
   padding-right: 0;
+}
+html body section .collection-shop-items .product-men .collection-shop-items-col {
+  margin-top: 0;
+  margin-bottom: 2vh;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 html body section .checkout-header {
