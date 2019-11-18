@@ -3,7 +3,7 @@ body {
         .content {
             @include resizeImg(none, 70VH);
 
-            button {
+            .error404button {
                 @include buttonStyle(16px);
                 text-decoration: none;
                 position: absolute;

@@ -34,6 +34,7 @@
     <?php
         include('showEvent.php');
     ?>
+
     </div>
 
     <footer class="container-fluid footer">

@@ -109,7 +109,7 @@
         }
         if (isset($_SESSION['user_log'])) {
             echo "        <div class='col-md-1 nav-bar-item'>
-            <a href='{$pathForLog}Log_outScript.php'><button type='button' class='btn btn-warning'>Se connecter</button></a>
+            <a href='../index/login_system/Log_outScript.php'><button type='button' class='btn btn-warning'>Se deconnecter</button></a>
         </div>
         <div class='col-md-1 nav-bar-item'>
             <span class='pseudo'>Bonjour " .  $_SESSION['user_log']->pseudo . "</span>
@@ -117,7 +117,7 @@
         <div></div>";
         } else {
             echo "<div class='col-md-1 nav-bar-item'>
-            <a href='..index/login_system/login.php'><button type='button' class='btn btn-warning'>Se connecter</button></a>
+            <a href='../index/login_system/login.php'><button type='button' class='btn btn-warning'>Se connecter</button></a>
         </div>";
         }
         ?>

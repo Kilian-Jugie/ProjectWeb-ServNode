@@ -27,7 +27,7 @@
     <div class="subscribeForm">
         <form action="/ma-page-de-traitement" method="post">
             <label for="email" class="subscribeText">Subscribe !</label>
-            <input type="email" id="mail" placeholder="" name="user_mail" class="subscribeInput">
+            <input type="email" id="mail" placeholder="Rentre ton mail..." name="user_mail" class="subscribeInput">
             <button type="submit" value="Submit" class="submitButton">Submit</button>
         </form>
     </div>

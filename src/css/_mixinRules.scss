@@ -150,7 +150,7 @@
 
 //REMI's MIXIN
 
-@mixin centerDisplay{
+@mixin centerDisplay {
     display: flex;
     align-self: center;
     justify-content: center;
@@ -199,6 +199,12 @@
     @media only screen and (max-widt:786px) {
         @content;
     }
+}
+
+@mixin fitContent($property) {
+    #{$property}: -webkit-fit-content;
+    #{$property}: -moz-fit-content;
+    #{$property}: fit-content;
 }
 
 // Terminer le putain de mixin pour le responsive (les dimensions à optimiser) //responsive making
