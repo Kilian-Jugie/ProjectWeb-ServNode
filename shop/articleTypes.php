@@ -1,8 +1,8 @@
 <?php
 $get_article = file_get_contents("http://bdecesi-api.ml/api/all_product");
 $get_article = json_decode($get_article);
-$get_article = $get_article[0];
-print_r($get_article);
+//$get_article = $get_article[0];
+//print_r($get_article);
 ?>
 
 <!DOCTYPE html>
@@ -81,14 +81,14 @@ print_r($get_article);
         <div class="container-fluid article">
             <div class="row">
                 <?php
-                foreach ($get_article as $key => $value) {
+                foreach ($get_article as $value) {
                     echo "<div class='col-md-3'>
-                    <img class='image' src='" . $key["urlImage"] . "' alt='" . $key["description_product"] . "' />
+                    <img class='image' src='" . $value->urlImage . "' alt='" . $value->description_product . "' />
                     <div class='hover'>
                         <span>
                             Taille en stock:
                         </span>
-                        <div>
+                        <!-- <div>
                             <a href='#'><span>
                                     S
                                 </span></a>
@@ -107,13 +107,18 @@ print_r($get_article);
                             <a href='#'><span>
                                     XL
                                 </span></a>
+                        </div> -->
+                        <div>
+                            <a href='#'><span>
+                                ".$value->size_label."
+                            </span></a>
                         </div>
                     </div>
                     <span>
-                        " . $key["label_product"] . "
+                        " . $value->label_product . "
                     </span>
                     <span>
-                        € " . $key["price_product"] . "
+                        € " . $value->price_product . "
                     </span>
                 </div>";
                 }

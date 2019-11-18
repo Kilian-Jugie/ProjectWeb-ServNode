@@ -45,6 +45,29 @@ if (isset($_POST['submit'])) {
                             include 'sign_up.php';
                         }
                     }
+<<<<<<< HEAD
+                }else{
+                    $news_letter = 0;
+                }
+                $json = (object)[
+                    "last_name" => $POST['last_name'],
+                    "first_name" => $POST['first_name'],
+                    "email" => $POST['email'],
+                    "password" => $password,
+                    "img_path" => $img_path,
+                    "address" => $POST['address'],
+                    "news_letter" => $news_letter,
+                    "user_pseudo" => $POST['user_pseudo'],
+                    "age" => $POST['age'],
+                    "id_city" => $POST['city']
+                ];
+                $response = httpPost("bdecesi-api.ml/api/add_user", $json);
+                if($response == '"User been correctfully added"'){
+                    header("Location: login.php?info=success_sign");
+                }else{
+                    header("Location: sign_up.php?info=user_exist");
+=======
+>>>>>>> 4c2034474d606f30be72e321b4c55fcb2937895c
                 }
             }
         } else {
