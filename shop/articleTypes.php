@@ -82,7 +82,7 @@ $get_article = json_decode($get_article);
                 <?php
                 foreach ($get_article as $value) {
                     echo "<div class='col-md-3'>
-                    <img class='image' src='" . $value->urlImage . "' alt='" . $value->description_product . "' />
+                    <img class='image' src='../" . $value->urlImage . "' alt='" . $value->description_product . "' />
                     <div class='hover'>
                         <span>
                             Taille en stock:
