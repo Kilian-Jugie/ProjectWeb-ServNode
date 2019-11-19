@@ -1,0 +1,56 @@
+body {
+    .container-fluid {
+        .content-bis {
+            @include resizeImg(none, 70VH);
+            @include headerPos(flex, row, center, center);
+            height: none;
+            margin-bottom: 10VH;
+
+
+            div {
+
+                @include headerPos(flex, row, center, center);
+                height: none;
+
+                .error403Img {
+                    @include resizeImg(30vw, none);
+                }
+            }
+
+            .errorText {
+                display: flex;
+                flex-direction: column;
+                transform: translate(-10vw, 0VH);
+
+                h1 {
+                    @include marginRule(1VH, 1VH, 0, 0);
+                    @include fontRule(25.6, 35.2, bolder, none, none, none, 1px, $colorBlack, 1);
+                }
+
+                p {
+                    @include marginRule(1VH, 1VH, 0, 0);
+                }
+
+                button {
+                    @include buttonStyle($sizeFont+2);
+                }
+            }
+
+            .digit {
+
+                @include headerPos(flex, row, center, center);
+                height: none;
+
+                span {
+                    @include marginRule(0, 0, 1vw, 1vw);
+                    font-size: 1.8em;
+                    font-weight: bolder;
+                }
+
+                .zeroDigit {
+                    transform: translate(0, 2VH);
+                }
+            }
+        }
+    }
+}

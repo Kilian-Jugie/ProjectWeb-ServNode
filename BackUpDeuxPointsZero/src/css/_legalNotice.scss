@@ -1,0 +1,28 @@
+body {
+    .legal-notice {
+        .content-legal-notice {
+            display: flex;
+            flex-direction: column;
+            @include resizeImg(100vw, none);
+            @include marginRule(4VH, 5VH, 20vw, 20vw);
+            @include borderRule(2px, solid, #808080, 3px);
+            @include paddingRule(6VH, 1VH, 2vw, 2vw);
+            width: -moz-fit-content;
+            max-width: 60vw;
+
+            h1 {
+                @include fontRule(24, 32, bold, none, none, center, 1px, $colorBlack, 1);
+                @include marginRule(2VH, 2VH, 1vw, 1vw);
+                @include paddingRule(2VH, 2VH, 1vw, 1vw);
+                width: -moz-fit-content;
+                background-color: #ffffff;
+            }
+
+            p {
+                @include fontRule(11.2, 16, none, none, none, justify, 1px, $colorBlack, 0.8);
+                @include marginRule(0.5VH, 0.5VH, 0, 0);
+                word-wrap: break-word;
+            }
+        }
+    }
+}

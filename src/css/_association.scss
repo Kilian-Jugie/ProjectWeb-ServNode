@@ -1,0 +1,69 @@
+body {
+    .displaying-association {
+
+        h1 {
+            margin-top: 6VH;
+            @include fontRule(32, 41.6, bold, none, none, center, 1px, $colorBlack, 1);
+        }
+
+        .row {
+            @include resizeImg(none, 70VH);
+            margin-bottom: 10VH;
+
+            div {
+                @include headerPos(flex, row, center, center);
+
+                .associationImg {
+                    @include resizeImg(30vw, none);
+                    border-radius: 10px;
+                }
+            }
+
+            .associationText {
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    @include marginRule(1VH, 1VH, 0, 0);
+                    @include fontRule(24, 32, none, none, none, center, 1px, $colorBlack, 1);
+                }
+
+                p {
+                    @include marginRule(1VH, 1VH, 0, 0);
+                    max-width: 30vw;
+                    @include fontRule(11.2, 17.6, lighter, none, none, justify, 1px, $colorBlack, 1);
+                }
+
+                div {
+                    a {
+                        text-align: center;
+                        text-decoration: none;
+                        font-size: 1VH;
+                        @include resizeImg(13vw, 5VH);
+                        @include borderRule(1px, solid, #ffc107, 22px);
+                        @include colorRule(#ffc107, #ffffff);
+                        @include headerPos(flex, row, center, center);
+                        @include marginRule(1VH, 1VH, 0, 0);
+                    }
+                }
+
+            }
+        }
+
+        .content {
+            @include headerPos(flex, row, center, center);
+
+            .associationText {
+                transform: translate(-10vw, 0VH);
+            }
+        }
+
+        .reverseContent {
+            @include headerPos(flex, row-reverse, center, center);
+
+            .associationText {
+                transform: translate(10vw, 0VH);
+            }
+        }
+    }
+}

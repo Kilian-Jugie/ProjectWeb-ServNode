@@ -1,0 +1,291 @@
+html {
+    body {
+        .header-shop {
+            @include headerBackground($colorBlack);
+            opacity: 1;
+
+            display: block;
+
+            @include responsiveSmartphone {
+                display: none;
+            }
+
+            .row {
+                height: 100%;
+
+                .pos-logo-shop {
+                    @include headerPos(flex, row, flex-start, center);
+                    @include paddingRule(0, 0, 2vh, 0);
+
+                    img {
+                        height: 5vh;
+                    }
+                }
+
+                .pos-nav-menu-shop {
+                    @include headerPos(flex, row, center, center);
+
+                    span {
+                        a {
+                            position: relative;
+                            color: white;
+                            font-weight: bold;
+                            letter-spacing: 1px;
+                            padding: $padding;
+                            font-size: $sizeFont;
+
+                            &::after {
+                                @include undescoreLine(0, white);
+                            }
+
+                            &:hover::after {
+                                transform: scaleX(1);
+                            }
+
+                        }
+                    }
+                }
+
+                .pos-icon-shop {
+                    @include headerPos(flex, row, flex-end, center);
+
+                    a {
+                        padding-right: $padding*2;
+
+                        button {
+                            @include buttonStyle($sizeFont);
+                        }
+
+                        img {
+                            color: $colorBlack;
+                            @include resizeImg(3vh, 3vh);
+                        }
+                    }
+                }
+            }
+
+            .second-shop-nav {
+                opacity: 1;
+
+                .second-shop-nav-row {
+                    background-color: $colorMoreBlack;
+                    @include headerPos(flex, row, center, center);
+                    height: 7vh;
+
+                    .second-shop-nav-col {
+                        @include headerPos(flex, row, flex-start, center);
+
+                        span {
+                            @include paddingRule(0, 0, 1vh, 1vh);
+                            @include marginRule(0, 0, 1vh, 0);
+
+                            a {
+                                @include fontRule(11.4, 11.4, auto, none, none, none, 1px, white, 1);
+
+                                &:hover {
+                                    @include fontRule(11.4, 11.4, auto, none, none, none, 1px, $colorYellow, 1);
+                                }
+                            }
+                        }
+                    }
+
+                    .second-shop-nav-col-bis {
+                        @include headerPos(flex, row, flex-end, center);
+
+                        span {
+                            @include paddingRule(0, 0, 1vh, 1vh);
+                            @include marginRule(0, 0, 1vh, 0);
+
+                            a {
+                                @include fontRule(11.4, 11.4, bolder, none, none, none, 1px, #8D0D02, 1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .shop-banner {
+            @include headerPos(flex, row, center, center);
+
+            .shop-inner-banner {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%);
+                background-color: white;
+                opacity: 0.8;
+                border-radius: 1vh;
+                @include paddingRule(1VH, 2VH, 1vw, 1vw);
+
+                div:nth-child(1) {
+                    span {
+                        @include fontRule(16, 16, bold, none, none, none, 1px, $colorBlack, 0.8);
+                    }
+                }
+
+                div:nth-child(2) {
+                    span {
+                        @include fontRule(16, 16, bold, none, none, none, 1px, $colorMoreBlack, 1);
+                    }
+                }
+
+
+                div:nth-child(3) {
+                    width: 100%;
+
+                    div {
+                        @include headerPos(flex, row, center, center);
+
+                        a {
+                            button {
+                                @include fontRule(10, 10, lighter, none, none, none, 1px, $colorMoreBlack, 1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .reduction {
+            height: 6vh;
+            background-color: $colorYellow;
+            @include headerPos(flex, column, center, center);
+
+            span:nth-child(1) {
+                @include fontRule(16, 16, bolder, none, none, none, 1px, white, 1);
+            }
+
+            span:nth-child(2) {
+                @include fontRule(16, 16, none, none, none, none, none, white, 1);
+            }
+        }
+
+        section {
+            .type-shop {
+                .type-shop-row {
+                    .type-shop-col {
+                        width: 50%;
+                        @include headerPos(flex, column, center, center);
+
+                        .type-shop-img {
+                            @include resizeImg(100%, auto);
+                            opacity: 0.6;
+
+                        }
+
+                        .type-shop-button-displaying {
+                            position: absolute;
+
+                            .type-shop-button-displaying-row {
+                                @include headerPos(flex, column, flex-end, flex-end);
+
+                                button {
+                                    border-radius: $radius;
+                                    @include fontRule(16, 16, lighter, none, none, none, 1px, white, 1);
+                                    @include resizeImg(15vh, 4vh);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        section {
+            .shop-collab {
+                @include headerPos(flex, row, center, center);
+
+                div {
+                    @include headerPos(flex, column, center, center);
+
+                    span:nth-child(1) {
+                        @include fontRule(25, 25, bolder, none, none, none, 1px, $colorBlack, 1);
+                    }
+
+                    span:nth-child(2) {
+                        @include fontRule(16, 16, none, none, none, none, 1px, $colorBlack, 1);
+                    }
+                }
+            }
+
+            .shop-collab-img {
+                @include marginRule(10%, 0, 0, 0);
+
+                .shop-collab-row {
+                    @include resizeImg(100%, auto);
+
+                    .shop-collab-col-un {
+                        @include resizeImg(50%, auto);
+                        @include headerPos(flex, column, flex-start, flex-end);
+
+                        img {
+                            @include resizeImg(50%, auto);
+                        }
+
+
+                        div {
+                            @include headerPos(flex, column, flex-start, flex-start);
+
+                            span:nth-child(1) {
+                                @include fontRule(16, 16, bolder, none, none, none, 1px, $colorBlack, 1);
+                            }
+
+                            div {
+                                .lighter-font {
+                                    @include fontRule(16, 16, lighter, none, none, none, 1px, $colorBlack, 0.6);
+                                }
+                            }
+
+                        }
+                    }
+
+                    .shop-collab-col-deux {
+                        @include resizeImg(50%, auto);
+
+                        img {
+                            @include resizeImg(50%, auto);
+                        }
+
+                        div {
+                            @include headerPos(flex, column, flex-start, flex-start);
+
+                            span:nth-child(1) {
+                                @include fontRule(16, 16, bolder, none, none, none, 1px, $colorBlack, 1);
+                            }
+
+                            div {
+                                .lighter-font {
+                                    @include fontRule(16, 16, lighter, none, none, none, 1px, $colorBlack, 0.6);
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+        section {
+            .collection-shop-title {
+                @include headerPos(flex, row, center, center);
+
+                span {
+                    @include fontRule(25, 25, bolder, none, none, none, 1px, $colorBlack, 1);
+                    @include paddingRule(5vh, 5vh, 0, 0);
+                }
+            }
+
+            .collection-shop-items {
+                .collection-shop-row {
+                    .collection-shop-items-col {
+                        a {
+                            img {
+                                @include resizeImg(100%, 100%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

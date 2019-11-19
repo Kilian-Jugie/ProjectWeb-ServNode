@@ -1,0 +1,24 @@
+.article-specific {
+    .article-specific-row {
+        width: 100%;
+        height: 40%;
+        @include headerPos(flex, row, center, center);
+
+        .article-specific-col:nth-child(1) {
+            @include headerPos(flex, row, center, center);
+            height: 100%;
+
+            .article-specific-image {
+                @include resizeImg(auto, 100%);
+            }
+        }
+
+        .article-specific-col:nth-child(2) {
+            @include headerPos(flex, column, center, center);
+
+            div {
+                @include marginRule(0, 10px, 0, 0);
+            }
+        }
+    }
+}

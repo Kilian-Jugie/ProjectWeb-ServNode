@@ -1,0 +1,53 @@
+html {
+    body {
+        section {
+            .checkout-header {
+                @include marginRule(100px, 0, 0, 0);
+
+                .checkout-header-row {
+                    @include headerPos(flex, column, center, center);
+
+                    .checkout-header-img {
+                        position: relative;
+                        left: -1rem;
+                        @include marginRule(0, 15px, 0, 0);
+
+                        img {
+                            @include resizeImg(150px, 150px);
+                        }
+                    }
+
+                    .checkout-header-span {
+                        position: relative;
+                        left: -1rem;
+                        @include marginRule(0, 50px, 0, 0);
+                        @include headerPos(flex, column, center, center);
+
+                        span:nth-child(1) {
+                            @include fontRule(35, 35, bolder, none, none , none, 2px, $colorBlack, 1);
+                        }
+
+                        span:nth-child(2) {
+                            @include fontRule(25, 25, lighter, none, none , none, 1px, $colorBlack, 0.7);
+                        }
+                    }
+                }
+            }
+        }
+
+        .accordeon-checkout {
+            .card-checkout {
+                .card-header-checkout {
+                    .title-checkout {
+
+
+                        button {
+                            @include fontRule(35, 35, bolder, none, none , none, 1px, $colorBlack, 1);
+                            @include resizeImg(auto, 8rem);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

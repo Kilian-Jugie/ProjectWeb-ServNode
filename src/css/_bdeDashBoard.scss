@@ -1,0 +1,83 @@
+.displaying-dashBoard {
+    @include headerPos(flex, row, center, center);
+    height: 500px;
+    background-color: $colorBlack;
+
+    .dashboard {
+        height: 80%;
+
+        .row {
+            height: 50%;
+
+            .orange-box {
+                background-color: $colorYellow;
+                @include headerPos(flex, column, center, center);
+
+                div:nth-child(1) {
+                    @include headerPos(flex, row, center, center);
+                    @include fontRule(25, 25, bolder, none, none, none, 1px, white, 1);
+                }
+
+                div:nth-child(2) {
+                    @include headerPos(flex, row, center, center);
+                    @include fontRule(17.6, 17.6, bolder, none, none, none, 1px, white, 1);
+                }
+            }
+
+            .white-box {
+                background-color: white;
+                @include headerPos(flex, column, center, center);
+
+                div:nth-child(1) {
+                    @include headerPos(flex, row, center, center);
+                    @include fontRule(25, 25, bolder, none, none, none, 1px, $colorYellow, 1);
+                }
+
+                div:nth-child(2) {
+                    @include headerPos(flex, row, center, center);
+                    @include fontRule(17.6, 17.6, bolder, none, none, none, 1px, $colorYellow, 1);
+                }
+            }
+
+            .title-dashBoard {
+                @include headerPos(flex, column, center, center);
+
+                div:nth-child(1) {
+                    @include headerPos(flex, row, center, center);
+
+                    span {
+                        @include fontRule(25, 25, bolder, none, none, none, 1px, $colorYellow, 0.6);
+                    }
+                }
+            }
+        }
+
+        .first {
+            div:nth-child(1) {
+                border-radius: 22px 0 0 0;
+
+                @include responsiveSmartphone {
+                    border-radius: 0 0 0 0;
+                }
+            }
+        }
+
+        .second {
+            div:nth-child(1) {
+                border-radius: 0 0 0 22px;
+
+                @include responsiveSmartphone {
+                    border-radius: 0 0 0 0;
+                }
+            }
+
+            div:nth-child(4) {
+                border-radius: 0 0 22px 0;
+
+                @include responsiveSmartphone {
+                    border-radius: 0 0 0 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,92 @@
+html {
+    body {
+        .shop-banner {
+            @include headerPos(flex, column, center, center);
+
+            .image-banner-bis {
+                opacity: 0.6;
+            }
+
+            .row-men {
+                position: absolute;
+                @include headerPos(flex, row, center, center);
+
+                @include responsiveSmartphone {
+                    @include headerPos(flex, column, center, center);
+                }
+
+                .col-men {
+                    @include paddingRule(0, 2vh, 3vh, 3vh);
+
+                    button {
+                        @include fontRule(16, 16, lighter, none, none, none, 1px, white, 1);
+                        @include resizeImg(15vh, 4vh);
+                        border-radius: $radius;
+                    }
+
+                }
+            }
+        }
+
+        .reduction {
+            height: 6vh;
+            background-color: $colorYellow;
+            @include headerPos(flex, column, center, center);
+
+            span:nth-child(1) {
+                @include fontRule(16, 16, bolder, none, none, none, 1px, white, 1);
+            }
+
+            span:nth-child(2) {
+                @include fontRule(16, 16, none, none, none, none, none, white, 1);
+            }
+        }
+
+        .reduction-men {
+            height: 10vh;
+        }
+
+        section {
+            .type-shop {
+                .type-shop-row {
+                    .type-shop-col {
+                        width: 50%;
+                        @include headerPos(flex, column, center, center);
+
+                        .type-shop-img {
+                            @include resizeImg(100%, 1395.92);
+                            opacity: 0.6;
+
+                        }
+
+                        button {
+                            position: relative;
+                            top: -20%;
+                            border-radius: $radius;
+                        }
+                    }
+                }
+            }
+        }
+
+        section {
+            .men {
+                @include paddingRule(50, 50, 0, 0);
+
+                span {
+                    @include fontRule(35, 35, bolder, none, none, none, 1px, $colorBlack, 1);
+                }
+            }
+
+            .collection-shop-items {
+                .product-men {
+                    @include paddingRule(0, 2vh, 0, 0);
+
+                    .collection-shop-items-col {
+                        @include marginRule(0, 2vh, 0, 0);
+                    }
+                }
+            }
+        }
+    }
+}

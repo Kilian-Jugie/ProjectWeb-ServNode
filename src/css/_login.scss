@@ -1,0 +1,95 @@
+html {
+    .log {
+        background-color: #878A8E;
+
+        section {
+            @include headerPos(flex, row, center, center);
+            @include marginRule(120px, 150px, 0, 0);
+
+            .form-displaying {
+                @include headerPos(flex, column, center, center);
+
+                @include resizeImg(700px, 600px);
+                background-color: $colorBlack;
+                border-radius: 10px;
+
+                form {
+                    @include headerPos(flex, column, center, center);
+
+                    h3 {
+                        @include fontRule(16, 16, bolder, none, none, none, 1px, white, 1);
+                    }
+
+                    div {
+                        width: 186px;
+                        @include headerPos(flex, row, flex-start !important, flex-end !important);
+
+                        p {
+                            @include fontRule(16, 16, auto, none, none, none, 1px, white, 1);
+                        }
+                    }
+
+                    input {
+                        border-radius: $radius;
+                    }
+                }
+
+                a {
+                    color: white;
+
+                    &:hover {
+                        color: $colorYellow;
+                    }
+                }
+            }
+
+            .form-displaying-bis {
+                @include headerPos(flex, column, center, center);
+
+                @include resizeImg(700px, 1300px);
+                background-color: $colorBlack;
+                border-radius: 10px;
+
+                form {
+                    @include resizeImg(450px, auto);
+                    @include headerPos(flex, column, center, center);
+
+                    h3 {
+                        @include fontRule(16, 16, bolder, none, none, none, 1px, white, 1);
+                    }
+
+                    .error-message {
+                        @include fontRule(16, 16, bolder, none, none, none, 1px, red, 1);
+                    }
+
+                    div {
+                        width: 567px;
+                        @include headerPos(flex, row, center !important, center !important);
+
+                        p {
+                            @include fontRule(16, 16, auto, none, none, none, 1px, white, 1);
+                        }
+                    }
+
+                    input {
+
+                        border-radius: $radius;
+
+                        .label {
+                            border-radius: 22px;
+                            width: 45px;
+                        }
+                    }
+                }
+
+                a {
+                    color: white;
+
+                    &:hover {
+                        color: $colorYellow;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+section {
+    .container-fluid {
+        .row {
+            .col-md-5 {
+                height: 400px;
+
+                .school-background {
+                    @include containerBackground;
+                }
+            }
+
+            .col-md-7 {
+                height: 400px;
+                @include headerPos(flex, column, center, center);
+
+                .displaying-school-text {
+                    padding: $padding*13 $padding*7 $padding*7 $padding*20;
+
+                    @include responsiveSmartphone {
+                        margin-top: 200px;
+                    }
+                }
+            }
+
+            .momo {
+                height: 100px;
+            }
+
+            div:nth-child(3) {
+                .displaying-title {
+                    @include displayingTitleAndLogo(relative, 370%, 35%);
+                    @include fontRule(35px, 35px, bolder, none, none, none, 1px, $colorBlack, 1);
+
+                    @include responsiveSmartphone {
+                        @include displayingTitleAndLogo(relative, 470%, 32%);
+                    }
+
+                    span::before {
+                        @include beforeTitle(51px, 5px, -60px, 25px, "");
+                    }
+                }
+
+                .displaying-image {
+                    @include displayingTitleAndLogo(relative, 380%, 32%);
+
+                    @include responsiveSmartphone {
+                        @include displayingTitleAndLogo(relative, 800%, 32%);
+                    }
+
+                    .resize-logo-image {
+                        @include resizeImg(300px, 300px);
+                    }
+                }
+            }
+        }
+    }
+}

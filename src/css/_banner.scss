@@ -1,0 +1,49 @@
+html {
+    body {
+        .container-fluid {
+            .image-size {
+                @include resize;
+            }
+
+            .inner-banner {
+                position: absolute;
+                top: 40%;
+                left: 10%;
+                @include headerPos(flex, column, center, center);
+                display: block;
+
+                @include responsiveSmartphone {
+                    display: none;
+                }
+
+                div:nth-child(1) {
+                    span {
+                        @include fontRule(25, 25, none, none, none, none, 1px, white, 0.6);
+                    }
+                }
+
+                div:nth-child(2) {
+                    span {
+                        @include fontRule(35, 35, bolder, none, none, none, 1px, white, 1);
+                    }
+                }
+
+                div:nth-child(3) {
+                    margin-top: 20px;
+
+                    button:nth-child(1) {
+                        @include buttonStyle($sizeFont+2);
+                    }
+                }
+
+                div:nth-child(4) {
+                    margin-top: 20px;
+
+                    button:nth-child(1) {
+                        @include buttonStyle($sizeFont+2);
+                    }
+                }
+            }
+        }
+    }
+}
