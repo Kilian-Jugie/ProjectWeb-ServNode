@@ -51,7 +51,6 @@
                 <input class='btn btn-warning redesign-event-button' type=\"submit\" name=\"Envoyer\" value=\"Envoyer\">
                 </form></div>";
         echo "<div><a href=\"#\">Accéder à l'association</a></div>";
-        echo "<div>{$data}</div>";
         echo "</div>
         </div>";
     }

@@ -239,5 +239,5 @@
 }
 
 @mixin responsiveSizing($property, $minimumFontSize, $maximumFontSize) {
-    #{$property}: calc((#{$minimumFontSize}px) + (#{$maximumFontSize} - #{$minimumFontSize}) * ((100vw - 768px) / (1920 - 768)));
+    #{$property}: calc((#{$minimumFontSize}px) + (#{$maximumFontSize} - #{$minimumFontSize}) * ((100vw - 768px) / (1920 - 768))) !important;
 }

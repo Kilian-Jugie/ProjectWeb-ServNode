@@ -1,4 +1,8 @@
 .article-specific {
+    .article-paragraphe {
+        @include fontRule($mediumTitle, $mediumTitle, bolder, none, none, none, 1px, $colorBlack, 1);
+    }
+
     .article-specific-row {
         width: 100%;
         height: 40%;

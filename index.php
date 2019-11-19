@@ -113,13 +113,10 @@
                          </span>
                      </div>
                      <div class="displaying-whoAreWe">
-                         Le CESI est une école d'ingénieur certifié par le CTI. Sa différence majeur vis-à-vis des autres écoles est
-                         a modularité du cursus qu'on peut y suivre et la méthode d'apprentissage. En effet, au fur et a mesure de leur scolarité
-                         es eleves, en fonction de leur envie futur vont pouvoir choisir des spécialisations. Ce choix d'enseignement permet aux
-                         eleves d'etre parfaitement adapté au domaine qu'il visent et de limiter l'apprentissage de domaine inutile proffessionellement
-                         parlant. Enfin la methode PBL est une méthode d'apprentissage consistant à mettre les eleves en face de probleme et de stimuler
-                         leur envie de rechercher les solutions a ce probleme dans le but de leur apprendre a apprendre par eux meme. En effet cette
-                         competence est trés utiles en entreprise dans des domaines aussi dynamique que l'informatique.
+                         Nous sommes le BDE du Cesi. Un groupe d’ami d’une quinzaine de personne, un groupe d’ami ayant l’envie et la volonté
+                         de faire du BDE Cesi une association et une structure influente dans le monde étudiant. Une entité à part entière capable
+                         de faire bouger les foules et de faire rayonner l’école à travers la Nouvelle-Aquitaine voire plus. Bienvenue sur notre site,
+                         notre QG d’où on peut organiser les rassemblements et plus généralement la vie étudiante du Cesi.
                      </div>
                  </div>
                  <div class="col-md-4 displaying-whoAreWeImage">

@@ -66,13 +66,11 @@
             <div class="row">
                 <div class="col-md-8 team-text">
                     <div class="displaying-school-team-text">
-                        Le CESI est une école d'ingénieur certifié par le CTI. Sa différence majeur vis-à-vis des autres écoles est
-                        la modularité du cursus qu'on peut y suivre et la méthode d'apprentissage. En effet, au fur et a mesure de leur scolarité
-                        les eleves, en fonction de leur envie futur vont pouvoir choisir des spécialisations. Ce choix d'enseignement permet aux
-                        eleves d'etre parfaitement adapté au domaine qu'il visent et de limiter l'apprentissage de domaine inutile proffessionellement
-                        parlant. Enfin la methode PBL est une méthode d'apprentissage consistant à mettre les eleves en face de probleme et de stimuler
-                        leur envie de rechercher les solutions a ce probleme dans le but de leur apprendre a apprendre par eux meme. En effet cette
-                        competence est trés utiles en entreprise dans des domaines aussi dynamique que l'informatique.
+                        Le Cesi est une école nationale, internationale même. En effet il existe plus d’une vingtaine de centre situé partout
+                        en France et même hors du territoire national (Moyen-Orient et bientôt d’autres Zones du monde). De plus le cursus est partagé
+                        entre les centres ce qui rend tous les centres interconnectés. Ce site est la concrétisation de ce lien viscéral et unique au
+                        Cesi et permet donc la mutualisation des BDE et une augmentation drastique des flux entre les BDE intraCampus qui est et sera
+                        bénéfique sur le long terme.
                     </div>
                 </div>
                 <div class="col-md-4 team-block">
@@ -242,9 +240,9 @@
                     </div>
                     <div class="col-md-4 color-black-pourquoi-bde-col">
                         <span>
-                            Le CESI est une école d'ingénieur certifié par le CTI. Sa différence majeur vis-à-vis des autres écoles est
-                            a modularité du cursus qu'on peut y suivre et la méthode d'apprentissage. En effet, au fur et a mesure de leur scolarité
-                            es eleves, en fonction de leur envie futur vont pouvoir choisir des spécialisations. Ce choix d'enseignement permet aux
+                            L'objectif de la réalisation du site E-Commerce ainsi que la vitrine était de développer nos compétences en langag Web
+                            (front-end/ back-end). Néanmoins, le but principal de ce dernier est d'aider à l'amélioration de la visibilité du BDE
+                            de CESI sur internet. Il permet également la généralisation des achats/events/organisations au sein d'un même campus.
                         </span>
                     </div>
                 </div>
@@ -271,9 +269,11 @@
                     </div>
                     <div>
                         <span>
-                            Le CESI est une école d'ingénieur certifié par le CTI. Sa différence majeur vis-à-vis des autres écoles est
-                            a modularité du cursus qu'on peut y suivre et la méthode d'apprentissage. En effet, au fur et a mesure de leur scolarité
-                            es eleves, en fonction de leur envie futur vont pouvoir choisir des spécialisations. Ce choix d'enseignement permet aux
+                            Lorsque nous ne sommes pas en “sprint”, il est important pour nous de
+                            garder une proximité entre nous et de rester le plus efficace possible. Pour
+                            cela nous utilisons différents outils qui nous permettent, entre autres,
+                            d’encadrer les projets, de laisser la possibilité au client de commenter les
+                            travaux, et d’organiser des conférences call.
                         </span>
                     </div>
                     <div>

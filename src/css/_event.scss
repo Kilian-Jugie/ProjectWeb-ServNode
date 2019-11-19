@@ -1,4 +1,9 @@
 body {
+    .must-beLogged {
+        @include headerPos(flex, row, center, center);
+        @include fontRule($mediumTitle+5, $mediumTitle+5, bolder, none, none, none, 1px, red, 1);
+    }
+
     .displaying-event {
         @include headerPos(flex, column, center, center);
 
