@@ -222,7 +222,7 @@
                         <img class="type-shop-img" src="../src/img/shop/accessoire.jpg" alt="image accessoire " />
                         <div class="containe-fluid type-shop-button-displaying">
                             <div class="row type-shop-button-displaying-row">
-                                <a href="goodies.php"><button type="button" class="btn btn-warning">Accessoire's</button></a>
+                                <a href="../errorPage/construcPage.php"><button type="button" class="btn btn-warning">Accessoire's</button></a>
                             </div>
                         </div>
                     </div>
@@ -230,7 +230,7 @@
                         <img class="type-shop-img" src="../src/img/shop/cup.jpg" alt="image goodies" />
                         <div class="containe-fluid type-shop-button-displaying">
                             <div class="row type-shop-button-displaying-row">
-                                <a href="goodies.php"><button type="button" class="btn btn-warning">Goodie's</button></a>
+                                <a href="../errorPage/construcPage.php"><button type="button" class="btn btn-warning">Goodie's</button></a>
                             </div>
                         </div>
                     </div>

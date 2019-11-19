@@ -3,7 +3,7 @@
 function zipImages()
 {
 
-    $rootPath = realpath("./src/img/eventImage");
+    $rootPath = realpath("../src/img/");
     $zip = new ZipArchive();
     $zip->open("file.zip", ZipArchive::CREATE | ZipArchive::OVERWRITE);
 

@@ -1,0 +1,31 @@
+html {
+    body {
+        .search-bar-displaying {
+            background-color: $colorBlack;
+
+            .search-bar-displaying-for-image {
+                position: absolute;
+                @include headerPos(flex, row, center, center);
+                @include marginRule(20px, 0, 0, 0, );
+
+                .imgage-size-search-bar {
+                    @include resizeImg(50px, 50px);
+                }
+            }
+
+            .search-bar {
+                @include headerPos(flex, row, center, center);
+                height: 100%;
+
+                .search-bar-input {
+                    width: 50%;
+                }
+
+                .redesign-event-button-bis {
+                    @include marginRule(0, 0, 50px, 0);
+                    border-radius: $radius;
+                }
+            }
+        }
+    }
+}

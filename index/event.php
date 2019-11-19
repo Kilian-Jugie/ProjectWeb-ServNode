@@ -31,7 +31,64 @@
     </section>
 
     <?php
-    include 'showEvents.php';
+    if (isset($_SESSION['user_log'])) {
+        include 'showEvents.php';
+    } else {
+        echo '<section class="container-fluid">
+        <div class="space">
+        </div>
+    </section>
+    <section class="container-fluid">
+    <div class="space">
+    </div>
+</section>
+<div class="container-fluid must-beLogged"> Vous devez être connecté pour acceder aux events &#128543</div>
+<div class="space">
+</div>
+</section>
+<section class="container-fluid">
+<div class="space">
+</div>
+</section>
+<div class="space">
+</div>
+</section>
+<section class="container-fluid">
+<div class="space">
+</div>
+</section>
+<div class="space">
+</div>
+</section>
+<section class="container-fluid">
+<div class="space">
+</div>
+</section>
+<div class="space">
+</div>
+</section>
+<section class="container-fluid">
+<div class="space">
+</div>
+</section>
+<div class="space">
+</div>
+</section>
+<section class="container-fluid">
+<div class="space">
+</div>
+</section>
+<div class="space">
+</div>
+</section>
+<section class="container-fluid">
+<div class="space">
+</div>
+</section>
+<div class="space">
+</div>
+</section>';
+    }
     ?>
 
     <!-- <div class="container-fluid displaying-event">
