@@ -375,8 +375,65 @@ include 'request.php';
             }      
         }  
     } 
+    class ActionAddProduct extends Action{
+        function getPrio(){
+            $priority = new Priority();
+            return $priority::$BDE;
+        }
+        function exec(){
+            if($this->getPrio() <= getUserRole()){
+                if(isset($_POST['submitProduct'])){
+                    $pathImg = stockPathImg($_FILES['input_urlimg']);
+                    $newProduct = (object)[
+                        "input_label" => $_POST['input_label'],
+                        "input_desc" => $_POST['input_desc'],
+                        "input_urlimg" => $pathImg,
+                        "price" => $_POST['input_price'],
+                        "input_id_product_type" => $_POST['input_id_product_type']
+                    ];
+                    return callAPI('POST', 'http://www.bdecesi-api.ml/api/add_product/', json_encode($newProduct));
+                }else{
+                    return "new";
+                }
+            }else{
+                return false;
+            }
+        }
+    }
+    class ActionAddEvent extends Action{
+        function getPrio(){
+            $priority = new Priority();
+            return $priority::$BDE;
+        }
+        function exec(){
+            if($this->getPrio() <= getUserRole()){
+                return true;
+            }else{
+                return false;
+            }
+        }
+    }
     function getUserRole(){
         return $_SESSION['priority'];
+    }
+    function stockPathImg($files){
+        $allowtypes = ['jpg', 'PNG', 'png', 'jpeg'];
+        $targetDir = '../src/img/shop/';
+         if(!empty($files['name'])){
+                $filename = basename($files['name']);
+                $filepath = $targetDir.$filename;
+                $filetype = pathinfo($filepath, PATHINFO_EXTENSION);
+                if(in_array($filetype, $allowtypes)){
+                    if(move_uploaded_file($files['tmp_name'], $filepath)){
+                         return $filepath;
+                    }else{
+                        $errorUpload .= $files['name'].', ';
+                    }
+                }else{
+                    $errorUploadType .= $files['name'].', ';
+                }
+                
+            }
     }
 
 ?>

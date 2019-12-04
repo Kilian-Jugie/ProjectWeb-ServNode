@@ -32,18 +32,12 @@
                 <div class='container form-displaying'>
                     <form method='POST' action='loginScript.php'>
                     ";
-<<<<<<< HEAD
         if (isset($_GET['info'])) {
             if ($_GET['info'] == "error_password") {
                 echo "<br><h3>Wrong Password</h3>";
             }
             if($_GET['info'] == "success_sign"){
                 echo "<br><h3>Inscription success please login</h3>";
-=======
-        if (isset($_GET['error'])) {
-            if ($_GET['error'] == "password") {
-                echo "<h3>Wrong Password</h3>";
->>>>>>> 4c2034474d606f30be72e321b4c55fcb2937895c
             }
         } else {
             echo " <h3> Ravi de vous revoir !</h3>";

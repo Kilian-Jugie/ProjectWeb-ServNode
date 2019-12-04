@@ -296,7 +296,38 @@
                 }else{
                     echo "Erreur le status n'a pas été mis à jour";
                 }
-        }       
+        }
+        $addProduct = new ActionAddProduct();
+        $addProduct = $addProduct->printOut();
+        if($addProduct == "new"){
+            echo "<form action='dashboard.php' method='POST' enctype='multipart/form-data'>
+                Label : 
+                <input type='text' name='input_label'><br>
+                Description : 
+                <input type='text' name='input_desc'><br>
+                Image Product : 
+                <input type='file' name='input_urlimg'><br>
+                Price : 
+                <input type='text' name='input_price'><br>
+                <SELECT name='input_id_product_type'>";
+                $getAllProductsType = new ActionGetAllProductsType();
+                $allProductsType = $getAllProductsType->printOut();
+                $allProductsType = json_decode($allProductsType);
+                for ($i = 0; $i < count($allProductsType); $i++) {
+                    echo "<option value=" . $allProductsType[$i]->id . ">" . $allProductsType[$i]->label . "</option>";
+                }
+                echo "</SELECT><br>
+                <input type='hidden' name='access_dashboard'>
+                <input type='submit' name='submitProduct' value='Add Product'>
+            </form>";
+        }else if($addProduct = ' '){
+            echo "Votre produit à été ajouté avec succés";
+        }
+        $addEvent = new ActionAddEvent();
+        $createEvent = $addEvent->printOut();
+        if($createEvent){
+            echo "<a href='../addEvent/addEvent.php'>Create Event</a>";
+        }      
     }
     function product_for_id($id, $allProducts){
         for($i = 0; $i < count($allProducts); $i++){

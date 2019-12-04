@@ -26,4 +26,5 @@
     Images : 
     <input type="file" name="files[]" id="files" multiple></input><br>
     <input type='submit' name='sumbit_event'></input><br>
-</form> 
+</form>
+<a href='../dashboard/index.php'>Return dashboard</a> 

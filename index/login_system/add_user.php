@@ -45,7 +45,6 @@ if (isset($_POST['submit'])) {
                             include 'sign_up.php';
                         }
                     }
-<<<<<<< HEAD
                 }else{
                     $news_letter = 0;
                 }
@@ -66,8 +65,6 @@ if (isset($_POST['submit'])) {
                     header("Location: login.php?info=success_sign");
                 }else{
                     header("Location: sign_up.php?info=user_exist");
-=======
->>>>>>> 4c2034474d606f30be72e321b4c55fcb2937895c
                 }
             }
         } else {
